@@ -108,20 +108,22 @@ function validate(entry, seenIds) {
       check(label, !planIds.has(plan.id), 'duplicate plan id');
       planIds.add(plan.id);
       check(label, typeof plan.name === 'string' && plan.name.length > 0, 'plan needs a name');
-      if (plan.price !== null && plan.price !== undefined) {
-        check(label, Number.isInteger(plan.price.amount), 'plan price.amount must be an integer in minor units');
-        check(label, typeof plan.price.currency === 'string', 'plan price.currency is required');
-        check(label, VALID_CYCLES.has(plan.price.cycle), 'plan price.cycle is not a valid cycle');
-      }
-    }
 
-    // A price without a checked date and a source is an assertion nobody can
-    // audit. The whole point of this file is that its claims are traceable.
-    const priced = (entry.plans ?? []).some((p) => p.price);
-    if (priced) {
-      check(id, ISO_DATE.test(entry.price_verified ?? ''), 'entries with prices need price_verified as an ISO date');
-      check(id, typeof entry.source === 'string' && entry.source.startsWith('http'),
-        'entries with prices need a source URL');
+      // Prices carry their own region, date and source. A price nobody can
+      // trace back to the page it came from is an assertion, not a fact, and
+      // the whole point of this file is that its claims are checkable.
+      const seenRegions = new Set();
+      for (const price of plan.prices ?? []) {
+        const pl = `${label}/${price.region ?? '(no region)'}`;
+        check(pl, /^[A-Z]{2}$/.test(price.region ?? ''), 'price.region must be an ISO alpha-2 code');
+        check(pl, !seenRegions.has(`${price.region}:${price.cycle}`), 'duplicate region and cycle for this plan');
+        seenRegions.add(`${price.region}:${price.cycle}`);
+        check(pl, Number.isInteger(price.amount), 'price.amount must be an integer in minor units');
+        check(pl, typeof price.currency === 'string' && /^[A-Z]{3}$/.test(price.currency), 'price.currency must be ISO 4217');
+        check(pl, VALID_CYCLES.has(price.cycle), 'price.cycle is not a valid cycle');
+        check(pl, ISO_DATE.test(price.verified ?? ''), 'a price needs the date it was checked');
+        check(pl, typeof price.source === 'string' && price.source.startsWith('http'), 'a price needs the URL it was read from');
+      }
     }
   }
 

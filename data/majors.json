@@ -123,7 +123,23 @@
     "color": "#0061FF",
     "price": null,
     "verified": null,
-    "icon": "dropbox.svg"
+    "icon": "dropbox.svg",
+    "plans": [
+      {
+        "id": "plus",
+        "name": "Plus",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 799,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.dropbox.com/en_GB/individual"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "backblaze",
@@ -153,7 +169,23 @@
     "color": "#F24E1E",
     "price": null,
     "verified": null,
-    "icon": "figma.svg"
+    "icon": "figma.svg",
+    "plans": [
+      {
+        "id": "professional",
+        "name": "Professional (full seat)",
+        "prices": [
+          {
+            "region": "US",
+            "amount": 1600,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.figma.com/pricing/"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "canva",
@@ -163,7 +195,39 @@
     "color": "#00C4CC",
     "price": null,
     "verified": null,
-    "icon": "canva.svg"
+    "icon": "canva.svg",
+    "plans": [
+      {
+        "id": "pro",
+        "name": "Pro",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 10000,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-10",
+            "source": "https://www.canva.com/en_gb/pricing/",
+            "note": "Per person"
+          }
+        ]
+      },
+      {
+        "id": "business",
+        "name": "Business",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 18000,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-10",
+            "source": "https://www.canva.com/en_gb/pricing/",
+            "note": "Per person"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "grammarly",
@@ -173,7 +237,23 @@
     "color": "#027E6F",
     "price": null,
     "verified": null,
-    "icon": "grammarly.svg"
+    "icon": "grammarly.svg",
+    "plans": [
+      {
+        "id": "pro",
+        "name": "Pro",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1000,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.grammarly.com/plans"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "evernote",
@@ -213,7 +293,37 @@
     "color": "#3B66BC",
     "price": null,
     "verified": null,
-    "icon": "1password.svg"
+    "icon": "1password.svg",
+    "plans": [
+      {
+        "id": "individual",
+        "name": "Individual",
+        "prices": [
+          {
+            "region": "US",
+            "amount": 399,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://1password.com/pricing/personal"
+          }
+        ]
+      },
+      {
+        "id": "families",
+        "name": "Families",
+        "prices": [
+          {
+            "region": "US",
+            "amount": 599,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://1password.com/pricing/personal"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "github-copilot",

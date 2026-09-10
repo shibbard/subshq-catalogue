@@ -14,33 +14,46 @@
       {
         "id": "standard-ads",
         "name": "Standard with adverts",
-        "price": {
-          "amount": 799,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 799,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://help.netflix.com/en/node/24926"
+          }
+        ]
       },
       {
         "id": "standard",
         "name": "Standard",
-        "price": {
-          "amount": 1399,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1399,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://help.netflix.com/en/node/24926"
+          }
+        ]
       },
       {
         "id": "premium",
         "name": "Premium",
-        "price": {
-          "amount": 2099,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 2099,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://help.netflix.com/en/node/24926"
+          }
+        ]
       }
     ],
-    "price_verified": "2026-09-10",
-    "source": "https://help.netflix.com/en/node/24926",
     "match": [
       "NETFLIX.COM",
       "NETFLIX"
@@ -84,42 +97,60 @@
       {
         "id": "individual",
         "name": "Individual",
-        "price": {
-          "amount": 1299,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1299,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.spotify.com/uk/premium/"
+          }
+        ]
       },
       {
         "id": "duo",
         "name": "Duo",
-        "price": {
-          "amount": 1799,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1799,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.spotify.com/uk/premium/"
+          }
+        ]
       },
       {
         "id": "family",
         "name": "Family",
-        "price": {
-          "amount": 2199,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 2199,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.spotify.com/uk/premium/"
+          }
+        ]
       },
       {
         "id": "student",
         "name": "Student",
-        "price": {
-          "amount": 599,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 599,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.spotify.com/uk/premium/"
+          }
+        ]
       }
     ],
-    "price_verified": "2026-09-10",
-    "source": "https://www.spotify.com/uk/premium/",
     "match": [
       "SPOTIFY"
     ],
@@ -162,16 +193,13 @@
     "plans": [
       {
         "id": "monthly",
-        "name": "Monthly",
-        "price": null
+        "name": "Monthly"
       },
       {
         "id": "annual",
-        "name": "Annual",
-        "price": null
+        "name": "Annual"
       }
     ],
-    "price_verified": null,
     "match": [
       "AMAZON PRIME",
       "AMZNPRIME",
@@ -220,21 +248,17 @@
     "plans": [
       {
         "id": "standard-ads",
-        "name": "Standard with Ads",
-        "price": null
+        "name": "Standard with Ads"
       },
       {
         "id": "standard",
-        "name": "Standard",
-        "price": null
+        "name": "Standard"
       },
       {
         "id": "premium",
-        "name": "Premium",
-        "price": null
+        "name": "Premium"
       }
     ],
-    "price_verified": null,
     "match": [
       "DISNEY PLUS",
       "DISNEYPLUS",
@@ -277,21 +301,17 @@
     "plans": [
       {
         "id": "individual",
-        "name": "Individual",
-        "price": null
+        "name": "Individual"
       },
       {
         "id": "family",
-        "name": "Family",
-        "price": null
+        "name": "Family"
       },
       {
         "id": "student",
-        "name": "Student",
-        "price": null
+        "name": "Student"
       }
     ],
-    "price_verified": null,
     "match": [
       "GOOGLE *YOUTUBE",
       "YOUTUBEPREMIUM",
@@ -336,21 +356,53 @@
     "plans": [
       {
         "id": "all-apps",
-        "name": "All Apps",
-        "price": null
+        "name": "Creative Cloud Pro (All Apps)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 6649,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.adobe.com/uk/creativecloud/plans.html",
+            "tax_included": true,
+            "note": "Standard rate; often discounted for the first 3 months"
+          }
+        ]
       },
       {
         "id": "single-app",
         "name": "Single App",
-        "price": null
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 2198,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.adobe.com/uk/creativecloud/plans.html",
+            "tax_included": true,
+            "note": "Most single apps; Lightroom is cheaper"
+          }
+        ]
       },
       {
         "id": "photography",
         "name": "Photography",
-        "price": null
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1997,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.adobe.com/uk/creativecloud/plans.html",
+            "tax_included": true,
+            "note": "Annual plan, billed monthly"
+          }
+        ]
       }
     ],
-    "price_verified": null,
     "match": [
       "ADOBE",
       "ADOBE SYSTEMS",
@@ -396,11 +448,9 @@
     "plans": [
       {
         "id": "premium-plus",
-        "name": "Premium Plus",
-        "price": null
+        "name": "Premium Plus"
       }
     ],
-    "price_verified": null,
     "match": [
       "AUDIBLE"
     ],
@@ -447,15 +497,70 @@
       {
         "id": "personal",
         "name": "Personal",
-        "price": null
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 849,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+          },
+          {
+            "region": "GB",
+            "amount": 8499,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-10",
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+          }
+        ]
       },
       {
         "id": "family",
         "name": "Family",
-        "price": null
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1049,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+          },
+          {
+            "region": "GB",
+            "amount": 10499,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-10",
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+          }
+        ]
+      },
+      {
+        "id": "premium",
+        "name": "Premium",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1899,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+          },
+          {
+            "region": "GB",
+            "amount": 18999,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-10",
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+          }
+        ]
       }
     ],
-    "price_verified": null,
     "match": [
       "MICROSOFT*365",
       "MICROSOFT 365",
@@ -499,16 +604,13 @@
     "plans": [
       {
         "id": "plus",
-        "name": "Plus",
-        "price": null
+        "name": "Plus"
       },
       {
         "id": "pro",
-        "name": "Pro",
-        "price": null
+        "name": "Pro"
       }
     ],
-    "price_verified": null,
     "match": [
       "OPENAI",
       "CHATGPT"
@@ -548,15 +650,35 @@
       {
         "id": "pro",
         "name": "Pro",
-        "price": null
+        "prices": [
+          {
+            "region": "US",
+            "amount": 2000,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.claude.com/pricing",
+            "tax_included": false
+          }
+        ]
       },
       {
         "id": "max",
         "name": "Max",
-        "price": null
+        "prices": [
+          {
+            "region": "US",
+            "amount": 10000,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.claude.com/pricing",
+            "tax_included": false,
+            "note": "From $100/month"
+          }
+        ]
       }
     ],
-    "price_verified": null,
     "match": [
       "ANTHROPIC",
       "CLAUDE.AI"
@@ -597,51 +719,74 @@
       {
         "id": "50gb",
         "name": "50 GB",
-        "price": {
-          "amount": 99,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 99,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://support.apple.com/en-gb/108047"
+          }
+        ]
       },
       {
         "id": "200gb",
         "name": "200 GB",
-        "price": {
-          "amount": 299,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 299,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://support.apple.com/en-gb/108047"
+          }
+        ]
       },
       {
         "id": "2tb",
         "name": "2 TB",
-        "price": {
-          "amount": 899,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 899,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://support.apple.com/en-gb/108047"
+          }
+        ]
       },
       {
         "id": "6tb",
         "name": "6 TB",
-        "price": {
-          "amount": 2699,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 2699,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://support.apple.com/en-gb/108047"
+          }
+        ]
       },
       {
         "id": "12tb",
         "name": "12 TB",
-        "price": {
-          "amount": 5499,
-          "currency": "GBP",
-          "cycle": "monthly"
-        }
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 5499,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://support.apple.com/en-gb/108047"
+          }
+        ]
       }
     ],
-    "price_verified": "2026-09-10",
-    "source": "https://support.apple.com/en-gb/108047",
     "match": [
       "APPLE.COM/BILL",
       "ITUNES.COM/BILL",

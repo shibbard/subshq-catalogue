@@ -1,14 +1,14 @@
-# Notice catalogue
+# Subs HQ catalogue
 
 **How to cancel things.** A public, machine-readable record of what each
 subscription service costs, how you actually get out of it, what they'll try when
 you attempt to, and what notice you have to give.
 
-This is the data behind [Notice](https://github.com/shibbard/notice), but it is
+This is the data behind [Subs HQ](https://github.com/shibbard/subshq), but it is
 useful on its own and deliberately not locked to it. Anyone can read the file.
 
 ```
-https://shibbard.github.io/notice-catalogue/catalogue.json
+https://shibbard.github.io/subshq-catalogue/catalogue.json
 ```
 
 ## Why this exists separately

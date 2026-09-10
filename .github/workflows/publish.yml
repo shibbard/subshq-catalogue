@@ -67,7 +67,7 @@ jobs:
           <h1>Notice catalogue</h1>
           <p>A public record of how to cancel things.</p>
           <p><a href="catalogue.json">catalogue.json</a></p>
-          <p><a href="https://github.com/shibbard/notice-catalogue">Source and contributions</a></p>
+          <p><a href="https://github.com/shibbard/subshq-catalogue">Source and contributions</a></p>
           HTML
 
       - uses: actions/upload-pages-artifact@v3

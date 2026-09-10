@@ -7,13 +7,14 @@
 //
 // Deliberately has no dependencies: it runs with plain node.
 
-import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(here, 'data');
 const OUT_DIR = path.join(here, 'dist');
+const ICON_SRC = path.join(here, 'icons');
 const OUT = path.join(OUT_DIR, 'catalogue.json');
 const ICON_DIR = path.join(OUT_DIR, 'icons');
 
@@ -46,9 +47,17 @@ function validate(entry, seenIds) {
 
   check(id, typeof entry.name === 'string' && entry.name.length > 0, 'name is required');
   check(id, VALID_CATEGORIES.has(entry.category), `category "${entry.category}" is not in the fixed list`);
-  check(id, typeof entry.region === 'string' && /^[A-Z]{2}$/.test(entry.region), 'region must be an ISO alpha-2 code');
+  // Region is optional: a service with no cancellation steps yet has no
+  // region-specific claim to make, and asserting one would be invention.
+  if (entry.region !== undefined) {
+    check(id, /^[A-Z]{2}$/.test(entry.region), 'region must be an ISO alpha-2 code');
+  }
   check(id, typeof entry.domain === 'string' && entry.domain.includes('.'), 'domain is required');
-  check(id, Array.isArray(entry.match) && entry.match.length > 0, 'match must list at least one statement descriptor');
+
+  // `match` is generated from the name when absent — see normaliseEntry.
+  if (entry.match !== undefined) {
+    check(id, Array.isArray(entry.match) && entry.match.length > 0, 'match must not be an empty array');
+  }
 
   // Price is optional but must be honest when present. PRD §8.1: minor units.
   if (entry.price !== null && entry.price !== undefined) {
@@ -57,8 +66,11 @@ function validate(entry, seenIds) {
     check(id, VALID_CYCLES.has(entry.price.cycle), 'price.cycle is not a valid cycle');
   }
 
+  // A stub — an entry with no cancel block — is a legitimate state. It gets a
+  // service into search with its name and icon so a subscription can be added,
+  // while being honest that nobody has worked out how to leave it yet. The app
+  // shows those differently from a service that is missing entirely.
   const c = entry.cancel;
-  check(id, !!c, 'cancel block is required');
   if (c) {
     check(id, Number.isInteger(c.difficulty) && c.difficulty >= 1 && c.difficulty <= 5, 'cancel.difficulty must be 1-5');
     check(id, Array.isArray(c.channels) && c.channels.length > 0, 'cancel.channels is required');
@@ -78,7 +90,7 @@ function validate(entry, seenIds) {
   // verified: null is legitimate and means "not checked against source".
   // It is not an error, but the UI must surface it, so warn loudly at build time.
   if (entry.verified === null || entry.verified === undefined) {
-    warnings.push(`${id}: unverified — the app will label this entry as unchecked`);
+    if (c) warnings.push(`${id}: unverified — the app will label this entry as unchecked`);
   } else {
     check(id, ISO_DATE.test(entry.verified), 'verified must be an ISO date or null');
   }
@@ -116,6 +128,17 @@ function validate(entry, seenIds) {
   if (entry.rights) {
     check(id, typeof entry.rights.source === 'string' && entry.rights.source.startsWith('http'),
       'rights.source must link to the source; never state rights without one');
+  }
+}
+
+/**
+ * Fills in what can be derived rather than demanding it be typed. A bank
+ * descriptor is almost always the service name in capitals, so that is the
+ * default; anything unusual still has to be listed explicitly.
+ */
+function normaliseEntry(entry) {
+  if (!entry.match && typeof entry.name === 'string') {
+    entry.match = [entry.name.toUpperCase().replace(/[^A-Z0-9 ]/g, '').trim()];
   }
 }
 
@@ -235,6 +258,8 @@ async function main() {
     entries.push(...(Array.isArray(parsed) ? parsed : [parsed]));
   }
 
+  for (const entry of entries) normaliseEntry(entry);
+
   const seenIds = new Set();
   for (const entry of entries) validate(entry, seenIds);
 
@@ -243,6 +268,17 @@ async function main() {
     for (const e of errors) console.error(`  ✗ ${e}`);
     console.error('\nA malformed entry must fail the build, not ship.\n');
     process.exit(1);
+  }
+
+  // Brand marks come from Simple Icons via scripts/enrich-icons.mjs and are
+  // committed, so a build needs no network and is reproducible.
+  await mkdir(ICON_DIR, { recursive: true });
+  let copied = 0;
+  const svgs = await readdir(ICON_SRC).catch(() => []);
+  for (const f of svgs) {
+    if (!f.endsWith('.svg')) continue;
+    await copyFile(path.join(ICON_SRC, f), path.join(ICON_DIR, f));
+    copied += 1;
   }
 
   entries.sort((a, b) => a.name.localeCompare(b.name));
@@ -292,7 +328,11 @@ async function main() {
 
   await writeFile(OUT, JSON.stringify(catalogue, null, 2) + '\n', 'utf8');
 
-  const unverified = entries.filter((e) => !e.verified).length;
+  const stubs = entries.filter((e) => !e.cancel).length;
+  const withSteps = entries.length - stubs;
+  // Only an entry that HAS cancellation steps can meaningfully be unverified;
+  // a stub has nothing to verify yet.
+  const unverified = entries.filter((e) => e.cancel && !e.verified).length;
   console.log(`\nBuilt ${entries.length} entries → dist/catalogue.json (v${version})`);
   if (warnings.length > 0) {
     console.log(`\n${unverified} of ${entries.length} entries are unverified:`);

@@ -1,0 +1,539 @@
+[
+  {
+    "id": "apple-music",
+    "name": "Apple Music",
+    "category": "music",
+    "domain": "music.apple.com",
+    "color": "#FA243C",
+    "price": null,
+    "verified": null,
+    "icon": "apple-music.svg"
+  },
+  {
+    "id": "amazon-music",
+    "name": "Amazon Music Unlimited",
+    "category": "music",
+    "domain": "music.amazon.co.uk",
+    "color": "#46C3D0",
+    "price": null,
+    "verified": null,
+    "icon": "amazon-music.svg"
+  },
+  {
+    "id": "tidal",
+    "name": "Tidal",
+    "category": "music",
+    "domain": "tidal.com",
+    "color": "#000000",
+    "price": null,
+    "verified": null,
+    "icon": "tidal.svg"
+  },
+  {
+    "id": "deezer",
+    "name": "Deezer",
+    "category": "music",
+    "domain": "deezer.com",
+    "color": "#A238FF",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "crunchyroll",
+    "name": "Crunchyroll",
+    "category": "streaming",
+    "domain": "crunchyroll.com",
+    "color": "#FF5E00",
+    "price": null,
+    "verified": null,
+    "icon": "crunchyroll.svg"
+  },
+  {
+    "id": "paramount-plus",
+    "name": "Paramount+",
+    "category": "streaming",
+    "domain": "paramountplus.com",
+    "color": "#0064FF",
+    "price": null,
+    "verified": null,
+    "icon": "paramount-plus.svg"
+  },
+  {
+    "id": "apple-tv-plus",
+    "name": "Apple TV+",
+    "category": "streaming",
+    "domain": "tv.apple.com",
+    "color": "#000000",
+    "price": null,
+    "verified": null,
+    "icon": "apple-tv-plus.svg"
+  },
+  {
+    "id": "britbox",
+    "name": "BritBox",
+    "category": "streaming",
+    "domain": "britbox.co.uk",
+    "color": "#0F1E5A",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "mubi",
+    "name": "MUBI",
+    "category": "streaming",
+    "domain": "mubi.com",
+    "color": "#000000",
+    "price": null,
+    "verified": null,
+    "icon": "mubi.svg"
+  },
+  {
+    "id": "xbox-game-pass",
+    "name": "Xbox Game Pass",
+    "category": "gaming",
+    "domain": "xbox.com",
+    "color": "#107C10",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "nintendo-switch-online",
+    "name": "Nintendo Switch Online",
+    "category": "gaming",
+    "domain": "nintendo.co.uk",
+    "color": "#E60012",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "ea-play",
+    "name": "EA Play",
+    "category": "gaming",
+    "domain": "ea.com",
+    "color": "#000000",
+    "price": null,
+    "verified": null,
+    "icon": "ea-play.svg"
+  },
+  {
+    "id": "dropbox",
+    "name": "Dropbox",
+    "category": "storage",
+    "domain": "dropbox.com",
+    "color": "#0061FF",
+    "price": null,
+    "verified": null,
+    "icon": "dropbox.svg"
+  },
+  {
+    "id": "backblaze",
+    "name": "Backblaze",
+    "category": "storage",
+    "domain": "backblaze.com",
+    "color": "#E21E29",
+    "price": null,
+    "verified": null,
+    "icon": "backblaze.svg"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "category": "software",
+    "domain": "notion.so",
+    "color": "#000000",
+    "price": null,
+    "verified": null,
+    "icon": "notion.svg"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "category": "software",
+    "domain": "figma.com",
+    "color": "#F24E1E",
+    "price": null,
+    "verified": null,
+    "icon": "figma.svg"
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "category": "software",
+    "domain": "canva.com",
+    "color": "#00C4CC",
+    "price": null,
+    "verified": null,
+    "icon": "canva.svg"
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "category": "software",
+    "domain": "grammarly.com",
+    "color": "#027E6F",
+    "price": null,
+    "verified": null,
+    "icon": "grammarly.svg"
+  },
+  {
+    "id": "evernote",
+    "name": "Evernote",
+    "category": "software",
+    "domain": "evernote.com",
+    "color": "#00A82D",
+    "price": null,
+    "verified": null,
+    "icon": "evernote.svg"
+  },
+  {
+    "id": "todoist",
+    "name": "Todoist",
+    "category": "software",
+    "domain": "todoist.com",
+    "color": "#E44332",
+    "price": null,
+    "verified": null,
+    "icon": "todoist.svg"
+  },
+  {
+    "id": "setapp",
+    "name": "Setapp",
+    "category": "software",
+    "domain": "setapp.com",
+    "color": "#E6C3A5",
+    "price": null,
+    "verified": null,
+    "icon": "setapp.svg"
+  },
+  {
+    "id": "1password",
+    "name": "1Password",
+    "category": "software",
+    "domain": "1password.com",
+    "color": "#3B66BC",
+    "price": null,
+    "verified": null,
+    "icon": "1password.svg"
+  },
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "category": "software",
+    "domain": "github.com",
+    "color": "#000000",
+    "price": null,
+    "verified": null,
+    "icon": "github-copilot.svg"
+  },
+  {
+    "id": "linkedin-premium",
+    "name": "LinkedIn Premium",
+    "category": "software",
+    "domain": "linkedin.com",
+    "color": "#0A66C2",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "nordvpn",
+    "name": "NordVPN",
+    "category": "software",
+    "domain": "nordvpn.com",
+    "color": "#4687FF",
+    "price": null,
+    "verified": null,
+    "icon": "nordvpn.svg"
+  },
+  {
+    "id": "expressvpn",
+    "name": "ExpressVPN",
+    "category": "software",
+    "domain": "expressvpn.com",
+    "color": "#DA3940",
+    "price": null,
+    "verified": null,
+    "icon": "expressvpn.svg"
+  },
+  {
+    "id": "surfshark",
+    "name": "Surfshark",
+    "category": "software",
+    "domain": "surfshark.com",
+    "color": "#1EBFBF",
+    "price": null,
+    "verified": null,
+    "icon": "surfshark.svg"
+  },
+  {
+    "id": "proton",
+    "name": "Proton",
+    "category": "software",
+    "domain": "proton.me",
+    "color": "#6D4AFF",
+    "price": null,
+    "verified": null,
+    "icon": "proton.svg"
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "category": "ai",
+    "domain": "midjourney.com",
+    "color": "#000000",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "category": "ai",
+    "domain": "perplexity.ai",
+    "color": "#1FB8CD",
+    "price": null,
+    "verified": null,
+    "icon": "perplexity.svg"
+  },
+  {
+    "id": "strava",
+    "name": "Strava",
+    "category": "fitness",
+    "domain": "strava.com",
+    "color": "#FC4C02",
+    "price": null,
+    "verified": null,
+    "icon": "strava.svg"
+  },
+  {
+    "id": "myfitnesspal",
+    "name": "MyFitnessPal",
+    "category": "fitness",
+    "domain": "myfitnesspal.com",
+    "color": "#0066EE",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "calm",
+    "name": "Calm",
+    "category": "fitness",
+    "domain": "calm.com",
+    "color": "#2E5FCA",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "the-gym-group",
+    "name": "The Gym Group",
+    "category": "fitness",
+    "domain": "thegymgroup.com",
+    "color": "#E4002B",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "david-lloyd",
+    "name": "David Lloyd Clubs",
+    "category": "fitness",
+    "domain": "davidlloyd.co.uk",
+    "color": "#00263A",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "nuffield-health",
+    "name": "Nuffield Health",
+    "category": "fitness",
+    "domain": "nuffieldhealth.com",
+    "color": "#00A9CE",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "duolingo",
+    "name": "Duolingo",
+    "category": "education",
+    "domain": "duolingo.com",
+    "color": "#58CC02",
+    "price": null,
+    "verified": null,
+    "icon": "duolingo.svg"
+  },
+  {
+    "id": "babbel",
+    "name": "Babbel",
+    "category": "education",
+    "domain": "babbel.com",
+    "color": "#FF6E1E",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "skillshare",
+    "name": "Skillshare",
+    "category": "education",
+    "domain": "skillshare.com",
+    "color": "#00FF84",
+    "price": null,
+    "verified": null,
+    "icon": "skillshare.svg"
+  },
+  {
+    "id": "coursera",
+    "name": "Coursera",
+    "category": "education",
+    "domain": "coursera.org",
+    "color": "#0056D2",
+    "price": null,
+    "verified": null,
+    "icon": "coursera.svg"
+  },
+  {
+    "id": "the-times",
+    "name": "The Times",
+    "category": "news",
+    "domain": "thetimes.com",
+    "color": "#00131F",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "the-guardian",
+    "name": "The Guardian",
+    "category": "news",
+    "domain": "theguardian.com",
+    "color": "#052962",
+    "price": null,
+    "verified": null,
+    "icon": "the-guardian.svg"
+  },
+  {
+    "id": "financial-times",
+    "name": "Financial Times",
+    "category": "news",
+    "domain": "ft.com",
+    "color": "#FFF1E5",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "the-economist",
+    "name": "The Economist",
+    "category": "news",
+    "domain": "economist.com",
+    "color": "#E3120B",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "which",
+    "name": "Which?",
+    "category": "news",
+    "domain": "which.co.uk",
+    "color": "#00A0D6",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "substack",
+    "name": "Substack",
+    "category": "news",
+    "domain": "substack.com",
+    "color": "#FF6719",
+    "price": null,
+    "verified": null,
+    "icon": "substack.svg"
+  },
+  {
+    "id": "vodafone-uk",
+    "name": "Vodafone",
+    "category": "mobile",
+    "region": "GB",
+    "domain": "vodafone.co.uk",
+    "color": "#E60000",
+    "price": null,
+    "verified": null,
+    "icon": "vodafone-uk.svg"
+  },
+  {
+    "id": "ee-uk",
+    "name": "EE",
+    "category": "mobile",
+    "region": "GB",
+    "domain": "ee.co.uk",
+    "color": "#007B85",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "o2-uk",
+    "name": "O2",
+    "category": "mobile",
+    "region": "GB",
+    "domain": "o2.co.uk",
+    "color": "#0050FF",
+    "price": null,
+    "verified": null,
+    "icon": "o2-uk.svg"
+  },
+  {
+    "id": "three-uk",
+    "name": "Three",
+    "category": "mobile",
+    "region": "GB",
+    "domain": "three.co.uk",
+    "color": "#EE2E7B",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "bt-uk",
+    "name": "BT",
+    "category": "utilities",
+    "region": "GB",
+    "domain": "bt.com",
+    "color": "#6400AA",
+    "price": null,
+    "verified": null,
+    "icon": "bt-uk.svg"
+  },
+  {
+    "id": "sky-uk",
+    "name": "Sky",
+    "category": "utilities",
+    "region": "GB",
+    "domain": "sky.com",
+    "color": "#0072C9",
+    "price": null,
+    "verified": null,
+    "icon": "sky-uk.svg"
+  },
+  {
+    "id": "uber-one",
+    "name": "Uber One",
+    "category": "food",
+    "domain": "uber.com",
+    "color": "#000000",
+    "price": null,
+    "verified": null,
+    "icon": "uber-one.svg"
+  },
+  {
+    "id": "deliveroo-plus",
+    "name": "Deliveroo Plus",
+    "category": "food",
+    "domain": "deliveroo.co.uk",
+    "color": "#00CCBC",
+    "price": null,
+    "verified": null,
+    "icon": "deliveroo-plus.svg"
+  },
+  {
+    "id": "ancestry",
+    "name": "Ancestry",
+    "category": "other",
+    "domain": "ancestry.co.uk",
+    "color": "#9CAF88",
+    "price": null,
+    "verified": null
+  }
+]

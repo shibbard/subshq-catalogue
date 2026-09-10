@@ -65,7 +65,8 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null
+    "verified": null,
+    "icon": "netflix-uk.svg"
   },
   {
     "id": "spotify-uk",
@@ -77,7 +78,7 @@
     "category": "music",
     "region": "GB",
     "domain": "spotify.com",
-    "color": "#1DB954",
+    "color": "#1ED760",
     "price": null,
     "plans": [
       {
@@ -143,7 +144,8 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null
+    "verified": null,
+    "icon": "spotify-uk.svg"
   },
   {
     "id": "amazon-prime-uk",
@@ -200,7 +202,8 @@
       ],
       "refund_policy": "partial"
     },
-    "verified": null
+    "verified": null,
+    "icon": "amazon-prime-uk.svg"
   },
   {
     "id": "disney-plus-uk",
@@ -315,7 +318,8 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null
+    "verified": null,
+    "icon": "youtube-premium-uk.svg"
   },
   {
     "id": "adobe-cc-uk",
@@ -424,7 +428,8 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null
+    "verified": null,
+    "icon": "audible-uk.svg"
   },
   {
     "id": "microsoft-365-uk",
@@ -489,7 +494,7 @@
     "category": "ai",
     "region": "GB",
     "domain": "openai.com",
-    "color": "#10A37F",
+    "color": "#412991",
     "price": null,
     "plans": [
       {
@@ -525,7 +530,8 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null
+    "verified": null,
+    "icon": "chatgpt-plus.svg"
   },
   {
     "id": "claude-pro",
@@ -572,7 +578,8 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null
+    "verified": null,
+    "icon": "claude-pro.svg"
   },
   {
     "id": "apple-icloud-uk",
@@ -584,7 +591,7 @@
     "category": "storage",
     "region": "GB",
     "domain": "apple.com",
-    "color": "#007AFF",
+    "color": "#3693F3",
     "price": null,
     "plans": [
       {
@@ -657,7 +664,8 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null
+    "verified": null,
+    "icon": "apple-icloud-uk.svg"
   },
   {
     "id": "puregym-uk",
@@ -708,7 +716,7 @@
     "category": "utilities",
     "region": "GB",
     "domain": "virginmedia.com",
-    "color": "#E10A0A",
+    "color": "#ED1A37",
     "price": null,
     "match": [
       "VIRGIN MEDIA",
@@ -744,6 +752,7 @@
       "renewal_reminder_required": true,
       "source": "https://www.ofcom.org.uk/phones-and-broadband/service-quality/contract-changes"
     },
-    "verified": null
+    "verified": null,
+    "icon": "virgin-media-uk.svg"
   }
 ]

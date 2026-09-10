@@ -1,0 +1,1870 @@
+[
+  {
+    "id": "acorn-tv",
+    "name": "Acorn TV",
+    "category": "streaming",
+    "domain": "acorn.tv",
+    "price": null,
+    "wikipedia": "Acorn TV",
+    "verified": null
+  },
+  {
+    "id": "aha",
+    "name": "Aha",
+    "category": "streaming",
+    "domain": "aha.video",
+    "price": null,
+    "wikipedia": "Aha (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "alchemiya",
+    "name": "Alchemiya",
+    "category": "streaming",
+    "domain": "alchemiya.com",
+    "price": null,
+    "wikipedia": "Alchemiya",
+    "verified": null
+  },
+  {
+    "id": "all-japan-pro-wrestling-tv",
+    "name": "All Japan Pro Wrestling TV",
+    "category": "streaming",
+    "domain": "ajpw.tv",
+    "price": null,
+    "wikipedia": "All Japan Pro Wrestling TV",
+    "verified": null
+  },
+  {
+    "id": "allblk",
+    "name": "Allblk",
+    "category": "streaming",
+    "domain": "allblk.tv",
+    "price": null,
+    "wikipedia": "Allblk",
+    "verified": null
+  },
+  {
+    "id": "altt",
+    "name": "ALTT",
+    "category": "streaming",
+    "domain": "altbalaji.com",
+    "price": null,
+    "wikipedia": "ALTT",
+    "verified": null
+  },
+  {
+    "id": "amazon-prime",
+    "name": "Amazon Prime",
+    "category": "other",
+    "domain": "amazon.com",
+    "price": null,
+    "wikipedia": "Amazon Prime",
+    "verified": null,
+    "color": "#00A8E1",
+    "icon": "amazon-prime.svg"
+  },
+  {
+    "id": "amazon-prime-video",
+    "name": "Amazon Prime Video",
+    "category": "streaming",
+    "domain": "primevideo.com",
+    "price": null,
+    "wikipedia": "Amazon Prime Video",
+    "verified": null,
+    "color": "#00A8E1",
+    "icon": "amazon-prime-video.svg"
+  },
+  {
+    "id": "amc",
+    "name": "AMC+",
+    "category": "streaming",
+    "domain": "amcplus.com",
+    "price": null,
+    "wikipedia": "AMC+",
+    "verified": null
+  },
+  {
+    "id": "ameba-tv",
+    "name": "Ameba TV",
+    "category": "streaming",
+    "domain": "amebatv.com",
+    "price": null,
+    "wikipedia": "Ameba TV",
+    "verified": null,
+    "color": "#2D8C3C",
+    "icon": "ameba-tv.svg"
+  },
+  {
+    "id": "animation-digital-network",
+    "name": "Animation Digital Network",
+    "category": "streaming",
+    "domain": "animationdigitalnetwork.fr",
+    "price": null,
+    "wikipedia": "Animation Digital Network",
+    "verified": null
+  },
+  {
+    "id": "arrow-films",
+    "name": "Arrow Films",
+    "category": "streaming",
+    "domain": "arrowfilms.co.uk",
+    "price": null,
+    "wikipedia": "Arrow Films",
+    "verified": null
+  },
+  {
+    "id": "ata-football",
+    "name": "ATA Football",
+    "category": "streaming",
+    "domain": "atafootball.com",
+    "price": null,
+    "wikipedia": "ATA Football",
+    "verified": null
+  },
+  {
+    "id": "atresplayer",
+    "name": "Atresplayer",
+    "category": "streaming",
+    "domain": "atresplayer.com",
+    "price": null,
+    "wikipedia": "Atresplayer",
+    "verified": null
+  },
+  {
+    "id": "audible",
+    "name": "Audible",
+    "category": "other",
+    "domain": "audible.com",
+    "price": null,
+    "wikipedia": "Audible (service)",
+    "verified": null,
+    "color": "#F8991C",
+    "icon": "audible.svg"
+  },
+  {
+    "id": "bahamut-animation-crazy",
+    "name": "Bahamut Animation Crazy",
+    "category": "streaming",
+    "domain": "ani.gamer.com.tw",
+    "price": null,
+    "wikipedia": "Bahamut Animation Crazy",
+    "verified": null
+  },
+  {
+    "id": "bandai-channel",
+    "name": "Bandai Channel",
+    "category": "streaming",
+    "domain": "b-ch.com",
+    "price": null,
+    "wikipedia": "Bandai Channel",
+    "verified": null
+  },
+  {
+    "id": "bar-a-tv",
+    "name": "Barça TV+",
+    "category": "streaming",
+    "domain": "barcatvplus.fcbarcelona.com",
+    "price": null,
+    "wikipedia": "Barça TV+",
+    "verified": null
+  },
+  {
+    "id": "barkbox",
+    "name": "BarkBox",
+    "category": "other",
+    "domain": "barkbox.com",
+    "price": null,
+    "wikipedia": "BarkBox",
+    "verified": null
+  },
+  {
+    "id": "bbc-select",
+    "name": "BBC Select",
+    "category": "streaming",
+    "domain": "bbcselect.com",
+    "price": null,
+    "wikipedia": "BBC Select (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "beacon",
+    "name": "Beacon",
+    "category": "streaming",
+    "domain": "beacon.tv",
+    "price": null,
+    "wikipedia": "Beacon (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "bet",
+    "name": "BET+",
+    "category": "streaming",
+    "domain": "bet.com",
+    "price": null,
+    "wikipedia": "BET+",
+    "verified": null
+  },
+  {
+    "id": "betterup",
+    "name": "BetterUp",
+    "category": "other",
+    "domain": "betterup.com",
+    "price": null,
+    "wikipedia": "BetterUp",
+    "verified": null
+  },
+  {
+    "id": "binge",
+    "name": "Binge",
+    "category": "streaming",
+    "domain": "binge.com.au",
+    "price": null,
+    "wikipedia": "Binge (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "birchbox",
+    "name": "Birchbox",
+    "category": "other",
+    "domain": "birchbox.com",
+    "price": null,
+    "wikipedia": "Birchbox",
+    "verified": null
+  },
+  {
+    "id": "blinkist",
+    "name": "Blinkist",
+    "category": "other",
+    "domain": "blinkist.com",
+    "price": null,
+    "wikipedia": "Blinkist",
+    "verified": null
+  },
+  {
+    "id": "blue-apron",
+    "name": "Blue Apron",
+    "category": "other",
+    "domain": "blueapron.com",
+    "price": null,
+    "wikipedia": "Blue Apron",
+    "verified": null
+  },
+  {
+    "id": "blutv",
+    "name": "BluTV",
+    "category": "streaming",
+    "domain": "blutv.com.tr",
+    "price": null,
+    "wikipedia": "BluTV",
+    "verified": null
+  },
+  {
+    "id": "brainly",
+    "name": "Brainly",
+    "category": "other",
+    "domain": "brainly.pl",
+    "price": null,
+    "wikipedia": "Brainly",
+    "verified": null
+  },
+  {
+    "id": "canal",
+    "name": "Canal+",
+    "category": "streaming",
+    "domain": "canalplus.com",
+    "price": null,
+    "wikipedia": "Canal+ (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "chorki",
+    "name": "Chorki",
+    "category": "streaming",
+    "domain": "chorki.com",
+    "price": null,
+    "wikipedia": "Chorki",
+    "verified": null
+  },
+  {
+    "id": "cinando",
+    "name": "Cinando",
+    "category": "other",
+    "domain": "cinando.com",
+    "price": null,
+    "wikipedia": "Cinando",
+    "verified": null
+  },
+  {
+    "id": "cine-mestizo",
+    "name": "Cine Mestizo",
+    "category": "streaming",
+    "domain": "cinemestizo.com",
+    "price": null,
+    "wikipedia": "Cine Mestizo",
+    "verified": null
+  },
+  {
+    "id": "classpass",
+    "name": "ClassPass",
+    "category": "other",
+    "domain": "classpass.com",
+    "price": null,
+    "wikipedia": "ClassPass",
+    "verified": null
+  },
+  {
+    "id": "cook-it",
+    "name": "Cook it",
+    "category": "other",
+    "domain": "chefcookit.com",
+    "price": null,
+    "wikipedia": "Cook it",
+    "verified": null
+  },
+  {
+    "id": "coupang-play",
+    "name": "Coupang Play",
+    "category": "streaming",
+    "domain": "coupangplay.com",
+    "price": null,
+    "wikipedia": "Coupang Play",
+    "verified": null
+  },
+  {
+    "id": "course-hero",
+    "name": "Course Hero",
+    "category": "other",
+    "domain": "coursehero.com",
+    "price": null,
+    "wikipedia": "Course Hero",
+    "verified": null
+  },
+  {
+    "id": "craft-smoothie",
+    "name": "Craft Smoothie",
+    "category": "other",
+    "domain": "craftsmoothie.co.nz",
+    "price": null,
+    "wikipedia": "Craft Smoothie",
+    "verified": null
+  },
+  {
+    "id": "craftsy",
+    "name": "Craftsy",
+    "category": "streaming",
+    "domain": "mybluprint.com",
+    "price": null,
+    "wikipedia": "Craftsy",
+    "verified": null
+  },
+  {
+    "id": "crave",
+    "name": "Crave",
+    "category": "streaming",
+    "domain": "info.cravetv.ca",
+    "price": null,
+    "wikipedia": "Crave (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "curiosity-stream",
+    "name": "Curiosity Stream",
+    "category": "streaming",
+    "domain": "curiositystream.com",
+    "price": null,
+    "wikipedia": "Curiosity Stream",
+    "verified": null
+  },
+  {
+    "id": "dazn",
+    "name": "DAZN",
+    "category": "streaming",
+    "domain": "dazn.com",
+    "price": null,
+    "wikipedia": "DAZN",
+    "verified": null,
+    "color": "#F8F8F5",
+    "icon": "dazn.svg"
+  },
+  {
+    "id": "dc-universe",
+    "name": "DC Universe",
+    "category": "streaming",
+    "domain": "dcuniverse.com",
+    "price": null,
+    "wikipedia": "DC Universe (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "dc-universe-infinite",
+    "name": "DC Universe Infinite",
+    "category": "other",
+    "domain": "dcuniverseinfinite.com",
+    "price": null,
+    "wikipedia": "DC Universe Infinite",
+    "verified": null
+  },
+  {
+    "id": "discovery",
+    "name": "Discovery+",
+    "category": "streaming",
+    "domain": "play.discoveryplus.com",
+    "price": null,
+    "wikipedia": "Discovery+",
+    "verified": null
+  },
+  {
+    "id": "disney-hotstar",
+    "name": "Disney+ Hotstar",
+    "category": "streaming",
+    "domain": "hotstar.com",
+    "price": null,
+    "wikipedia": "Disney+ Hotstar",
+    "verified": null
+  },
+  {
+    "id": "disneynow",
+    "name": "DisneyNow",
+    "category": "streaming",
+    "domain": "disneynow.com",
+    "price": null,
+    "wikipedia": "DisneyNow",
+    "verified": null
+  },
+  {
+    "id": "dmm-com",
+    "name": "DMM.com",
+    "category": "streaming",
+    "domain": "dmm-corp.com",
+    "price": null,
+    "wikipedia": "DMM.com",
+    "verified": null
+  },
+  {
+    "id": "dollar-shave-club",
+    "name": "Dollar Shave Club",
+    "category": "other",
+    "domain": "dollarshaveclub.com",
+    "price": null,
+    "wikipedia": "Dollar Shave Club",
+    "verified": null
+  },
+  {
+    "id": "dramafever",
+    "name": "DramaFever",
+    "category": "streaming",
+    "domain": "dramafever.com",
+    "price": null,
+    "wikipedia": "DramaFever",
+    "verified": null
+  },
+  {
+    "id": "dropout",
+    "name": "Dropout",
+    "category": "streaming",
+    "domain": "dropout.tv",
+    "price": null,
+    "wikipedia": "Dropout (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "eleven-sports-uk-and-ireland",
+    "name": "Eleven Sports UK and Ireland",
+    "category": "streaming",
+    "domain": "elevensports.uk",
+    "price": null,
+    "wikipedia": "Eleven Sports UK and Ireland",
+    "verified": null
+  },
+  {
+    "id": "eros-now",
+    "name": "Eros Now",
+    "category": "streaming",
+    "domain": "erosnow.com",
+    "price": null,
+    "wikipedia": "Eros Now",
+    "verified": null
+  },
+  {
+    "id": "espn",
+    "name": "ESPN",
+    "category": "streaming",
+    "domain": "plus.espn.com",
+    "price": null,
+    "wikipedia": "ESPN (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "fabletics",
+    "name": "Fabletics",
+    "category": "other",
+    "domain": "fabletics.com",
+    "price": null,
+    "wikipedia": "Fabletics",
+    "verified": null
+  },
+  {
+    "id": "fanatiz",
+    "name": "Fanatiz",
+    "category": "streaming",
+    "domain": "fanatiz.com",
+    "price": null,
+    "wikipedia": "Fanatiz",
+    "verified": null
+  },
+  {
+    "id": "fandango-media",
+    "name": "Fandango Media",
+    "category": "streaming",
+    "domain": "fandango.com",
+    "price": null,
+    "wikipedia": "Fandango Media",
+    "verified": null,
+    "color": "#FF7300",
+    "icon": "fandango-media.svg"
+  },
+  {
+    "id": "fandor",
+    "name": "Fandor",
+    "category": "streaming",
+    "domain": "fandor.com",
+    "price": null,
+    "wikipedia": "Fandor",
+    "verified": null
+  },
+  {
+    "id": "fanfix",
+    "name": "Fanfix",
+    "category": "other",
+    "domain": "fanfix.io",
+    "price": null,
+    "wikipedia": "Fanfix",
+    "verified": null
+  },
+  {
+    "id": "filimo",
+    "name": "Filimo",
+    "category": "streaming",
+    "domain": "filimo.com",
+    "price": null,
+    "wikipedia": "Filimo",
+    "verified": null
+  },
+  {
+    "id": "filmin",
+    "name": "Filmin",
+    "category": "streaming",
+    "domain": "filmin.es",
+    "price": null,
+    "wikipedia": "Filmin",
+    "verified": null
+  },
+  {
+    "id": "filmstruck",
+    "name": "FilmStruck",
+    "category": "streaming",
+    "domain": "filmstruck.com",
+    "price": null,
+    "wikipedia": "FilmStruck",
+    "verified": null
+  },
+  {
+    "id": "flintobox",
+    "name": "Flintobox",
+    "category": "other",
+    "domain": "flintobox.com",
+    "price": null,
+    "wikipedia": "Flintobox",
+    "verified": null
+  },
+  {
+    "id": "float-shuttle",
+    "name": "FLOAT Shuttle",
+    "category": "other",
+    "domain": "floatshuttle.com",
+    "price": null,
+    "wikipedia": "FLOAT Shuttle",
+    "verified": null
+  },
+  {
+    "id": "flosports",
+    "name": "FloSports",
+    "category": "streaming",
+    "domain": "flosports.tv",
+    "price": null,
+    "wikipedia": "FloSports",
+    "verified": null
+  },
+  {
+    "id": "fod",
+    "name": "FOD",
+    "category": "streaming",
+    "domain": "fod.fujitv.co.jp",
+    "price": null,
+    "wikipedia": "FOD (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "fox-nation",
+    "name": "Fox Nation",
+    "category": "streaming",
+    "domain": "nation.foxnews.com",
+    "price": null,
+    "wikipedia": "Fox Nation",
+    "verified": null,
+    "color": "#000000",
+    "icon": "fox-nation.svg"
+  },
+  {
+    "id": "foxtel-now",
+    "name": "Foxtel Now",
+    "category": "streaming",
+    "domain": "foxtel.com.au",
+    "price": null,
+    "wikipedia": "Foxtel Now",
+    "verified": null,
+    "color": "#EB5205",
+    "icon": "foxtel-now.svg"
+  },
+  {
+    "id": "funimation",
+    "name": "Funimation",
+    "category": "streaming",
+    "domain": "funimation.com",
+    "price": null,
+    "wikipedia": "Funimation",
+    "verified": null
+  },
+  {
+    "id": "funk",
+    "name": "Funk",
+    "category": "streaming",
+    "domain": "funk.net",
+    "price": null,
+    "wikipedia": "Funk (service)",
+    "verified": null
+  },
+  {
+    "id": "gamefly",
+    "name": "GameFly",
+    "category": "gaming",
+    "domain": "gamefly.com",
+    "price": null,
+    "wikipedia": "GameFly",
+    "verified": null
+  },
+  {
+    "id": "getabstract",
+    "name": "GetAbstract",
+    "category": "other",
+    "domain": "getabstract.com",
+    "price": null,
+    "wikipedia": "GetAbstract",
+    "verified": null
+  },
+  {
+    "id": "global-wrestling-network",
+    "name": "Global Wrestling Network",
+    "category": "streaming",
+    "domain": "globalwrestlingnetwork.com",
+    "price": null,
+    "wikipedia": "Global Wrestling Network",
+    "verified": null
+  },
+  {
+    "id": "globoplay",
+    "name": "Globoplay",
+    "category": "streaming",
+    "domain": "globoplay.globo.com",
+    "price": null,
+    "wikipedia": "Globoplay",
+    "verified": null
+  },
+  {
+    "id": "goodfood-market",
+    "name": "Goodfood Market",
+    "category": "other",
+    "domain": "makegoodfood.ca",
+    "price": null,
+    "wikipedia": "Goodfood Market",
+    "verified": null
+  },
+  {
+    "id": "google-one",
+    "name": "Google One",
+    "category": "other",
+    "domain": "one.google.com",
+    "price": null,
+    "wikipedia": "Google One",
+    "verified": null,
+    "color": "#4285F4",
+    "icon": "google-one.svg"
+  },
+  {
+    "id": "google-play-pass",
+    "name": "Google Play Pass",
+    "category": "other",
+    "domain": "play.google.com",
+    "price": null,
+    "wikipedia": "Google Play Pass",
+    "verified": null,
+    "color": "#414141",
+    "icon": "google-play-pass.svg"
+  },
+  {
+    "id": "gousto",
+    "name": "Gousto",
+    "category": "other",
+    "domain": "gousto.co.uk",
+    "price": null,
+    "wikipedia": "Gousto",
+    "verified": null
+  },
+  {
+    "id": "graze",
+    "name": "Graze",
+    "category": "other",
+    "domain": "graze.com",
+    "price": null,
+    "wikipedia": "Graze (company)",
+    "verified": null
+  },
+  {
+    "id": "gta",
+    "name": "GTA+",
+    "category": "other",
+    "domain": "rockstargames.com",
+    "price": null,
+    "wikipedia": "GTA+",
+    "verified": null
+  },
+  {
+    "id": "harry-s",
+    "name": "Harry's",
+    "category": "other",
+    "domain": "harrys.com",
+    "price": null,
+    "wikipedia": "Harry's",
+    "verified": null
+  },
+  {
+    "id": "hayu",
+    "name": "Hayu",
+    "category": "streaming",
+    "domain": "hayu.com",
+    "price": null,
+    "wikipedia": "Hayu (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "hbo-go",
+    "name": "HBO Go",
+    "category": "streaming",
+    "domain": "hbogo.hu",
+    "price": null,
+    "wikipedia": "HBO Go",
+    "verified": null,
+    "color": "#000000",
+    "icon": "hbo-go.svg"
+  },
+  {
+    "id": "hbo-max",
+    "name": "HBO Max",
+    "category": "streaming",
+    "domain": "hbomax.com",
+    "price": null,
+    "wikipedia": "HBO Max",
+    "verified": null,
+    "color": "#000000",
+    "icon": "hbo-max.svg"
+  },
+  {
+    "id": "hbo-now",
+    "name": "HBO Now",
+    "category": "streaming",
+    "domain": "hbonow.com",
+    "price": null,
+    "wikipedia": "HBO Now",
+    "verified": null,
+    "color": "#000000",
+    "icon": "hbo-now.svg"
+  },
+  {
+    "id": "headspace",
+    "name": "Headspace",
+    "category": "other",
+    "domain": "headspace.com",
+    "price": null,
+    "wikipedia": "Headspace (company)",
+    "verified": null,
+    "color": "#F47D31",
+    "icon": "headspace.svg"
+  },
+  {
+    "id": "hellofresh",
+    "name": "HelloFresh",
+    "category": "other",
+    "domain": "hellofresh.com",
+    "price": null,
+    "wikipedia": "HelloFresh",
+    "verified": null,
+    "color": "#99CC33",
+    "icon": "hellofresh.svg"
+  },
+  {
+    "id": "hidive",
+    "name": "Hidive",
+    "category": "streaming",
+    "domain": "hidive.com",
+    "price": null,
+    "wikipedia": "Hidive",
+    "verified": null
+  },
+  {
+    "id": "home-chef",
+    "name": "Home Chef",
+    "category": "other",
+    "domain": "homechef.com",
+    "price": null,
+    "wikipedia": "Home Chef",
+    "verified": null
+  },
+  {
+    "id": "hooq",
+    "name": "Hooq",
+    "category": "streaming",
+    "domain": "hooq.tv",
+    "price": null,
+    "wikipedia": "Hooq",
+    "verified": null
+  },
+  {
+    "id": "howdy",
+    "name": "Howdy",
+    "category": "streaming",
+    "domain": "howdy.tv",
+    "price": null,
+    "wikipedia": "Howdy (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "hulu",
+    "name": "Hulu",
+    "category": "streaming",
+    "domain": "hulu.com",
+    "price": null,
+    "wikipedia": "Hulu",
+    "verified": null
+  },
+  {
+    "id": "hulu-japan",
+    "name": "Hulu Japan",
+    "category": "streaming",
+    "domain": "hulu.jp",
+    "price": null,
+    "wikipedia": "Hulu Japan",
+    "verified": null
+  },
+  {
+    "id": "iflix",
+    "name": "Iflix",
+    "category": "streaming",
+    "domain": "iflix.com",
+    "price": null,
+    "wikipedia": "Iflix",
+    "verified": null
+  },
+  {
+    "id": "ipsy",
+    "name": "Ipsy",
+    "category": "other",
+    "domain": "ipsy.com",
+    "price": null,
+    "wikipedia": "Ipsy",
+    "verified": null
+  },
+  {
+    "id": "iqiyi",
+    "name": "IQIYI",
+    "category": "streaming",
+    "domain": "iqiyi.com",
+    "price": null,
+    "wikipedia": "IQIYI",
+    "verified": null
+  },
+  {
+    "id": "iwant",
+    "name": "IWant",
+    "category": "streaming",
+    "domain": "iwantv.com.ph",
+    "price": null,
+    "wikipedia": "IWant",
+    "verified": null
+  },
+  {
+    "id": "kayo-sports",
+    "name": "Kayo Sports",
+    "category": "streaming",
+    "domain": "kayosports.com.au",
+    "price": null,
+    "wikipedia": "Kayo Sports",
+    "verified": null
+  },
+  {
+    "id": "kidoodle-tv",
+    "name": "Kidoodle.TV",
+    "category": "streaming",
+    "domain": "kidoodle.tv",
+    "price": null,
+    "wikipedia": "Kidoodle.TV",
+    "verified": null
+  },
+  {
+    "id": "kocowa",
+    "name": "Kocowa",
+    "category": "streaming",
+    "domain": "kocowa.com",
+    "price": null,
+    "wikipedia": "Kocowa",
+    "verified": null
+  },
+  {
+    "id": "laugh-out-loud-productions",
+    "name": "Laugh Out Loud Productions",
+    "category": "streaming",
+    "domain": "laughoutloud.com",
+    "price": null,
+    "wikipedia": "Laugh Out Loud Productions",
+    "verified": null
+  },
+  {
+    "id": "le-tote",
+    "name": "Le Tote",
+    "category": "other",
+    "domain": "letote.com",
+    "price": null,
+    "wikipedia": "Le Tote",
+    "verified": null
+  },
+  {
+    "id": "lemino",
+    "name": "Lemino",
+    "category": "streaming",
+    "domain": "lemino.docomo.ne.jp",
+    "price": null,
+    "wikipedia": "Lemino",
+    "verified": null
+  },
+  {
+    "id": "lionsgate",
+    "name": "Lionsgate+",
+    "category": "streaming",
+    "domain": "lionsgateplus.com",
+    "price": null,
+    "wikipedia": "Lionsgate+",
+    "verified": null
+  },
+  {
+    "id": "loot-crate",
+    "name": "Loot Crate",
+    "category": "other",
+    "domain": "lootcrate.com",
+    "price": null,
+    "wikipedia": "Loot Crate",
+    "verified": null,
+    "color": "#1E1E1E",
+    "icon": "loot-crate.svg"
+  },
+  {
+    "id": "marvel-unlimited",
+    "name": "Marvel Unlimited",
+    "category": "other",
+    "domain": "marvel.com",
+    "price": null,
+    "wikipedia": "Marvel Unlimited",
+    "verified": null
+  },
+  {
+    "id": "masterclass",
+    "name": "MasterClass",
+    "category": "other",
+    "domain": "masterclass.com",
+    "price": null,
+    "wikipedia": "MasterClass",
+    "verified": null
+  },
+  {
+    "id": "means",
+    "name": "Means",
+    "category": "streaming",
+    "domain": "means.tv",
+    "price": null,
+    "wikipedia": "Means (company)",
+    "verified": null
+  },
+  {
+    "id": "medium",
+    "name": "Medium",
+    "category": "other",
+    "domain": "medium.com",
+    "price": null,
+    "wikipedia": "Medium (website)",
+    "verified": null,
+    "color": "#000000",
+    "icon": "medium.svg"
+  },
+  {
+    "id": "mewatch",
+    "name": "Mewatch",
+    "category": "streaming",
+    "domain": "mewatch.sg",
+    "price": null,
+    "wikipedia": "Mewatch",
+    "verified": null
+  },
+  {
+    "id": "mgm",
+    "name": "MGM+",
+    "category": "streaming",
+    "domain": "mgmplus.com",
+    "price": null,
+    "wikipedia": "MGM+",
+    "verified": null
+  },
+  {
+    "id": "microsoft-365",
+    "name": "Microsoft 365",
+    "category": "other",
+    "domain": "office365.com",
+    "price": null,
+    "wikipedia": "Microsoft 365",
+    "verified": null
+  },
+  {
+    "id": "mls-on-apple-tv",
+    "name": "MLS on Apple TV",
+    "category": "streaming",
+    "domain": "mlssoccer.com",
+    "price": null,
+    "wikipedia": "MLS on Apple TV",
+    "verified": null
+  },
+  {
+    "id": "myaew",
+    "name": "MyAEW",
+    "category": "streaming",
+    "domain": "myaew.com",
+    "price": null,
+    "wikipedia": "MyAEW",
+    "verified": null
+  },
+  {
+    "id": "nbc-sports-gold",
+    "name": "NBC Sports Gold",
+    "category": "streaming",
+    "domain": "nbcsportsgold.com",
+    "price": null,
+    "wikipedia": "NBC Sports Gold",
+    "verified": null,
+    "color": "#222222",
+    "icon": "nbc-sports-gold.svg"
+  },
+  {
+    "id": "nebula",
+    "name": "Nebula",
+    "category": "streaming",
+    "domain": "nebula.tv",
+    "price": null,
+    "wikipedia": "Nebula (streaming service)",
+    "verified": null,
+    "color": "#2CADFE",
+    "icon": "nebula.svg"
+  },
+  {
+    "id": "new-japan-pro-wrestling-world",
+    "name": "New Japan Pro-Wrestling World",
+    "category": "streaming",
+    "domain": "njpwworld.com",
+    "price": null,
+    "wikipedia": "New Japan Pro-Wrestling World",
+    "verified": null,
+    "color": "#FF160B",
+    "icon": "new-japan-pro-wrestling-world.svg"
+  },
+  {
+    "id": "newsplayer",
+    "name": "Newsplayer",
+    "category": "streaming",
+    "domain": "newsplayer.com",
+    "price": null,
+    "wikipedia": "Newsplayer",
+    "verified": null
+  },
+  {
+    "id": "nexway",
+    "name": "Nexway",
+    "category": "other",
+    "domain": "nexway.com",
+    "price": null,
+    "wikipedia": "Nexway",
+    "verified": null
+  },
+  {
+    "id": "noggin",
+    "name": "Noggin",
+    "category": "streaming",
+    "domain": "noggin.com",
+    "price": null,
+    "wikipedia": "Noggin (brand)",
+    "verified": null
+  },
+  {
+    "id": "ondamedia",
+    "name": "Ondamedia",
+    "category": "streaming",
+    "domain": "ondamedia.cl",
+    "price": null,
+    "wikipedia": "Ondamedia",
+    "verified": null
+  },
+  {
+    "id": "oneplay",
+    "name": "Oneplay",
+    "category": "streaming",
+    "domain": "oneplay.cz",
+    "price": null,
+    "wikipedia": "Oneplay",
+    "verified": null
+  },
+  {
+    "id": "oracle-advertising-and-customer-experience",
+    "name": "Oracle Advertising and Customer Experience",
+    "category": "other",
+    "domain": "oracle.com",
+    "price": null,
+    "wikipedia": "Oracle Advertising and Customer Experience",
+    "verified": null
+  },
+  {
+    "id": "patreon",
+    "name": "Patreon",
+    "category": "other",
+    "domain": "patreon.com",
+    "price": null,
+    "wikipedia": "Patreon",
+    "verified": null,
+    "color": "#000000",
+    "icon": "patreon.svg"
+  },
+  {
+    "id": "peacock",
+    "name": "Peacock",
+    "category": "streaming",
+    "domain": "peacocktv.com",
+    "price": null,
+    "wikipedia": "Peacock (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "peloton-interactive",
+    "name": "Peloton Interactive",
+    "category": "other",
+    "domain": "onepeloton.com",
+    "price": null,
+    "wikipedia": "Peloton Interactive",
+    "verified": null,
+    "color": "#181A1D",
+    "icon": "peloton-interactive.svg"
+  },
+  {
+    "id": "perlego",
+    "name": "Perlego",
+    "category": "other",
+    "domain": "perlego.com",
+    "price": null,
+    "wikipedia": "Perlego",
+    "verified": null
+  },
+  {
+    "id": "playboy-club",
+    "name": "Playboy Club",
+    "category": "other",
+    "domain": "centerfold.com",
+    "price": null,
+    "wikipedia": "Playboy Club (platform)",
+    "verified": null
+  },
+  {
+    "id": "playstation-video",
+    "name": "PlayStation Video",
+    "category": "streaming",
+    "domain": "playstation.com",
+    "price": null,
+    "wikipedia": "PlayStation Video",
+    "verified": null,
+    "color": "#0070D1",
+    "icon": "playstation-video.svg"
+  },
+  {
+    "id": "plex",
+    "name": "Plex",
+    "category": "streaming",
+    "domain": "plex.tv",
+    "price": null,
+    "wikipedia": "Plex",
+    "verified": null,
+    "color": "#EBAF00",
+    "icon": "plex.svg"
+  },
+  {
+    "id": "pokergo",
+    "name": "PokerGO",
+    "category": "streaming",
+    "domain": "pokergo.com",
+    "price": null,
+    "wikipedia": "PokerGO",
+    "verified": null
+  },
+  {
+    "id": "pressreader",
+    "name": "PressReader",
+    "category": "other",
+    "domain": "pressreader.com",
+    "price": null,
+    "wikipedia": "PressReader",
+    "verified": null
+  },
+  {
+    "id": "presto",
+    "name": "Presto",
+    "category": "streaming",
+    "domain": "presto.com.au",
+    "price": null,
+    "wikipedia": "Presto (streaming company)",
+    "verified": null,
+    "color": "#5890FF",
+    "icon": "presto.svg"
+  },
+  {
+    "id": "quickflix",
+    "name": "Quickflix",
+    "category": "streaming",
+    "domain": "quickflix.com.au",
+    "price": null,
+    "wikipedia": "Quickflix",
+    "verified": null
+  },
+  {
+    "id": "raiplay",
+    "name": "RaiPlay",
+    "category": "streaming",
+    "domain": "rai.tv",
+    "price": null,
+    "wikipedia": "RaiPlay",
+    "verified": null
+  },
+  {
+    "id": "rakuten-tv",
+    "name": "Rakuten TV",
+    "category": "streaming",
+    "domain": "showtime.jp",
+    "price": null,
+    "wikipedia": "Rakuten TV",
+    "verified": null,
+    "color": "#BF0000",
+    "icon": "rakuten-tv.svg"
+  },
+  {
+    "id": "rakuten-viki",
+    "name": "Rakuten Viki",
+    "category": "streaming",
+    "domain": "viki.com",
+    "price": null,
+    "wikipedia": "Rakuten Viki",
+    "verified": null,
+    "color": "#BF0000",
+    "icon": "rakuten-viki.svg"
+  },
+  {
+    "id": "readly",
+    "name": "Readly",
+    "category": "other",
+    "domain": "readly.com",
+    "price": null,
+    "wikipedia": "Readly",
+    "verified": null
+  },
+  {
+    "id": "rent-the-runway",
+    "name": "Rent the Runway",
+    "category": "other",
+    "domain": "renttherunway.com",
+    "price": null,
+    "wikipedia": "Rent the Runway",
+    "verified": null
+  },
+  {
+    "id": "rivertv",
+    "name": "RiverTV",
+    "category": "streaming",
+    "domain": "rivertv.ca",
+    "price": null,
+    "wikipedia": "RiverTV",
+    "verified": null
+  },
+  {
+    "id": "rocksmith",
+    "name": "Rocksmith+",
+    "category": "other",
+    "domain": "ubisoft.com",
+    "price": null,
+    "wikipedia": "Rocksmith+",
+    "verified": null
+  },
+  {
+    "id": "rtmklik",
+    "name": "RTMKlik",
+    "category": "streaming",
+    "domain": "rtmklik.rtm.gov.my",
+    "price": null,
+    "wikipedia": "RTMKlik",
+    "verified": null
+  },
+  {
+    "id": "salto",
+    "name": "Salto",
+    "category": "streaming",
+    "domain": "salto.media",
+    "price": null,
+    "wikipedia": "Salto (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "scribd",
+    "name": "Scribd",
+    "category": "other",
+    "domain": "scribd.com",
+    "price": null,
+    "wikipedia": "Scribd",
+    "verified": null,
+    "color": "#1E7B85",
+    "icon": "scribd.svg"
+  },
+  {
+    "id": "shoedazzle",
+    "name": "ShoeDazzle",
+    "category": "other",
+    "domain": "shoedazzle.com",
+    "price": null,
+    "wikipedia": "ShoeDazzle",
+    "verified": null
+  },
+  {
+    "id": "showmax",
+    "name": "Showmax",
+    "category": "streaming",
+    "domain": "showmax.com",
+    "price": null,
+    "wikipedia": "Showmax",
+    "verified": null
+  },
+  {
+    "id": "shudder",
+    "name": "Shudder",
+    "category": "streaming",
+    "domain": "shudder.com",
+    "price": null,
+    "wikipedia": "Shudder (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "simplycook",
+    "name": "SimplyCook",
+    "category": "other",
+    "domain": "simplycook.com",
+    "price": null,
+    "wikipedia": "SimplyCook",
+    "verified": null
+  },
+  {
+    "id": "siriusxm",
+    "name": "SiriusXM",
+    "category": "other",
+    "domain": "siriusxm.com",
+    "price": null,
+    "wikipedia": "SiriusXM",
+    "verified": null
+  },
+  {
+    "id": "skyshowtime",
+    "name": "SkyShowtime",
+    "category": "streaming",
+    "domain": "skyshowtime.com",
+    "price": null,
+    "wikipedia": "SkyShowtime",
+    "verified": null
+  },
+  {
+    "id": "smotrim",
+    "name": "Smotrim",
+    "category": "streaming",
+    "domain": "smotrim.ru",
+    "price": null,
+    "wikipedia": "Smotrim",
+    "verified": null
+  },
+  {
+    "id": "sony-pictures-core",
+    "name": "Sony Pictures Core",
+    "category": "streaming",
+    "domain": "sonypicturescore.com",
+    "price": null,
+    "wikipedia": "Sony Pictures Core",
+    "verified": null,
+    "color": "#FFFFFF",
+    "icon": "sony-pictures-core.svg"
+  },
+  {
+    "id": "sonyliv",
+    "name": "SonyLIV",
+    "category": "streaming",
+    "domain": "sonyliv.com",
+    "price": null,
+    "wikipedia": "SonyLIV",
+    "verified": null
+  },
+  {
+    "id": "stacktv",
+    "name": "StackTV",
+    "category": "streaming",
+    "domain": "stacktv.ca",
+    "price": null,
+    "wikipedia": "StackTV",
+    "verified": null
+  },
+  {
+    "id": "stan",
+    "name": "Stan",
+    "category": "streaming",
+    "domain": "stan.com.au",
+    "price": null,
+    "wikipedia": "Stan (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "star",
+    "name": "Star+",
+    "category": "streaming",
+    "domain": "starplus.com",
+    "price": null,
+    "wikipedia": "Star+",
+    "verified": null
+  },
+  {
+    "id": "start",
+    "name": "Start",
+    "category": "streaming",
+    "domain": "start.ru",
+    "price": null,
+    "wikipedia": "Start (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "stirr",
+    "name": "Stirr",
+    "category": "streaming",
+    "domain": "stirr.com",
+    "price": null,
+    "wikipedia": "Stirr",
+    "verified": null
+  },
+  {
+    "id": "stitch-fix",
+    "name": "Stitch Fix",
+    "category": "other",
+    "domain": "stitchfix.com",
+    "price": null,
+    "wikipedia": "Stitch Fix",
+    "verified": null
+  },
+  {
+    "id": "storytel",
+    "name": "Storytel",
+    "category": "other",
+    "domain": "storytel.com",
+    "price": null,
+    "wikipedia": "Storytel",
+    "verified": null
+  },
+  {
+    "id": "streamz",
+    "name": "Streamz",
+    "category": "streaming",
+    "domain": "streamz.be",
+    "price": null,
+    "wikipedia": "Streamz",
+    "verified": null
+  },
+  {
+    "id": "sunbasket",
+    "name": "Sunbasket",
+    "category": "other",
+    "domain": "sunbasket.com",
+    "price": null,
+    "wikipedia": "Sunbasket",
+    "verified": null
+  },
+  {
+    "id": "surf-air",
+    "name": "Surf Air",
+    "category": "other",
+    "domain": "surfair.com",
+    "price": null,
+    "wikipedia": "Surf Air",
+    "verified": null
+  },
+  {
+    "id": "tabii",
+    "name": "Tabii",
+    "category": "streaming",
+    "domain": "tabii.com",
+    "price": null,
+    "wikipedia": "Tabii",
+    "verified": null
+  },
+  {
+    "id": "techstyle-fashion-group",
+    "name": "TechStyle Fashion Group",
+    "category": "other",
+    "domain": "justfab.de",
+    "price": null,
+    "wikipedia": "TechStyle Fashion Group",
+    "verified": null
+  },
+  {
+    "id": "the-animation-showcase",
+    "name": "The Animation Showcase",
+    "category": "streaming",
+    "domain": "animationshowcase.com",
+    "price": null,
+    "wikipedia": "The Animation Showcase",
+    "verified": null
+  },
+  {
+    "id": "the-honest-company",
+    "name": "The Honest Company",
+    "category": "other",
+    "domain": "honest.com",
+    "price": null,
+    "wikipedia": "The Honest Company",
+    "verified": null
+  },
+  {
+    "id": "the-roku-channel",
+    "name": "The Roku Channel",
+    "category": "streaming",
+    "domain": "therokuchannel.roku.com",
+    "price": null,
+    "wikipedia": "The Roku Channel",
+    "verified": null
+  },
+  {
+    "id": "the-teaching-company",
+    "name": "The Teaching Company",
+    "category": "streaming",
+    "domain": "wondrium.com",
+    "price": null,
+    "wikipedia": "The Teaching Company",
+    "verified": null
+  },
+  {
+    "id": "tna",
+    "name": "TNA+",
+    "category": "streaming",
+    "domain": "impactplus.tv",
+    "price": null,
+    "wikipedia": "TNA+",
+    "verified": null
+  },
+  {
+    "id": "tonton",
+    "name": "Tonton",
+    "category": "streaming",
+    "domain": "tonton.com.my",
+    "price": null,
+    "wikipedia": "Tonton (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "tovala",
+    "name": "Tovala",
+    "category": "other",
+    "domain": "tovala.com",
+    "price": null,
+    "wikipedia": "Tovala",
+    "verified": null
+  },
+  {
+    "id": "triller-inc",
+    "name": "Triller Inc.",
+    "category": "streaming",
+    "domain": "trillerinc.com",
+    "price": null,
+    "wikipedia": "Triller Inc.",
+    "verified": null,
+    "color": "#FF0089",
+    "icon": "triller-inc.svg"
+  },
+  {
+    "id": "triller-tv",
+    "name": "Triller TV",
+    "category": "streaming",
+    "domain": "fite.tv",
+    "price": null,
+    "wikipedia": "Triller TV",
+    "verified": null,
+    "color": "#E61414",
+    "icon": "triller-tv.svg"
+  },
+  {
+    "id": "trilogy-media",
+    "name": "Trilogy Media",
+    "category": "streaming",
+    "domain": "trilogymedia.com",
+    "price": null,
+    "wikipedia": "Trilogy Media",
+    "verified": null
+  },
+  {
+    "id": "trunk-club",
+    "name": "Trunk Club",
+    "category": "other",
+    "domain": "trunkclub.com",
+    "price": null,
+    "wikipedia": "Trunk Club",
+    "verified": null
+  },
+  {
+    "id": "tving",
+    "name": "TVING",
+    "category": "streaming",
+    "domain": "tving.com",
+    "price": null,
+    "wikipedia": "TVING",
+    "verified": null
+  },
+  {
+    "id": "u-next",
+    "name": "U-Next",
+    "category": "streaming",
+    "domain": "video.unext.jp",
+    "price": null,
+    "wikipedia": "U-Next",
+    "verified": null
+  },
+  {
+    "id": "ufc-fight-pass",
+    "name": "UFC Fight Pass",
+    "category": "streaming",
+    "domain": "ufc.tv",
+    "price": null,
+    "wikipedia": "UFC Fight Pass",
+    "verified": null,
+    "color": "#D20A0A",
+    "icon": "ufc-fight-pass.svg"
+  },
+  {
+    "id": "venu-sports",
+    "name": "Venu Sports",
+    "category": "streaming",
+    "domain": "venu.com",
+    "price": null,
+    "wikipedia": "Venu Sports",
+    "verified": null
+  },
+  {
+    "id": "vessel",
+    "name": "Vessel",
+    "category": "streaming",
+    "domain": "vessel.com",
+    "price": null,
+    "wikipedia": "Vessel (website)",
+    "verified": null
+  },
+  {
+    "id": "viaplay",
+    "name": "Viaplay",
+    "category": "streaming",
+    "domain": "viaplay.com",
+    "price": null,
+    "wikipedia": "Viaplay",
+    "verified": null,
+    "color": "#FE365F",
+    "icon": "viaplay.svg"
+  },
+  {
+    "id": "vidangel",
+    "name": "VidAngel",
+    "category": "streaming",
+    "domain": "vidangel.com",
+    "price": null,
+    "wikipedia": "VidAngel",
+    "verified": null
+  },
+  {
+    "id": "vidio",
+    "name": "Vidio",
+    "category": "streaming",
+    "domain": "vidio.com",
+    "price": null,
+    "wikipedia": "Vidio",
+    "verified": null
+  },
+  {
+    "id": "vision",
+    "name": "Vision+",
+    "category": "streaming",
+    "domain": "visionplus.id",
+    "price": null,
+    "wikipedia": "Vision+",
+    "verified": null
+  },
+  {
+    "id": "viu",
+    "name": "Viu",
+    "category": "streaming",
+    "domain": "viu.com",
+    "price": null,
+    "wikipedia": "Viu (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "vix",
+    "name": "Vix",
+    "category": "streaming",
+    "domain": "vix.com",
+    "price": null,
+    "wikipedia": "Vix (streaming service)",
+    "verified": null
+  },
+  {
+    "id": "voot",
+    "name": "Voot",
+    "category": "streaming",
+    "domain": "voot.com",
+    "price": null,
+    "wikipedia": "Voot",
+    "verified": null
+  },
+  {
+    "id": "voyo",
+    "name": "Voyo",
+    "category": "streaming",
+    "domain": "voyo.nova.cz",
+    "price": null,
+    "wikipedia": "Voyo",
+    "verified": null
+  },
+  {
+    "id": "vuclip",
+    "name": "Vuclip",
+    "category": "streaming",
+    "domain": "vuclip.com",
+    "price": null,
+    "wikipedia": "Vuclip",
+    "verified": null
+  },
+  {
+    "id": "wakanim",
+    "name": "Wakanim",
+    "category": "streaming",
+    "domain": "wakanim.tv",
+    "price": null,
+    "wikipedia": "Wakanim",
+    "verified": null
+  },
+  {
+    "id": "watcha",
+    "name": "Watcha",
+    "category": "streaming",
+    "domain": "watcha.team",
+    "price": null,
+    "wikipedia": "Watcha",
+    "verified": null
+  },
+  {
+    "id": "wavve",
+    "name": "Wavve",
+    "category": "streaming",
+    "domain": "wavve.com",
+    "price": null,
+    "wikipedia": "Wavve",
+    "verified": null
+  },
+  {
+    "id": "wow-presents-plus",
+    "name": "WOW Presents Plus",
+    "category": "streaming",
+    "domain": "wowpresentsplus.com",
+    "price": null,
+    "wikipedia": "WOW Presents Plus",
+    "verified": null
+  },
+  {
+    "id": "wwe-network",
+    "name": "WWE Network",
+    "category": "streaming",
+    "domain": "network.wwe.com",
+    "price": null,
+    "wikipedia": "WWE Network",
+    "verified": null,
+    "color": "#000000",
+    "icon": "wwe-network.svg"
+  },
+  {
+    "id": "wwnlive",
+    "name": "WWNLive",
+    "category": "streaming",
+    "domain": "wwnlive.com",
+    "price": null,
+    "wikipedia": "WWNLive",
+    "verified": null
+  },
+  {
+    "id": "xfinity-streampix",
+    "name": "Xfinity Streampix",
+    "category": "streaming",
+    "domain": "comcast.com",
+    "price": null,
+    "wikipedia": "Xfinity Streampix",
+    "verified": null
+  },
+  {
+    "id": "yousician",
+    "name": "Yousician",
+    "category": "other",
+    "domain": "ovelin.com",
+    "price": null,
+    "wikipedia": "Yousician",
+    "verified": null
+  },
+  {
+    "id": "zee5",
+    "name": "ZEE5",
+    "category": "streaming",
+    "domain": "zee5.com",
+    "price": null,
+    "wikipedia": "ZEE5",
+    "verified": null
+  },
+  {
+    "id": "zuora",
+    "name": "Zuora",
+    "category": "other",
+    "domain": "zuora.com",
+    "price": null,
+    "wikipedia": "Zuora",
+    "verified": null
+  }
+]

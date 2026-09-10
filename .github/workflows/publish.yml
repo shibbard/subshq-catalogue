@@ -1,0 +1,78 @@
+name: Validate and publish
+
+# A malformed entry fails the build rather than reaching anyone. On main, the
+# validated feed is published to GitHub Pages, which is what installed apps
+# actually fetch.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Quarterly: rebuilds so the staleness report appears in the log and entries
+    # past 180 days get noticed rather than quietly rotting.
+    - cron: '0 9 1 */3 *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate the catalogue
+        run: node build.mjs
+
+  publish:
+    needs: validate
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build with icons
+        # Icons change rarely and this is the one place a network fetch belongs.
+        # Failure here must not block the data from publishing.
+        run: node build.mjs --icons
+        continue-on-error: true
+
+      - name: Build without icons if that failed
+        run: node build.mjs
+
+      - name: Add CORS headers
+        # Apps fetch this cross-origin. GitHub Pages sends Access-Control-Allow-Origin:*
+        # for static files already, but the index makes the feed browsable.
+        run: |
+          cat > dist/index.html <<'HTML'
+          <!doctype html><meta charset="utf-8">
+          <title>Notice catalogue</title>
+          <style>body{font:16px/1.5 system-ui;margin:40px auto;max-width:38rem;padding:0 20px}</style>
+          <h1>Notice catalogue</h1>
+          <p>A public record of how to cancel things.</p>
+          <p><a href="catalogue.json">catalogue.json</a></p>
+          <p><a href="https://github.com/shibbard/notice-catalogue">Source and contributions</a></p>
+          HTML
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

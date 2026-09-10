@@ -1,0 +1,749 @@
+[
+  {
+    "id": "netflix-uk",
+    "name": "Netflix",
+    "aliases": [
+      "netflix.com"
+    ],
+    "category": "streaming",
+    "region": "GB",
+    "domain": "netflix.com",
+    "color": "#E50914",
+    "price": null,
+    "plans": [
+      {
+        "id": "standard-ads",
+        "name": "Standard with adverts",
+        "price": {
+          "amount": 799,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "standard",
+        "name": "Standard",
+        "price": {
+          "amount": 1399,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "premium",
+        "name": "Premium",
+        "price": {
+          "amount": 2099,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      }
+    ],
+    "price_verified": "2026-09-10",
+    "source": "https://help.netflix.com/en/node/24926",
+    "match": [
+      "NETFLIX.COM",
+      "NETFLIX"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://www.netflix.com/cancelplan",
+      "channels": [
+        "web"
+      ],
+      "steps": [
+        "Sign in on the web — the mobile apps have no cancel option",
+        "Account → Membership → Cancel Membership",
+        "Confirm. Access runs to the end of the period you have already paid for."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "May offer to pause your membership instead of cancelling"
+      ],
+      "gotchas": [
+        "If you signed up through Apple or Google, you must cancel there instead — Netflix cannot cancel it for you"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "spotify-uk",
+    "name": "Spotify",
+    "aliases": [
+      "spotify.com",
+      "spotify premium"
+    ],
+    "category": "music",
+    "region": "GB",
+    "domain": "spotify.com",
+    "color": "#1DB954",
+    "price": null,
+    "plans": [
+      {
+        "id": "individual",
+        "name": "Individual",
+        "price": {
+          "amount": 1299,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "duo",
+        "name": "Duo",
+        "price": {
+          "amount": 1799,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "price": {
+          "amount": 2199,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "price": {
+          "amount": 599,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      }
+    ],
+    "price_verified": "2026-09-10",
+    "source": "https://www.spotify.com/uk/premium/",
+    "match": [
+      "SPOTIFY"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://www.spotify.com/account/subscription/",
+      "channels": [
+        "web"
+      ],
+      "steps": [
+        "Sign in on the web at spotify.com/account",
+        "Under Your plan, choose Change plan, then Cancel Premium",
+        "Confirm. You keep Premium until the end of the current billing period, then drop to the free tier."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "May offer a discounted period to stay"
+      ],
+      "gotchas": [
+        "Cancelling does not delete your account, playlists or saved music",
+        "If billed through Apple, Google or a mobile network bundle, cancel with them instead"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "amazon-prime-uk",
+    "name": "Amazon Prime",
+    "aliases": [
+      "amazon prime",
+      "prime membership"
+    ],
+    "category": "shopping",
+    "region": "GB",
+    "domain": "amazon.co.uk",
+    "color": "#00A8E1",
+    "price": null,
+    "plans": [
+      {
+        "id": "monthly",
+        "name": "Monthly",
+        "price": null
+      },
+      {
+        "id": "annual",
+        "name": "Annual",
+        "price": null
+      }
+    ],
+    "price_verified": null,
+    "match": [
+      "AMAZON PRIME",
+      "AMZNPRIME",
+      "AMZN PRIME",
+      "PRIME UK"
+    ],
+    "cancel": {
+      "difficulty": 3,
+      "url": "https://www.amazon.co.uk/gp/primecentral",
+      "channels": [
+        "web"
+      ],
+      "steps": [
+        "Go to Your Account → Prime Membership",
+        "Choose Manage membership, then End membership",
+        "Work through the retention screens — there are several, and the option to continue cancelling is usually the least prominent button",
+        "Confirm on the final screen. Nothing is cancelled until you reach it."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "Multiple screens of benefits before the confirm button",
+        "May offer to pause or to switch to a cheaper plan",
+        "Offers to remind you before renewal instead of cancelling now"
+      ],
+      "gotchas": [
+        "A partial refund may be available if you have not used Prime benefits in the current period",
+        "Ending Prime also ends Prime Video, Prime Delivery and Prime Reading"
+      ],
+      "refund_policy": "partial"
+    },
+    "verified": null
+  },
+  {
+    "id": "disney-plus-uk",
+    "name": "Disney+",
+    "aliases": [
+      "disneyplus.com",
+      "disney plus"
+    ],
+    "category": "streaming",
+    "region": "GB",
+    "domain": "disneyplus.com",
+    "color": "#113CCF",
+    "price": null,
+    "plans": [
+      {
+        "id": "standard-ads",
+        "name": "Standard with Ads",
+        "price": null
+      },
+      {
+        "id": "standard",
+        "name": "Standard",
+        "price": null
+      },
+      {
+        "id": "premium",
+        "name": "Premium",
+        "price": null
+      }
+    ],
+    "price_verified": null,
+    "match": [
+      "DISNEY PLUS",
+      "DISNEYPLUS",
+      "DISNEY+"
+    ],
+    "cancel": {
+      "difficulty": 2,
+      "url": "https://www.disneyplus.com/account/subscription",
+      "channels": [
+        "web"
+      ],
+      "steps": [
+        "Sign in on the web and open Account → Subscription",
+        "Select your subscription, then Cancel Subscription",
+        "Give a reason if asked, then confirm. Access continues to the end of the paid period."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "May offer a cheaper ad-supported plan instead of cancelling"
+      ],
+      "gotchas": [
+        "If billed through Apple, Google, Sky or a broadband bundle, cancel with that provider"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "youtube-premium-uk",
+    "name": "YouTube Premium",
+    "aliases": [
+      "youtube premium",
+      "youtube music"
+    ],
+    "category": "streaming",
+    "region": "GB",
+    "domain": "youtube.com",
+    "color": "#FF0000",
+    "price": null,
+    "plans": [
+      {
+        "id": "individual",
+        "name": "Individual",
+        "price": null
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "price": null
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "price": null
+      }
+    ],
+    "price_verified": null,
+    "match": [
+      "GOOGLE *YOUTUBE",
+      "YOUTUBEPREMIUM",
+      "YOUTUBE PREMIUM"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://www.youtube.com/paid_memberships",
+      "channels": [
+        "web",
+        "app"
+      ],
+      "steps": [
+        "Go to youtube.com/paid_memberships while signed in",
+        "Select Manage membership, then Deactivate",
+        "Choose Continue to cancel. Benefits run to the end of the paid period."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "Offers to pause the membership for up to 6 months instead"
+      ],
+      "gotchas": [
+        "If you subscribed in the iOS app, it is billed by Apple and must be cancelled in iOS Settings"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "adobe-cc-uk",
+    "name": "Adobe Creative Cloud",
+    "aliases": [
+      "adobe",
+      "creative cloud"
+    ],
+    "category": "software",
+    "region": "GB",
+    "domain": "adobe.com",
+    "color": "#FA0F00",
+    "price": null,
+    "plans": [
+      {
+        "id": "all-apps",
+        "name": "All Apps",
+        "price": null
+      },
+      {
+        "id": "single-app",
+        "name": "Single App",
+        "price": null
+      },
+      {
+        "id": "photography",
+        "name": "Photography",
+        "price": null
+      }
+    ],
+    "price_verified": null,
+    "match": [
+      "ADOBE",
+      "ADOBE SYSTEMS",
+      "ADOBE *CREATIVE"
+    ],
+    "cancel": {
+      "difficulty": 4,
+      "url": "https://account.adobe.com/plans",
+      "channels": [
+        "web",
+        "chat"
+      ],
+      "steps": [
+        "Sign in at account.adobe.com and open Plans",
+        "Choose Manage plan, then Cancel your plan",
+        "Work through the retention offers",
+        "If the web flow will not complete, use live chat — it is often the only route that works"
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "Offers discounted months to stay",
+        "Offers to switch you to a cheaper single-app plan"
+      ],
+      "gotchas": [
+        "An annual plan paid monthly usually carries an early termination fee of roughly half the remaining contract — check what you signed up to before cancelling",
+        "There is often a short window after renewal in which you can cancel without the fee"
+      ],
+      "refund_policy": "varies"
+    },
+    "verified": null
+  },
+  {
+    "id": "audible-uk",
+    "name": "Audible",
+    "aliases": [
+      "audible.co.uk"
+    ],
+    "category": "streaming",
+    "region": "GB",
+    "domain": "audible.co.uk",
+    "color": "#F8991C",
+    "price": null,
+    "plans": [
+      {
+        "id": "premium-plus",
+        "name": "Premium Plus",
+        "price": null
+      }
+    ],
+    "price_verified": null,
+    "match": [
+      "AUDIBLE"
+    ],
+    "cancel": {
+      "difficulty": 3,
+      "url": "https://www.audible.co.uk/account/membership",
+      "channels": [
+        "web",
+        "chat"
+      ],
+      "steps": [
+        "Sign in on the web — the app does not offer cancellation",
+        "Account Details → Cancel membership",
+        "Decline the retention offers, which usually include a free month or a paused membership",
+        "Confirm on the final screen"
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "Offers to pause the membership for up to three months",
+        "Offers free credits or a discounted rate to stay"
+      ],
+      "gotchas": [
+        "Credits you have already bought are usually lost when the membership ends — spend them first",
+        "Books you have already purchased with credits remain yours"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "microsoft-365-uk",
+    "name": "Microsoft 365",
+    "aliases": [
+      "office 365",
+      "microsoft office"
+    ],
+    "category": "software",
+    "region": "GB",
+    "domain": "microsoft.com",
+    "color": "#D83B01",
+    "price": null,
+    "plans": [
+      {
+        "id": "personal",
+        "name": "Personal",
+        "price": null
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "price": null
+      }
+    ],
+    "price_verified": null,
+    "match": [
+      "MICROSOFT*365",
+      "MICROSOFT 365",
+      "MSFT *365"
+    ],
+    "cancel": {
+      "difficulty": 2,
+      "url": "https://account.microsoft.com/services",
+      "channels": [
+        "web"
+      ],
+      "steps": [
+        "Sign in at account.microsoft.com and open Services & subscriptions",
+        "Choose Manage on the subscription, then Cancel subscription",
+        "Confirm. You keep access until the end of the paid period."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "Offers to turn off recurring billing instead of cancelling outright"
+      ],
+      "gotchas": [
+        "Turning off recurring billing is not the same as cancelling, but it has the same practical effect at the end of the term",
+        "OneDrive storage drops back to the free allowance — move your files before the subscription lapses"
+      ],
+      "refund_policy": "prorated"
+    },
+    "verified": null
+  },
+  {
+    "id": "chatgpt-plus",
+    "name": "ChatGPT Plus",
+    "aliases": [
+      "openai",
+      "chatgpt"
+    ],
+    "category": "ai",
+    "region": "GB",
+    "domain": "openai.com",
+    "color": "#10A37F",
+    "price": null,
+    "plans": [
+      {
+        "id": "plus",
+        "name": "Plus",
+        "price": null
+      },
+      {
+        "id": "pro",
+        "name": "Pro",
+        "price": null
+      }
+    ],
+    "price_verified": null,
+    "match": [
+      "OPENAI",
+      "CHATGPT"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://chatgpt.com/#settings/Subscription",
+      "channels": [
+        "web"
+      ],
+      "steps": [
+        "Open ChatGPT and go to Settings → Subscription",
+        "Choose Manage my subscription, then Cancel plan",
+        "Confirm. Access continues to the end of the paid month."
+      ],
+      "notice_period_days": 0,
+      "gotchas": [
+        "If you subscribed in the iOS or Android app, cancel through Apple or Google instead"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "claude-pro",
+    "name": "Claude Pro",
+    "aliases": [
+      "anthropic"
+    ],
+    "category": "ai",
+    "region": "GB",
+    "domain": "claude.ai",
+    "color": "#D97757",
+    "price": null,
+    "plans": [
+      {
+        "id": "pro",
+        "name": "Pro",
+        "price": null
+      },
+      {
+        "id": "max",
+        "name": "Max",
+        "price": null
+      }
+    ],
+    "price_verified": null,
+    "match": [
+      "ANTHROPIC",
+      "CLAUDE.AI"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://claude.ai/settings/billing",
+      "channels": [
+        "web"
+      ],
+      "steps": [
+        "Open claude.ai and go to Settings → Billing",
+        "Choose Manage subscription, then cancel",
+        "Confirm. Access continues to the end of the paid period."
+      ],
+      "notice_period_days": 0,
+      "gotchas": [
+        "If you subscribed in a mobile app, cancel through Apple or Google instead"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "apple-icloud-uk",
+    "name": "iCloud+",
+    "aliases": [
+      "icloud",
+      "apple storage"
+    ],
+    "category": "storage",
+    "region": "GB",
+    "domain": "apple.com",
+    "color": "#007AFF",
+    "price": null,
+    "plans": [
+      {
+        "id": "50gb",
+        "name": "50 GB",
+        "price": {
+          "amount": 99,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "200gb",
+        "name": "200 GB",
+        "price": {
+          "amount": 299,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "2tb",
+        "name": "2 TB",
+        "price": {
+          "amount": 899,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "6tb",
+        "name": "6 TB",
+        "price": {
+          "amount": 2699,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "12tb",
+        "name": "12 TB",
+        "price": {
+          "amount": 5499,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      }
+    ],
+    "price_verified": "2026-09-10",
+    "source": "https://support.apple.com/en-gb/108047",
+    "match": [
+      "APPLE.COM/BILL",
+      "ITUNES.COM/BILL",
+      "APPLE UK"
+    ],
+    "cancel": {
+      "difficulty": 2,
+      "channels": [
+        "app"
+      ],
+      "steps": [
+        "On iPhone or iPad: Settings → your name at the top → iCloud → Manage Account Storage → Change Storage Plan",
+        "Choose Downgrade Options and sign in",
+        "Select the free 5GB plan, then Done"
+      ],
+      "notice_period_days": 0,
+      "gotchas": [
+        "If your data exceeds 5GB the extra is not deleted immediately, but new backups and syncing stop — get your photos off first",
+        "This is separate from other Apple subscriptions, which live under Settings → your name → Subscriptions"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "puregym-uk",
+    "name": "PureGym",
+    "aliases": [
+      "pure gym"
+    ],
+    "category": "fitness",
+    "region": "GB",
+    "domain": "puregym.com",
+    "price": null,
+    "match": [
+      "PUREGYM",
+      "PURE GYM"
+    ],
+    "cancel": {
+      "difficulty": 4,
+      "url": "https://www.puregym.com/members/",
+      "channels": [
+        "web",
+        "app"
+      ],
+      "steps": [
+        "Sign in to your online member account",
+        "Open your membership details and choose to cancel",
+        "Check the date your cancellation takes effect before you finish — it is usually the end of a notice period, not immediately",
+        "Cancel the Direct Debit with your bank only after the final payment has been taken, not before"
+      ],
+      "notice_period_days": 30,
+      "retention_tactics": [
+        "May offer a freeze or a cheaper off-peak membership instead"
+      ],
+      "gotchas": [
+        "Fixed-term memberships usually cannot be cancelled before the minimum term ends — check what you signed",
+        "Cancelling the Direct Debit first does not end the contract and can leave you owing arrears",
+        "Notice periods vary by membership type — confirm yours in your account before relying on 30 days"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "virgin-media-uk",
+    "name": "Virgin Media",
+    "aliases": [
+      "virgin broadband"
+    ],
+    "category": "utilities",
+    "region": "GB",
+    "domain": "virginmedia.com",
+    "color": "#E10A0A",
+    "price": null,
+    "match": [
+      "VIRGIN MEDIA",
+      "VIRGINMEDIA"
+    ],
+    "cancel": {
+      "difficulty": 5,
+      "phone": "150",
+      "channels": [
+        "phone",
+        "post"
+      ],
+      "steps": [
+        "Ring 150 from a Virgin Media line, or 0345 454 1111 from any phone",
+        "Ask explicitly to cancel — you will be transferred to a retentions team",
+        "State the date you want service to end and ask for written confirmation",
+        "If you cannot get through, write to the cancellations address on your bill; the notice period runs from the date they receive it"
+      ],
+      "notice_period_days": 30,
+      "retention_tactics": [
+        "Retentions will offer substantial discounts to keep you",
+        "May offer to reduce your package rather than cancel"
+      ],
+      "gotchas": [
+        "Cancelling inside a minimum term normally means early disconnection charges",
+        "You must return equipment or be charged for it — keep the proof of postage",
+        "Price rises during a contract may give you a right to leave without penalty; check the notice they sent you"
+      ],
+      "refund_policy": "varies"
+    },
+    "rights": {
+      "region": "GB",
+      "renewal_reminder_required": true,
+      "source": "https://www.ofcom.org.uk/phones-and-broadband/service-quality/contract-changes"
+    },
+    "verified": null
+  }
+]

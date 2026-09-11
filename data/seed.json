@@ -1041,6 +1041,53 @@
     "region": "GB",
     "domain": "puregym.com",
     "price": null,
+    "plans": [
+      {
+        "id": "off-peak",
+        "name": "Off-Peak",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1799,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://www.puregym.com/gyms/",
+            "note": "From £17.99/month + joining fee. Price varies by gym location; access limited to off-peak hours"
+          }
+        ]
+      },
+      {
+        "id": "core",
+        "name": "Core",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 2299,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://www.puregym.com/gyms/",
+            "note": "From £22.99/month + joining fee. Price varies by gym location; unrestricted 24/7 access"
+          }
+        ]
+      },
+      {
+        "id": "plus",
+        "name": "Plus",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 2899,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://www.puregym.com/gyms/",
+            "note": "From £28.99/month + joining fee. Price varies by gym location; includes access to other PureGym sites, 4 guest visits/month, free freeze"
+          }
+        ]
+      }
+    ],
     "match": [
       "PUREGYM",
       "PURE GYM"

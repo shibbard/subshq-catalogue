@@ -26,12 +26,12 @@ fact.
 - **Cancellation routes** are seeded from well-known, stable flows. A good
   starting point; not a guarantee.
 - **Prices** are only present where someone has checked them against the
-  service's own page, and every priced entry must carry `price_verified` and a
-  `source` URL. The build refuses any that don't.
+  service's own page, and every price must carry its own `verified` date,
+  `source` URL and `tax_included` basis. The build refuses any that don't.
 
-`price_verified` is separate from `verified` on purpose. Prices and cancellation
-steps get checked at different times, and one field for both would overstate
-whichever was checked less recently.
+A price's `verified` is separate from the entry's on purpose. Prices and
+cancellation steps get checked at different times, and one field for both would
+overstate whichever was checked less recently.
 
 **Verifying entries is the real work here.** The code is a weekend; the data is
 the point.
@@ -64,10 +64,13 @@ nothing, because someone will trust it.
   "color": "#E50914",
   "plans": [
     { "id": "standard", "name": "Standard",
-      "price": { "amount": 1399, "currency": "GBP", "cycle": "monthly" } }
+      "prices": [
+        { "region": "GB", "amount": 1399, "currency": "GBP", "cycle": "monthly",
+          "tax_included": true,            // true | false | null — see below
+          "verified": "2026-09-10",
+          "source": "https://www.netflix.com/signup/planform" }
+      ] }
   ],
-  "price_verified": "2026-09-10",
-  "source": "https://help.netflix.com/en/node/24926",
   "match": ["NETFLIX.COM", "NETFLIX"],   // bank statement descriptors
   "cancel": {
     "difficulty": 1,                      // 1 easy … 5 obstructive
@@ -84,6 +87,29 @@ nothing, because someone will trust it.
 ```
 
 Money is always an **integer in minor units** — 1399 is £13.99. Never a float.
+
+Prices live per plan and carry their own region, date and source, because the
+UK price may be checked today and the US price a year later.
+
+### `tax_included`
+
+Required on every price, and one of three values:
+
+| Value | Means |
+| --- | --- |
+| `true` | The page stated the figure includes VAT or sales tax |
+| `false` | The page stated tax is added on top |
+| `null` | The page did not say |
+
+`null` is a finding, not a blank. Leaving the field off entirely is an error and
+the build rejects it, because "nobody looked" and "the page was silent" are
+different facts and an app has to treat them differently.
+
+This matters more than it looks. UK consumer prices are quoted inclusive of VAT;
+US prices never are; and a US vendor billing a UK customer may add 20% at
+checkout that appears nowhere on the pricing page — Ideogram's $20.00 plan
+charges a UK customer $24.00. An app that shows the headline figure as the
+amount someone pays would be wrong by a fifth, with no way to tell.
 
 ## Icons
 

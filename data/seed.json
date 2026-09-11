@@ -21,7 +21,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://help.netflix.com/en/node/24926"
+            "source": "https://help.netflix.com/en/node/24926",
+            "tax_included": true
           }
         ]
       },
@@ -35,7 +36,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://help.netflix.com/en/node/24926"
+            "source": "https://help.netflix.com/en/node/24926",
+            "tax_included": true
           }
         ]
       },
@@ -49,7 +51,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://help.netflix.com/en/node/24926"
+            "source": "https://help.netflix.com/en/node/24926",
+            "tax_included": true
           }
         ]
       }
@@ -104,7 +107,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://www.spotify.com/uk/premium/"
+            "source": "https://www.spotify.com/uk/premium/",
+            "tax_included": true
           }
         ]
       },
@@ -118,7 +122,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://www.spotify.com/uk/premium/"
+            "source": "https://www.spotify.com/uk/premium/",
+            "tax_included": true
           }
         ]
       },
@@ -132,7 +137,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://www.spotify.com/uk/premium/"
+            "source": "https://www.spotify.com/uk/premium/",
+            "tax_included": true
           }
         ]
       },
@@ -146,7 +152,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://www.spotify.com/uk/premium/"
+            "source": "https://www.spotify.com/uk/premium/",
+            "tax_included": true
           }
         ]
       }
@@ -201,7 +208,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://www.amazon.co.uk/amazonprime"
+            "source": "https://www.amazon.co.uk/amazonprime",
+            "tax_included": true
           }
         ]
       },
@@ -215,7 +223,8 @@
             "currency": "GBP",
             "cycle": "annual",
             "verified": "2026-09-10",
-            "source": "https://www.amazon.co.uk/amazonprime"
+            "source": "https://www.amazon.co.uk/amazonprime",
+            "tax_included": true
           }
         ]
       },
@@ -230,7 +239,8 @@
             "cycle": "monthly",
             "verified": "2026-09-10",
             "source": "https://www.amazon.co.uk/amazonprime",
-            "note": "Eligibility restricted"
+            "note": "Eligibility restricted",
+            "tax_included": true
           }
         ]
       },
@@ -245,7 +255,8 @@
             "cycle": "annual",
             "verified": "2026-09-10",
             "source": "https://www.amazon.co.uk/amazonprime",
-            "note": "Eligibility restricted"
+            "note": "Eligibility restricted",
+            "tax_included": true
           }
         ]
       }
@@ -307,7 +318,8 @@
             "cycle": "monthly",
             "verified": "2026-09-10",
             "source": "https://www.disneyplus.com/en-gb",
-            "note": "Standard rate; a 6-month minimum-term plan is cheaper"
+            "note": "Standard rate; a 6-month minimum-term plan is cheaper",
+            "tax_included": true
           }
         ]
       },
@@ -322,7 +334,8 @@
             "cycle": "monthly",
             "verified": "2026-09-10",
             "source": "https://www.disneyplus.com/en-gb",
-            "note": "Standard rate; a 6-month minimum-term plan is cheaper"
+            "note": "Standard rate; a 6-month minimum-term plan is cheaper",
+            "tax_included": true
           }
         ]
       },
@@ -337,7 +350,8 @@
             "cycle": "monthly",
             "verified": "2026-09-10",
             "source": "https://www.disneyplus.com/en-gb",
-            "note": "Standard rate; a 6-month minimum-term plan is cheaper"
+            "note": "Standard rate; a 6-month minimum-term plan is cheaper",
+            "tax_included": true
           }
         ]
       }
@@ -392,7 +406,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://m.youtube.com/premium"
+            "source": "https://m.youtube.com/premium",
+            "tax_included": true
           }
         ]
       },
@@ -406,7 +421,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://m.youtube.com/premium"
+            "source": "https://m.youtube.com/premium",
+            "tax_included": true
           }
         ]
       },
@@ -420,7 +436,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://m.youtube.com/premium"
+            "source": "https://m.youtube.com/premium",
+            "tax_included": true
           }
         ]
       },
@@ -434,7 +451,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://m.youtube.com/premium"
+            "source": "https://m.youtube.com/premium",
+            "tax_included": true
           }
         ]
       }
@@ -583,7 +601,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://www.audible.co.uk/ep/memberbenefits"
+            "source": "https://www.audible.co.uk/ep/memberbenefits",
+            "tax_included": true
           }
         ]
       },
@@ -597,7 +616,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://www.audible.co.uk/ep/memberbenefits"
+            "source": "https://www.audible.co.uk/ep/memberbenefits",
+            "tax_included": true
           }
         ]
       },
@@ -611,7 +631,8 @@
             "currency": "GBP",
             "cycle": "annual",
             "verified": "2026-09-10",
-            "source": "https://www.audible.co.uk/ep/memberbenefits"
+            "source": "https://www.audible.co.uk/ep/memberbenefits",
+            "tax_included": true
           }
         ]
       },
@@ -625,7 +646,8 @@
             "currency": "GBP",
             "cycle": "annual",
             "verified": "2026-09-10",
-            "source": "https://www.audible.co.uk/ep/memberbenefits"
+            "source": "https://www.audible.co.uk/ep/memberbenefits",
+            "tax_included": true
           }
         ]
       }
@@ -683,7 +705,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products",
+            "tax_included": true
           },
           {
             "region": "GB",
@@ -691,7 +714,8 @@
             "currency": "GBP",
             "cycle": "annual",
             "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products",
+            "tax_included": true
           }
         ]
       },
@@ -705,7 +729,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products",
+            "tax_included": true
           },
           {
             "region": "GB",
@@ -713,7 +738,8 @@
             "currency": "GBP",
             "cycle": "annual",
             "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products",
+            "tax_included": true
           }
         ]
       },
@@ -727,7 +753,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products",
+            "tax_included": true
           },
           {
             "region": "GB",
@@ -735,7 +762,8 @@
             "currency": "GBP",
             "cycle": "annual",
             "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
+            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products",
+            "tax_included": true
           }
         ]
       }
@@ -985,7 +1013,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://support.apple.com/en-gb/108047"
+            "source": "https://support.apple.com/en-gb/108047",
+            "tax_included": true
           }
         ]
       },
@@ -999,7 +1028,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://support.apple.com/en-gb/108047"
+            "source": "https://support.apple.com/en-gb/108047",
+            "tax_included": true
           }
         ]
       },
@@ -1013,7 +1043,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://support.apple.com/en-gb/108047"
+            "source": "https://support.apple.com/en-gb/108047",
+            "tax_included": true
           }
         ]
       },
@@ -1027,7 +1058,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://support.apple.com/en-gb/108047"
+            "source": "https://support.apple.com/en-gb/108047",
+            "tax_included": true
           }
         ]
       },
@@ -1041,7 +1073,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-10",
-            "source": "https://support.apple.com/en-gb/108047"
+            "source": "https://support.apple.com/en-gb/108047",
+            "tax_included": true
           }
         ]
       }
@@ -1093,7 +1126,8 @@
             "cycle": "monthly",
             "verified": "2026-09-11",
             "source": "https://www.puregym.com/gyms/",
-            "note": "From £17.99/month + joining fee. Price varies by gym location; access limited to off-peak hours"
+            "note": "From £17.99/month + joining fee. Price varies by gym location; access limited to off-peak hours",
+            "tax_included": true
           }
         ]
       },
@@ -1108,7 +1142,8 @@
             "cycle": "monthly",
             "verified": "2026-09-11",
             "source": "https://www.puregym.com/gyms/",
-            "note": "From £22.99/month + joining fee. Price varies by gym location; unrestricted 24/7 access"
+            "note": "From £22.99/month + joining fee. Price varies by gym location; unrestricted 24/7 access",
+            "tax_included": true
           }
         ]
       },
@@ -1123,7 +1158,8 @@
             "cycle": "monthly",
             "verified": "2026-09-11",
             "source": "https://www.puregym.com/gyms/",
-            "note": "From £28.99/month + joining fee. Price varies by gym location; includes access to other PureGym sites, 4 guest visits/month, free freeze"
+            "note": "From £28.99/month + joining fee. Price varies by gym location; includes access to other PureGym sites, 4 guest visits/month, free freeze",
+            "tax_included": true
           }
         ]
       }
@@ -1348,7 +1384,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-11",
-            "source": "https://www.apple.com/uk/apple-one/"
+            "source": "https://www.apple.com/uk/apple-one/",
+            "tax_included": true
           }
         ]
       }
@@ -1404,7 +1441,8 @@
             "cycle": "monthly",
             "verified": "2026-09-11",
             "source": "https://www.apple.com/uk/apple-care/",
-            "note": "Price varies by device model; this is a representative iPhone rate"
+            "note": "Price varies by device model; this is a representative iPhone rate",
+            "tax_included": true
           }
         ]
       }
@@ -1458,7 +1496,8 @@
             "cycle": "annual",
             "verified": "2026-09-11",
             "source": "https://www.dashlane.com/pricing",
-            "note": "Billed annually; check current site for monthly option"
+            "note": "Billed annually; check current site for monthly option",
+            "tax_included": true
           }
         ]
       }
@@ -1513,7 +1552,8 @@
             "cycle": "monthly",
             "verified": "2026-09-11",
             "source": "https://fitbod.me/",
-            "note": "Confirmed from an in-app UK checkout screen: $15.99/month standard price. Fitbod bills in USD even for UK customers. A 'WEB_DISCOUNT_10' promo code was showing 10% off ($14.39/mo) at time of checking — treat that as a temporary promo, not the standing price"
+            "note": "Confirmed from an in-app UK checkout screen: $15.99/month standard price. Fitbod bills in USD even for UK customers. A 'WEB_DISCOUNT_10' promo code was showing 10% off ($14.39/mo) at time of checking — treat that as a temporary promo, not the standing price",
+            "tax_included": null
           }
         ]
       },
@@ -1528,7 +1568,8 @@
             "cycle": "monthly",
             "verified": "2026-09-11",
             "source": "https://fitbod.me/",
-            "note": "Confirmed from an in-app UK checkout screen: $95.99/year ($7.99/mo effective), standard price. A 'WEB_DISCOUNT_10' promo code was showing 10% off ($86.39/year, $7.20/mo) at time of checking — treat that as a temporary promo, not the standing price"
+            "note": "Confirmed from an in-app UK checkout screen: $95.99/year ($7.99/mo effective), standard price. A 'WEB_DISCOUNT_10' promo code was showing 10% off ($86.39/year, $7.20/mo) at time of checking — treat that as a temporary promo, not the standing price",
+            "tax_included": null
           }
         ]
       }
@@ -1577,7 +1618,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-11",
-            "source": "https://one.google.com/about/plans"
+            "source": "https://one.google.com/about/plans",
+            "tax_included": true
           }
         ]
       },
@@ -1591,7 +1633,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-11",
-            "source": "https://one.google.com/about/plans"
+            "source": "https://one.google.com/about/plans",
+            "tax_included": true
           }
         ]
       },
@@ -1605,7 +1648,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-11",
-            "source": "https://one.google.com/about/plans"
+            "source": "https://one.google.com/about/plans",
+            "tax_included": true
           }
         ]
       }
@@ -1658,7 +1702,8 @@
             "currency": "GBP",
             "cycle": "monthly",
             "verified": "2026-09-11",
-            "source": "https://www.skylightapp.com/"
+            "source": "https://www.skylightapp.com/",
+            "tax_included": true
           }
         ]
       }
@@ -1712,7 +1757,8 @@
             "cycle": "annual",
             "verified": "2026-09-11",
             "source": "https://www.strava.com/subscribe",
-            "note": "Annual price; a monthly option is also offered at a higher effective rate"
+            "note": "Annual price; a monthly option is also offered at a higher effective rate",
+            "tax_included": true
           }
         ]
       }

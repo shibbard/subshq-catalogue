@@ -47,13 +47,8 @@ jobs:
         with:
           node-version: 22
 
-      - name: Build with icons
-        # Icons change rarely and this is the one place a network fetch belongs.
-        # Failure here must not block the data from publishing.
-        run: node build.mjs --icons
-        continue-on-error: true
-
-      - name: Build without icons if that failed
+      - name: Build
+        # Brand glyphs are committed under icons/, so this needs no network.
         run: node build.mjs
 
       - name: Add CORS headers

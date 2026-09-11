@@ -87,13 +87,15 @@ Money is always an **integer in minor units** — 1399 is £13.99. Never a float
 
 ## Icons
 
-`node build.mjs --icons` fetches each service's own favicon into `dist/icons`.
-This happens at build time only, never at runtime: an app requesting
-netflix.com's favicon while it's open would tell Netflix that the user tracks a
-Netflix subscription.
+Brand marks are single-colour SVGs from [Simple Icons](https://simpleicons.org)
+(CC0), committed under `icons/` and named after the entry — `netflix-uk.svg` for
+`netflix-uk`. `node scripts/enrich-icons.mjs` matches entries to brands, writes
+the SVGs and sets each entry's `icon` and `color`. The build copies them into
+`dist/icons`, and fails if an `icon` isn't `<id>.svg` or has no file.
 
-Icons under 32px are rejected — scaled up they're mush, and a monogram on the
-brand colour looks better.
+Apps should ship these glyphs rather than fetch them at runtime: an app
+requesting netflix.com's icon while it's open would tell Netflix, or whoever
+served the icon, that the user tracks a Netflix subscription.
 
 ## Licence
 

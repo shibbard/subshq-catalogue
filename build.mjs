@@ -19,7 +19,6 @@ const OUT = path.join(OUT_DIR, 'catalogue.json');
 const ICON_DIR = path.join(OUT_DIR, 'icons');
 
 const SCHEMA = 1;
-const FETCH_ICONS = process.argv.includes('--icons');
 const HEX = /^#[0-9A-Fa-f]{6}$/;
 
 const VALID_CATEGORIES = new Set([
@@ -38,7 +37,7 @@ function check(id, condition, message) {
   if (!condition) errors.push(`${id}: ${message}`);
 }
 
-function validate(entry, seenIds) {
+function validate(entry, seenIds, glyphs) {
   const id = entry.id ?? '(missing id)';
 
   check(id, typeof entry.id === 'string' && entry.id.length > 0, 'id is required');
@@ -99,6 +98,13 @@ function validate(entry, seenIds) {
     check(id, HEX.test(entry.color), 'color must be a 6-digit hex like "#E50914"');
   }
 
+  // Apps ship the glyphs in icons/ and draw `icon` from that set, so any other
+  // name points at a file no install has. See the icons note below.
+  if (entry.icon !== undefined) {
+    check(id, entry.icon === `${entry.id}.svg`, `icon must be "${entry.id}.svg", the glyph named after the entry`);
+    check(id, glyphs.has(entry.icon), `icon "${entry.icon}" has no file in icons/`);
+  }
+
   if (entry.plans !== undefined) {
     check(id, Array.isArray(entry.plans) && entry.plans.length > 0, 'plans must be a non-empty array');
     const planIds = new Set();
@@ -146,101 +152,17 @@ function normaliseEntry(entry) {
 
 // --- icons -----------------------------------------------------------------
 //
-// Fetched at BUILD time only, from each service's own domain, and written into
-// public/icons. Never at runtime: a request for netflix.com's favicon while the
-// app is open would tell Netflix (or whichever proxy served it) that this user
-// tracks a Netflix subscription. That is precisely the leak the whole design
-// exists to avoid, and no visual polish is worth it.
+// Brand marks are Simple Icons glyphs, fetched by scripts/enrich-icons.mjs and
+// committed under icons/ as <id>.svg, which also sets `icon` in the data. The
+// build only copies them, so it needs no network and is reproducible.
 //
-// Run with `npm run catalogue -- --icons`. Without the flag the existing icons
-// are left alone, so an ordinary build needs no network at all.
-
-const EXT_BY_TYPE = {
-  'image/png': '.png',
-  'image/x-icon': '.ico',
-  'image/vnd.microsoft.icon': '.ico',
-  'image/svg+xml': '.svg',
-  'image/jpeg': '.jpg',
-  'image/webp': '.webp',
-};
-
-// Ordered biggest-first. A 16px favicon.ico scaled up to a 40px tile looks
-// exactly as bad as it sounds, so the large PNGs are tried well before it.
-const ICON_PATHS = [
-  '/apple-touch-icon.png',
-  '/apple-touch-icon-precomposed.png',
-  '/favicon-196x196.png',
-  '/favicon-192x192.png',
-  '/favicon-180x180.png',
-  '/favicon-128.png',
-  '/favicon-96x96.png',
-  '/favicon-64x64.png',
-  '/favicon-32x32.png',
-  '/favicon.ico',
-];
-
-/** Reads the largest square declared inside an ICO directory. */
-function icoMaxSize(buf) {
-  if (buf.length < 6 || buf.readUInt16LE(0) !== 0 || buf.readUInt16LE(2) !== 1) return 0;
-  const count = buf.readUInt16LE(4);
-  let max = 0;
-  for (let i = 0; i < count; i += 1) {
-    const off = 6 + i * 16;
-    if (off + 2 > buf.length) break;
-    // 0 in the ICO header means 256.
-    const w = buf[off] === 0 ? 256 : buf[off];
-    if (w > max) max = w;
-  }
-  return max;
-}
-
-async function fetchIcon(entry) {
-  // A small icon is worse than a big one but much better than none, so a
-  // low-resolution find is held as a fallback rather than discarded.
-  let fallback = null;
-
-  for (const p of ICON_PATHS) {
-    try {
-      const res = await fetch(`https://${entry.domain}${p}`, {
-        redirect: 'follow',
-        signal: AbortSignal.timeout(8000),
-        headers: { accept: 'image/*' },
-      });
-      if (!res.ok) continue;
-
-      // A 200 with an HTML body is a soft 404 — several large sites do this,
-      // and without the content-type check you save a web page as a logo.
-      const type = (res.headers.get('content-type') ?? '').split(';')[0].trim().toLowerCase();
-      const ext = EXT_BY_TYPE[type];
-      if (!ext) continue;
-
-      const buf = Buffer.from(await res.arrayBuffer());
-      if (buf.length < 500) continue;
-
-      const declared = ext === '.ico' ? icoMaxSize(buf) : 0;
-      // Below 32px there is nothing to salvage: scaled up to a 44px tile mark
-      // it is mush, and the brand-colour monogram genuinely looks better.
-      if (declared > 0 && declared < 32) continue;
-      if (declared > 0 && declared < 48) {
-        fallback ??= { ext, buf };
-        continue;
-      }
-
-      const file = `${entry.id}${ext}`;
-      await writeFile(path.join(ICON_DIR, file), buf);
-      return file;
-    } catch {
-      // Timeout, DNS failure, TLS problem — try the next path, then give up.
-    }
-  }
-
-  if (fallback) {
-    const file = `${entry.id}${fallback.ext}`;
-    await writeFile(path.join(ICON_DIR, file), fallback.buf);
-    return file;
-  }
-  return null;
-}
+// Apps bundle the same glyphs and never fetch an icon at runtime: a request for
+// netflix.com's icon while the app is open would tell Netflix (or whichever
+// host served it) that this user tracks a Netflix subscription.
+//
+// `icon` is taken from the data and nothing else. This build used to scrape
+// favicons and carry icon names forward from its previous output, and in CI
+// that replaced the glyph names with .ico and .png files no app ships.
 
 async function main() {
   await mkdir(OUT_DIR, { recursive: true });
@@ -262,8 +184,10 @@ async function main() {
 
   for (const entry of entries) normaliseEntry(entry);
 
+  const glyphs = new Set((await readdir(ICON_SRC).catch(() => [])).filter((f) => f.endsWith('.svg')));
+
   const seenIds = new Set();
-  for (const entry of entries) validate(entry, seenIds);
+  for (const entry of entries) validate(entry, seenIds, glyphs);
 
   if (errors.length > 0) {
     console.error(`\nCatalogue build failed with ${errors.length} error(s):\n`);
@@ -272,47 +196,12 @@ async function main() {
     process.exit(1);
   }
 
-  // Brand marks come from Simple Icons via scripts/enrich-icons.mjs and are
-  // committed, so a build needs no network and is reproducible.
   await mkdir(ICON_DIR, { recursive: true });
-  let copied = 0;
-  const svgs = await readdir(ICON_SRC).catch(() => []);
-  for (const f of svgs) {
-    if (!f.endsWith('.svg')) continue;
+  for (const f of glyphs) {
     await copyFile(path.join(ICON_SRC, f), path.join(ICON_DIR, f));
-    copied += 1;
   }
 
   entries.sort((a, b) => a.name.localeCompare(b.name));
-
-  if (FETCH_ICONS) {
-    await mkdir(ICON_DIR, { recursive: true });
-    console.log(`\nFetching icons for ${entries.length} entries…`);
-    let got = 0;
-    for (const entry of entries) {
-      const file = await fetchIcon(entry);
-      if (file) {
-        entry.icon = file;
-        got += 1;
-        console.log(`  ✓ ${entry.name} → ${file}`);
-      } else {
-        delete entry.icon;
-        console.log(`  · ${entry.name} — no usable icon, falling back to a monogram`);
-      }
-    }
-    console.log(`\n${got} of ${entries.length} icons fetched.`);
-  } else {
-    // Keep whatever the previous build resolved, so a no-network build does
-    // not silently strip every icon out of the catalogue.
-    const prior = await readFile(OUT, 'utf8').then((t) => JSON.parse(t)).catch(() => null);
-    if (prior) {
-      const iconsById = new Map(prior.entries.filter((e) => e.icon).map((e) => [e.id, e.icon]));
-      for (const entry of entries) {
-        const existing = iconsById.get(entry.id);
-        if (existing) entry.icon = existing;
-      }
-    }
-  }
 
   // The version is a monotonic counter; CI bumps it on merge. Locally we derive
   // it from the entry count and content so a rebuild is deterministic.

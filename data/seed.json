@@ -782,12 +782,52 @@
     "price": null,
     "plans": [
       {
+        "id": "go",
+        "name": "Go",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 800,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://chatgpt.com/pricing",
+            "tax_included": false,
+            "note": "OpenAI bills in USD; 20% UK VAT is added at checkout on top of this headline price (per user's confirmed pattern with other US SaaS billing UK customers) — exact charged total not confirmed against a receipt"
+          }
+        ]
+      },
+      {
         "id": "plus",
-        "name": "Plus"
+        "name": "Plus",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 2000,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://chatgpt.com/pricing",
+            "tax_included": false,
+            "note": "OpenAI bills in USD; 20% UK VAT is added at checkout on top of this headline price (per user's confirmed pattern with other US SaaS billing UK customers) — exact charged total not confirmed against a receipt"
+          }
+        ]
       },
       {
         "id": "pro",
-        "name": "Pro"
+        "name": "Pro",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 10000,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://chatgpt.com/pricing",
+            "tax_included": false,
+            "note": "Listed as 'From $100/month' on the pricing page — not confirmed against a receipt"
+          }
+        ]
       }
     ],
     "match": [

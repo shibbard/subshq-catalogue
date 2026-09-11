@@ -7,7 +7,51 @@
     "color": "#FA243C",
     "price": null,
     "verified": null,
-    "icon": "apple-music.svg"
+    "icon": "apple-music.svg",
+    "plans": [
+      {
+        "id": "individual",
+        "name": "Individual",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1199,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.apple.com/uk/apple-music/"
+          }
+        ]
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1999,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.apple.com/uk/apple-music/"
+          }
+        ]
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 599,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.apple.com/uk/apple-music/"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "amazon-music",
@@ -46,7 +90,57 @@
     "color": "#FF5E00",
     "price": null,
     "verified": null,
-    "icon": "crunchyroll.svg"
+    "icon": "crunchyroll.svg",
+    "plans": [
+      {
+        "id": "fan",
+        "name": "Fan",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 599,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.crunchyroll.com/premium",
+            "tax_included": true
+          },
+          {
+            "region": "GB",
+            "amount": 5999,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-10",
+            "source": "https://www.crunchyroll.com/premium",
+            "tax_included": true
+          }
+        ]
+      },
+      {
+        "id": "mega-fan",
+        "name": "Mega Fan",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 699,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.crunchyroll.com/premium",
+            "tax_included": true
+          },
+          {
+            "region": "GB",
+            "amount": 6999,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-10",
+            "source": "https://www.crunchyroll.com/premium",
+            "tax_included": true
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "paramount-plus",
@@ -66,7 +160,23 @@
     "color": "#000000",
     "price": null,
     "verified": null,
-    "icon": "apple-tv-plus.svg"
+    "icon": "apple-tv-plus.svg",
+    "plans": [
+      {
+        "id": "standard",
+        "name": "Apple TV",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 999,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.apple.com/uk/apple-tv-plus/"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "britbox",

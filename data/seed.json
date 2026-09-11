@@ -193,11 +193,61 @@
     "plans": [
       {
         "id": "monthly",
-        "name": "Monthly"
+        "name": "Monthly",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 899,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.amazon.co.uk/amazonprime"
+          }
+        ]
       },
       {
         "id": "annual",
-        "name": "Annual"
+        "name": "Annual",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 9500,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-10",
+            "source": "https://www.amazon.co.uk/amazonprime"
+          }
+        ]
+      },
+      {
+        "id": "student-monthly",
+        "name": "Students and 18-24s (monthly)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 449,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.amazon.co.uk/amazonprime",
+            "note": "Eligibility restricted"
+          }
+        ]
+      },
+      {
+        "id": "student-annual",
+        "name": "Students and 18-24s (annual)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 4749,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-10",
+            "source": "https://www.amazon.co.uk/amazonprime",
+            "note": "Eligibility restricted"
+          }
+        ]
       }
     ],
     "match": [
@@ -248,15 +298,48 @@
     "plans": [
       {
         "id": "standard-ads",
-        "name": "Standard with Ads"
+        "name": "Standard with Ads",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 599,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.disneyplus.com/en-gb",
+            "note": "Standard rate; a 6-month minimum-term plan is cheaper"
+          }
+        ]
       },
       {
         "id": "standard",
-        "name": "Standard"
+        "name": "Standard",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 999,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.disneyplus.com/en-gb",
+            "note": "Standard rate; a 6-month minimum-term plan is cheaper"
+          }
+        ]
       },
       {
         "id": "premium",
-        "name": "Premium"
+        "name": "Premium",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1499,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.disneyplus.com/en-gb",
+            "note": "Standard rate; a 6-month minimum-term plan is cheaper"
+          }
+        ]
       }
     ],
     "match": [
@@ -301,15 +384,59 @@
     "plans": [
       {
         "id": "individual",
-        "name": "Individual"
+        "name": "Individual",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1299,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://m.youtube.com/premium"
+          }
+        ]
       },
       {
         "id": "family",
-        "name": "Family"
+        "name": "Family",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1999,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://m.youtube.com/premium"
+          }
+        ]
       },
       {
         "id": "student",
-        "name": "Student"
+        "name": "Student",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 799,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://m.youtube.com/premium"
+          }
+        ]
+      },
+      {
+        "id": "lite",
+        "name": "Premium Lite",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 799,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://m.youtube.com/premium"
+          }
+        ]
       }
     ],
     "match": [
@@ -447,8 +574,60 @@
     "price": null,
     "plans": [
       {
-        "id": "premium-plus",
-        "name": "Premium Plus"
+        "id": "standard",
+        "name": "Standard",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 599,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.audible.co.uk/ep/memberbenefits"
+          }
+        ]
+      },
+      {
+        "id": "premium",
+        "name": "Premium",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 899,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-10",
+            "source": "https://www.audible.co.uk/ep/memberbenefits"
+          }
+        ]
+      },
+      {
+        "id": "premium-annual-12",
+        "name": "Premium Annual, 12 credits",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 6999,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-10",
+            "source": "https://www.audible.co.uk/ep/memberbenefits"
+          }
+        ]
+      },
+      {
+        "id": "premium-annual-24",
+        "name": "Premium Annual, 24 credits",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 10999,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-10",
+            "source": "https://www.audible.co.uk/ep/memberbenefits"
+          }
+        ]
       }
     ],
     "match": [

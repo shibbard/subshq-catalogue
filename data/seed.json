@@ -14,46 +14,33 @@
       {
         "id": "standard-ads",
         "name": "Standard with adverts",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 799,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://help.netflix.com/en/node/24926"
-          }
-        ]
+        "price": {
+          "amount": 799,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "standard",
         "name": "Standard",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 1399,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://help.netflix.com/en/node/24926"
-          }
-        ]
+        "price": {
+          "amount": 1399,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "premium",
         "name": "Premium",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 2099,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://help.netflix.com/en/node/24926"
-          }
-        ]
+        "price": {
+          "amount": 2099,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       }
     ],
+    "price_verified": "2026-09-10",
+    "source": "https://help.netflix.com/en/node/24926",
     "match": [
       "NETFLIX.COM",
       "NETFLIX"
@@ -78,8 +65,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "netflix-uk.svg"
+    "verified": null
   },
   {
     "id": "spotify-uk",
@@ -91,66 +77,48 @@
     "category": "music",
     "region": "GB",
     "domain": "spotify.com",
-    "color": "#1ED760",
+    "color": "#1DB954",
     "price": null,
     "plans": [
       {
         "id": "individual",
         "name": "Individual",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 1299,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.spotify.com/uk/premium/"
-          }
-        ]
+        "price": {
+          "amount": 1299,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "duo",
         "name": "Duo",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 1799,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.spotify.com/uk/premium/"
-          }
-        ]
+        "price": {
+          "amount": 1799,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "family",
         "name": "Family",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 2199,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.spotify.com/uk/premium/"
-          }
-        ]
+        "price": {
+          "amount": 2199,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "student",
         "name": "Student",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 599,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.spotify.com/uk/premium/"
-          }
-        ]
+        "price": {
+          "amount": 599,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       }
     ],
+    "price_verified": "2026-09-10",
+    "source": "https://www.spotify.com/uk/premium/",
     "match": [
       "SPOTIFY"
     ],
@@ -175,8 +143,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "spotify-uk.svg"
+    "verified": null
   },
   {
     "id": "amazon-prime-uk",
@@ -194,62 +161,24 @@
       {
         "id": "monthly",
         "name": "Monthly",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 899,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.amazon.co.uk/amazonprime"
-          }
-        ]
+        "price": {
+          "amount": 899,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "annual",
         "name": "Annual",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 9500,
-            "currency": "GBP",
-            "cycle": "annual",
-            "verified": "2026-09-10",
-            "source": "https://www.amazon.co.uk/amazonprime"
-          }
-        ]
-      },
-      {
-        "id": "student-monthly",
-        "name": "Students and 18-24s (monthly)",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 449,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.amazon.co.uk/amazonprime",
-            "note": "Eligibility restricted"
-          }
-        ]
-      },
-      {
-        "id": "student-annual",
-        "name": "Students and 18-24s (annual)",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 4749,
-            "currency": "GBP",
-            "cycle": "annual",
-            "verified": "2026-09-10",
-            "source": "https://www.amazon.co.uk/amazonprime",
-            "note": "Eligibility restricted"
-          }
-        ]
+        "price": {
+          "amount": 9500,
+          "currency": "GBP",
+          "cycle": "annual"
+        }
       }
     ],
+    "price_verified": "2026-09-11",
+    "source": "https://www.amazon.co.uk/amazonprime",
     "match": [
       "AMAZON PRIME",
       "AMZNPRIME",
@@ -280,8 +209,7 @@
       ],
       "refund_policy": "partial"
     },
-    "verified": null,
-    "icon": "amazon-prime-uk.svg"
+    "verified": null
   },
   {
     "id": "disney-plus-uk",
@@ -299,49 +227,33 @@
       {
         "id": "standard-ads",
         "name": "Standard with Ads",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 599,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.disneyplus.com/en-gb",
-            "note": "Standard rate; a 6-month minimum-term plan is cheaper"
-          }
-        ]
+        "price": {
+          "amount": 499,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "standard",
         "name": "Standard",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 999,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.disneyplus.com/en-gb",
-            "note": "Standard rate; a 6-month minimum-term plan is cheaper"
-          }
-        ]
+        "price": {
+          "amount": 799,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "premium",
         "name": "Premium",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 1499,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.disneyplus.com/en-gb",
-            "note": "Standard rate; a 6-month minimum-term plan is cheaper"
-          }
-        ]
+        "price": {
+          "amount": 1099,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       }
     ],
+    "price_verified": "2026-09-11",
+    "source": "https://www.disneyplus.com/en-gb",
     "match": [
       "DISNEY PLUS",
       "DISNEYPLUS",
@@ -385,60 +297,42 @@
       {
         "id": "individual",
         "name": "Individual",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 1299,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://m.youtube.com/premium"
-          }
-        ]
+        "price": {
+          "amount": 1299,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "family",
         "name": "Family",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 1999,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://m.youtube.com/premium"
-          }
-        ]
+        "price": {
+          "amount": 1999,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "student",
         "name": "Student",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 799,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://m.youtube.com/premium"
-          }
-        ]
+        "price": {
+          "amount": 799,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "lite",
         "name": "Premium Lite",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 799,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://m.youtube.com/premium"
-          }
-        ]
+        "price": {
+          "amount": 799,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       }
     ],
+    "price_verified": "2026-09-11",
+    "source": "https://m.youtube.com/premium",
     "match": [
       "GOOGLE *YOUTUBE",
       "YOUTUBEPREMIUM",
@@ -465,8 +359,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "youtube-premium-uk.svg"
+    "verified": null
   },
   {
     "id": "adobe-cc-uk",
@@ -483,53 +376,34 @@
     "plans": [
       {
         "id": "all-apps",
-        "name": "Creative Cloud Pro (All Apps)",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 6649,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.adobe.com/uk/creativecloud/plans.html",
-            "tax_included": true,
-            "note": "Standard rate; often discounted for the first 3 months"
-          }
-        ]
+        "name": "All Apps",
+        "price": {
+          "amount": 6649,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "single-app",
         "name": "Single App",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 2198,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.adobe.com/uk/creativecloud/plans.html",
-            "tax_included": true,
-            "note": "Most single apps; Lightroom is cheaper"
-          }
-        ]
+        "price": {
+          "amount": 2198,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "photography",
         "name": "Photography",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 1997,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.adobe.com/uk/creativecloud/plans.html",
-            "tax_included": true,
-            "note": "Annual plan, billed monthly"
-          }
-        ]
+        "price": {
+          "amount": 1997,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       }
     ],
+    "price_verified": "2026-09-11",
+    "source": "https://www.adobe.com/uk/creativecloud/plans.html",
     "match": [
       "ADOBE",
       "ADOBE SYSTEMS",
@@ -574,62 +448,26 @@
     "price": null,
     "plans": [
       {
-        "id": "standard",
-        "name": "Standard",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 599,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.audible.co.uk/ep/memberbenefits"
-          }
-        ]
+        "id": "premium-plus-1-credit",
+        "name": "Premium Plus (1 credit/month)",
+        "price": {
+          "amount": 599,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
-        "id": "premium",
-        "name": "Premium",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 899,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.audible.co.uk/ep/memberbenefits"
-          }
-        ]
-      },
-      {
-        "id": "premium-annual-12",
-        "name": "Premium Annual, 12 credits",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 6999,
-            "currency": "GBP",
-            "cycle": "annual",
-            "verified": "2026-09-10",
-            "source": "https://www.audible.co.uk/ep/memberbenefits"
-          }
-        ]
-      },
-      {
-        "id": "premium-annual-24",
-        "name": "Premium Annual, 24 credits",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 10999,
-            "currency": "GBP",
-            "cycle": "annual",
-            "verified": "2026-09-10",
-            "source": "https://www.audible.co.uk/ep/memberbenefits"
-          }
-        ]
+        "id": "premium-plus-2-credit",
+        "name": "Premium Plus (2 credits/month)",
+        "price": {
+          "amount": 899,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       }
     ],
+    "price_verified": "2026-09-11",
+    "source": "https://www.audible.co.uk/ep/memberbenefits",
     "match": [
       "AUDIBLE"
     ],
@@ -657,8 +495,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "audible-uk.svg"
+    "verified": null
   },
   {
     "id": "microsoft-365-uk",
@@ -676,70 +513,24 @@
       {
         "id": "personal",
         "name": "Personal",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 849,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
-          },
-          {
-            "region": "GB",
-            "amount": 8499,
-            "currency": "GBP",
-            "cycle": "annual",
-            "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
-          }
-        ]
+        "price": {
+          "amount": 849,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "family",
         "name": "Family",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 1049,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
-          },
-          {
-            "region": "GB",
-            "amount": 10499,
-            "currency": "GBP",
-            "cycle": "annual",
-            "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
-          }
-        ]
-      },
-      {
-        "id": "premium",
-        "name": "Premium",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 1899,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
-          },
-          {
-            "region": "GB",
-            "amount": 18999,
-            "currency": "GBP",
-            "cycle": "annual",
-            "verified": "2026-09-10",
-            "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products"
-          }
-        ]
+        "price": {
+          "amount": 1049,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       }
     ],
+    "price_verified": "2026-09-11",
+    "source": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products",
     "match": [
       "MICROSOFT*365",
       "MICROSOFT 365",
@@ -778,18 +569,30 @@
     "category": "ai",
     "region": "GB",
     "domain": "openai.com",
-    "color": "#412991",
+    "color": "#10A37F",
     "price": null,
     "plans": [
       {
         "id": "plus",
-        "name": "Plus"
+        "name": "Plus",
+        "price": {
+          "amount": 2000,
+          "currency": "USD",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "pro",
-        "name": "Pro"
+        "name": "Pro",
+        "price": {
+          "amount": 20000,
+          "currency": "USD",
+          "cycle": "monthly"
+        }
       }
     ],
+    "price_verified": "2026-09-11",
+    "source": "https://chatgpt.com/",
     "match": [
       "OPENAI",
       "CHATGPT"
@@ -811,14 +614,14 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "chatgpt-plus.svg"
+    "verified": null
   },
   {
     "id": "claude-pro",
     "name": "Claude Pro",
     "aliases": [
-      "anthropic"
+      "anthropic",
+      "claude max"
     ],
     "category": "ai",
     "region": "GB",
@@ -827,60 +630,70 @@
     "price": null,
     "plans": [
       {
-        "id": "pro",
-        "name": "Pro",
-        "prices": [
-          {
-            "region": "US",
-            "amount": 2000,
-            "currency": "USD",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.claude.com/pricing",
-            "tax_included": false
-          }
-        ]
+        "id": "pro-annual",
+        "name": "Pro (Annual)",
+        "price": {
+          "amount": 1500,
+          "currency": "GBP",
+          "cycle": "annual"
+        }
+      },
+      {
+        "id": "pro-monthly",
+        "name": "Pro (Monthly)",
+        "price": {
+          "amount": 1800,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "max",
-        "name": "Max",
-        "prices": [
-          {
-            "region": "US",
-            "amount": 10000,
-            "currency": "USD",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.claude.com/pricing",
-            "tax_included": false,
-            "note": "From $100/month"
-          }
-        ]
+        "name": "Max (5x)",
+        "price": {
+          "amount": 9000,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "max-20x",
+        "name": "Max (20x)",
+        "price": null
       }
     ],
+    "price_verified": "2026-09-11",
+    "source": "https://claude.com/pricing",
     "match": [
       "ANTHROPIC",
-      "CLAUDE.AI"
+      "CLAUDE.AI",
+      "CLAUDE PRO",
+      "CLAUDE MAX"
     ],
     "cancel": {
       "difficulty": 1,
       "url": "https://claude.ai/settings/billing",
       "channels": [
-        "web"
+        "web",
+        "app"
       ],
       "steps": [
-        "Open claude.ai and go to Settings → Billing",
-        "Choose Manage subscription, then cancel",
-        "Confirm. Access continues to the end of the paid period."
+        "On web: Go to claude.ai, click your initials (bottom left) → Settings → Billing → Cancel",
+        "On Claude Desktop: Open the app, click initials → Settings → Billing → Cancel",
+        "On iOS: Open Claude, click initials (top right) → Billing → Manage subscription → Cancel",
+        "On Android: Open Claude, click initials (top right) → Billing → Manage subscription → Cancel",
+        "Access continues through the end of your current billing period"
       ],
-      "notice_period_days": 0,
+      "notice_period_days": 1,
+      "retention_tactics": [],
       "gotchas": [
-        "If you subscribed in a mobile app, cancel through Apple or Google instead"
+        "If you subscribed via Apple App Store or Google Play, you must cancel there, not in the app",
+        "You must cancel at least 24 hours before your next billing date to avoid the next charge",
+        "Cancellation takes effect at the end of the current billing period, not immediately"
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "claude-pro.svg"
+    "verified": null
   },
   {
     "id": "apple-icloud-uk",
@@ -892,80 +705,57 @@
     "category": "storage",
     "region": "GB",
     "domain": "apple.com",
-    "color": "#3693F3",
+    "color": "#007AFF",
     "price": null,
     "plans": [
       {
         "id": "50gb",
         "name": "50 GB",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 99,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://support.apple.com/en-gb/108047"
-          }
-        ]
+        "price": {
+          "amount": 99,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "200gb",
         "name": "200 GB",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 299,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://support.apple.com/en-gb/108047"
-          }
-        ]
+        "price": {
+          "amount": 299,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "2tb",
         "name": "2 TB",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 899,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://support.apple.com/en-gb/108047"
-          }
-        ]
+        "price": {
+          "amount": 899,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "6tb",
         "name": "6 TB",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 2699,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://support.apple.com/en-gb/108047"
-          }
-        ]
+        "price": {
+          "amount": 2699,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       },
       {
         "id": "12tb",
         "name": "12 TB",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 5499,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://support.apple.com/en-gb/108047"
-          }
-        ]
+        "price": {
+          "amount": 5499,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
       }
     ],
+    "price_verified": "2026-09-10",
+    "source": "https://support.apple.com/en-gb/108047",
     "match": [
       "APPLE.COM/BILL",
       "ITUNES.COM/BILL",
@@ -988,8 +778,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "apple-icloud-uk.svg"
+    "verified": null
   },
   {
     "id": "puregym-uk",
@@ -1040,7 +829,7 @@
     "category": "utilities",
     "region": "GB",
     "domain": "virginmedia.com",
-    "color": "#ED1A37",
+    "color": "#E10A0A",
     "price": null,
     "match": [
       "VIRGIN MEDIA",
@@ -1076,7 +865,486 @@
       "renewal_reminder_required": true,
       "source": "https://www.ofcom.org.uk/phones-and-broadband/service-quality/contract-changes"
     },
-    "verified": null,
-    "icon": "virgin-media-uk.svg"
+    "verified": null
+  },
+  {
+    "id": "ideogram-us",
+    "name": "Ideogram",
+    "aliases": [
+      "ideogram.ai",
+      "ideogram ai"
+    ],
+    "category": "ai",
+    "region": "US",
+    "domain": "ideogram.ai",
+    "color": "#000000",
+    "price": null,
+    "plans": [
+      {
+        "id": "free",
+        "name": "Free",
+        "price": {
+          "amount": 0,
+          "currency": "USD",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "plus",
+        "name": "Plus",
+        "price": {
+          "amount": 1500,
+          "currency": "USD",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "pro",
+        "name": "Pro",
+        "price": {
+          "amount": 4200,
+          "currency": "USD",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "team",
+        "name": "Team",
+        "price": {
+          "amount": 2000,
+          "currency": "USD",
+          "cycle": "monthly"
+        }
+      }
+    ],
+    "price_verified": "2026-09-11",
+    "source": "https://ideogram.ai/pricing/",
+    "match": [
+      "IDEOGRAM",
+      "IDEOGRAM.AI"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://ideogram.ai/plans",
+      "channels": [
+        "web"
+      ],
+      "steps": [
+        "Sign in to your account and go to Manage plan",
+        "Click 'Manage plan ↗' to open the billing portal",
+        "Click 'Cancel subscription' next to your plan",
+        "Review the end date and confirm cancellation"
+      ],
+      "notice_period_days": 5,
+      "retention_tactics": [],
+      "gotchas": [
+        "Cancellations must be made at least 5 days before your renewal date",
+        "Your plan stays active until the end of the period you have paid for",
+        "Top-up credits expire one year from purchase"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "apple-one-uk",
+    "name": "Apple One",
+    "aliases": [
+      "apple one bundle"
+    ],
+    "category": "other",
+    "region": "GB",
+    "domain": "apple.com",
+    "color": "#555555",
+    "price": null,
+    "plans": [
+      {
+        "id": "individual",
+        "name": "Individual",
+        "price": null
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "price": null
+      },
+      {
+        "id": "premier",
+        "name": "Premier",
+        "price": {
+          "amount": 3695,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      }
+    ],
+    "price_verified": "2026-09-11",
+    "source": "https://www.apple.com/uk/apple-one/",
+    "match": [
+      "APPLE ONE",
+      "APPLE.COM/BILL"
+    ],
+    "cancel": {
+      "difficulty": 2,
+      "url": "https://support.apple.com/en-gb/HT211238",
+      "channels": [
+        "app",
+        "web"
+      ],
+      "steps": [
+        "On iPhone/iPad: Settings → your name at the top → Subscriptions → Apple One",
+        "Tap 'Cancel Subscription'",
+        "Confirm the cancellation. You keep access through the end of the current billing period."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "May offer a discount to keep you on the plan"
+      ],
+      "gotchas": [
+        "Cancelling Apple One also affects all bundled services (Apple TV+, Apple Music, iCloud+, etc.)",
+        "Individual subscriptions to those services are not cancelled automatically"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "applecare-plus-uk",
+    "name": "AppleCare+",
+    "aliases": [
+      "applecare"
+    ],
+    "category": "insurance",
+    "region": "GB",
+    "domain": "apple.com",
+    "color": "#555555",
+    "price": null,
+    "plans": [
+      {
+        "id": "standard",
+        "name": "Standard",
+        "price": {
+          "amount": 1199,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "with-theft-loss",
+        "name": "With Theft and Loss",
+        "price": {
+          "amount": 1199,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      }
+    ],
+    "price_verified": "2026-09-11",
+    "source": "https://www.apple.com/uk/",
+    "match": [
+      "APPLECARE",
+      "APPLE CARE"
+    ],
+    "cancel": {
+      "difficulty": 2,
+      "phone": "0800 956 6504",
+      "channels": [
+        "app",
+        "phone"
+      ],
+      "steps": [
+        "On iPhone/iPad: Settings → your name → Subscriptions → AppleCare+",
+        "Tap 'Cancel Subscription'",
+        "Confirm. Coverage continues through the end of the billing period."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [],
+      "gotchas": [
+        "If you purchased AppleCare+ with your device, cancellation doesn't affect your warranty",
+        "Coverage is per device, not per account"
+      ],
+      "refund_policy": "prorated"
+    },
+    "verified": null
+  },
+  {
+    "id": "dashlane-uk",
+    "name": "Dashlane",
+    "aliases": [
+      "dashlane.com",
+      "password manager"
+    ],
+    "category": "software",
+    "region": "GB",
+    "domain": "dashlane.com",
+    "color": "#4B7BF5",
+    "price": null,
+    "plans": [
+      {
+        "id": "free",
+        "name": "Free",
+        "price": {
+          "amount": 0,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "premium",
+        "name": "Premium",
+        "price": {
+          "amount": 3999,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      }
+    ],
+    "price_verified": "2026-09-11",
+    "source": "https://www.dashlane.com/",
+    "match": [
+      "DASHLANE"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://www.dashlane.com/account",
+      "channels": [
+        "web"
+      ],
+      "steps": [
+        "Sign in to your Dashlane account at account.dashlane.com",
+        "Go to Settings → Subscriptions",
+        "Click 'Cancel' or 'Manage plan' → Cancel subscription",
+        "Confirm. You keep access through the end of the current billing period."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "May offer a discount to continue"
+      ],
+      "gotchas": [
+        "Your passwords remain in your vault even after cancellation",
+        "If you subscribed through App Store/Play Store, cancel there instead"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "fitbod-uk",
+    "name": "Fitbod",
+    "aliases": [
+      "fitbod.me",
+      "workout app"
+    ],
+    "category": "fitness",
+    "region": "GB",
+    "domain": "fitbod.me",
+    "color": "#FF6B35",
+    "price": null,
+    "plans": [
+      {
+        "id": "premium",
+        "name": "Premium",
+        "price": null
+      }
+    ],
+    "price_verified": null,
+    "match": [
+      "FITBOD"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "channels": [
+        "app"
+      ],
+      "steps": [
+        "Open the Fitbod app → Settings → Subscription",
+        "Tap 'Manage subscription' or 'Cancel subscription'",
+        "If billed through the app store, manage via iOS Settings → Subscriptions or Google Play",
+        "Confirm cancellation"
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [],
+      "gotchas": [
+        "Most Fitbod subscriptions are billed through Apple App Store or Google Play, not directly",
+        "You must cancel through your device's app store settings, not through the Fitbod app"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "google-photos-uk",
+    "name": "Google Photos",
+    "aliases": [
+      "google storage",
+      "photos storage"
+    ],
+    "category": "storage",
+    "region": "GB",
+    "domain": "google.com",
+    "color": "#4285F4",
+    "price": null,
+    "plans": [
+      {
+        "id": "100gb",
+        "name": "100 GB",
+        "price": {
+          "amount": 199,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "200gb",
+        "name": "200 GB",
+        "price": {
+          "amount": 279,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      },
+      {
+        "id": "2tb",
+        "name": "2 TB",
+        "price": {
+          "amount": 999,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      }
+    ],
+    "price_verified": "2026-09-11",
+    "source": "https://one.google.com/storage-plans",
+    "match": [
+      "GOOGLE *PHOTOS",
+      "GOOGLE STORAGE",
+      "GOOGLE ONE"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://one.google.com/storage",
+      "channels": [
+        "web",
+        "app"
+      ],
+      "steps": [
+        "Go to one.google.com and select your storage plan",
+        "Click 'Cancel plan' or 'Upgrade plan' and select the free tier (15 GB)",
+        "Confirm. Excess files are not deleted but cannot be backed up or synced"
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [],
+      "gotchas": [
+        "Cancelling doesn't delete your photos, but new uploads/backups are blocked if you exceed 15 GB",
+        "Google Photos and Google One storage are shared across all Google services (Gmail, Drive, etc.)"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "skylight-uk",
+    "name": "Skylight",
+    "aliases": [
+      "skylight app",
+      "calendar"
+    ],
+    "category": "software",
+    "region": "GB",
+    "domain": "skylightapp.com",
+    "color": "#6366F1",
+    "price": null,
+    "plans": [
+      {
+        "id": "plus",
+        "name": "Plus",
+        "price": {
+          "amount": 600,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      }
+    ],
+    "price_verified": "2026-09-11",
+    "source": "https://www.skylightapp.com/",
+    "match": [
+      "SKYLIGHT",
+      "SKYLIGHT APP"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://www.skylightapp.com/account",
+      "channels": [
+        "app",
+        "web"
+      ],
+      "steps": [
+        "Open the Skylight app → Settings → Subscription",
+        "Tap 'Manage subscription' or visit skylightapp.com/account",
+        "Click 'Cancel subscription'",
+        "Confirm. Access continues through the end of the current period."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [],
+      "gotchas": [
+        "If subscribed through the app store, manage via Apple/Google settings",
+        "Your calendar data remains accessible after cancellation"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "strava-uk",
+    "name": "Strava",
+    "aliases": [
+      "strava.com",
+      "running app"
+    ],
+    "category": "fitness",
+    "region": "GB",
+    "domain": "strava.com",
+    "color": "#FC5200",
+    "price": null,
+    "plans": [
+      {
+        "id": "summit",
+        "name": "Summit",
+        "price": {
+          "amount": 5499,
+          "currency": "GBP",
+          "cycle": "monthly"
+        }
+      }
+    ],
+    "price_verified": "2026-09-11",
+    "source": "https://www.strava.com/subscription",
+    "match": [
+      "STRAVA"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://www.strava.com/account/subscription",
+      "channels": [
+        "web",
+        "app"
+      ],
+      "steps": [
+        "Visit strava.com or open the app and go to Settings → Subscription",
+        "Click 'Manage subscription'",
+        "Select 'Cancel my subscription'",
+        "Confirm. Access continues through the end of the billing period."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "May offer a discount or free trial extension"
+      ],
+      "gotchas": [
+        "If billed through Apple App Store or Google Play, cancel there instead",
+        "Your training log and segments remain visible after cancellation"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
   }
 ]

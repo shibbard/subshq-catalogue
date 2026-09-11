@@ -1133,32 +1133,56 @@
     "price": null,
     "plans": [
       {
-        "id": "plus",
-        "name": "Plus",
+        "id": "plus-monthly",
+        "name": "Plus (billed monthly)",
         "prices": [
           {
             "region": "GB",
-            "amount": 1500,
+            "amount": 2000,
             "currency": "USD",
             "cycle": "monthly",
             "verified": "2026-09-11",
             "source": "https://ideogram.ai/pricing/",
-            "note": "Ideogram bills in USD worldwide, no GBP pricing exists. Billed annually at $180; $20/month if billed monthly"
-          },
-          {
-            "region": "US",
-            "amount": 1500,
-            "currency": "USD",
-            "cycle": "monthly",
-            "verified": "2026-09-11",
-            "source": "https://ideogram.ai/pricing/",
-            "note": "Billed annually at $180; $20/month if billed monthly"
+            "tax_included": false,
+            "note": "Confirmed from a UK customer's actual receipt: $20.00 + 20% UK VAT ($4.00) = $24.00 charged. Ideogram bills in USD worldwide; VAT is added at checkout for UK/EU customers and is not shown in the headline price"
           }
         ]
       },
       {
-        "id": "pro",
-        "name": "Pro",
+        "id": "plus-annual",
+        "name": "Plus (billed annually)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1500,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://ideogram.ai/pricing/",
+            "tax_included": false,
+            "note": "Effective monthly rate when billed annually at $180/year, plus VAT for UK customers. Not verified against an actual receipt."
+          }
+        ]
+      },
+      {
+        "id": "pro-monthly",
+        "name": "Pro (billed monthly)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 6000,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://ideogram.ai/pricing/",
+            "tax_included": false,
+            "note": "Sourced from the pricing page, not a receipt — verify like Plus was. Plus VAT for UK customers"
+          }
+        ]
+      },
+      {
+        "id": "pro-annual",
+        "name": "Pro (billed annually)",
         "prices": [
           {
             "region": "GB",
@@ -1167,22 +1191,14 @@
             "cycle": "monthly",
             "verified": "2026-09-11",
             "source": "https://ideogram.ai/pricing/",
-            "note": "Ideogram bills in USD worldwide, no GBP pricing exists. Billed annually at $504; $60/month if billed monthly"
-          },
-          {
-            "region": "US",
-            "amount": 4200,
-            "currency": "USD",
-            "cycle": "monthly",
-            "verified": "2026-09-11",
-            "source": "https://ideogram.ai/pricing/",
-            "note": "Billed annually at $504; $60/month if billed monthly"
+            "tax_included": false,
+            "note": "Effective monthly rate when billed annually at $504/year, plus VAT for UK customers. Not verified against an actual receipt."
           }
         ]
       },
       {
         "id": "team",
-        "name": "Team",
+        "name": "Team (billed annually, per user, min 2 users)",
         "prices": [
           {
             "region": "GB",
@@ -1191,16 +1207,8 @@
             "cycle": "monthly",
             "verified": "2026-09-11",
             "source": "https://ideogram.ai/pricing/",
-            "note": "Ideogram bills in USD worldwide, no GBP pricing exists. Per user/month, billed annually, minimum 2 users"
-          },
-          {
-            "region": "US",
-            "amount": 2000,
-            "currency": "USD",
-            "cycle": "monthly",
-            "verified": "2026-09-11",
-            "source": "https://ideogram.ai/pricing/",
-            "note": "Per user/month, billed annually, minimum 2 users"
+            "tax_included": false,
+            "note": "Per user/month, billed annually, minimum 2 users. Plus VAT for UK customers. Not verified against an actual receipt."
           }
         ]
       }

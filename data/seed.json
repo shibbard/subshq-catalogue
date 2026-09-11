@@ -818,7 +818,8 @@
     "id": "claude-pro",
     "name": "Claude Pro",
     "aliases": [
-      "anthropic"
+      "anthropic",
+      "claude max"
     ],
     "category": "ai",
     "region": "GB",
@@ -828,8 +829,18 @@
     "plans": [
       {
         "id": "pro",
-        "name": "Pro",
+        "name": "Pro (annual)",
         "prices": [
+          {
+            "region": "GB",
+            "amount": 1500,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://claude.com/pricing",
+            "tax_included": true,
+            "note": "Billed annually at £180"
+          },
           {
             "region": "US",
             "amount": 2000,
@@ -842,9 +853,34 @@
         ]
       },
       {
-        "id": "max",
-        "name": "Max",
+        "id": "pro-monthly",
+        "name": "Pro (monthly)",
         "prices": [
+          {
+            "region": "GB",
+            "amount": 1800,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://claude.com/pricing",
+            "tax_included": true
+          }
+        ]
+      },
+      {
+        "id": "max",
+        "name": "Max 5x",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 9000,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://claude.com/pricing",
+            "tax_included": true,
+            "note": "From £90/month"
+          },
           {
             "region": "US",
             "amount": 10000,
@@ -860,22 +896,26 @@
     ],
     "match": [
       "ANTHROPIC",
-      "CLAUDE.AI"
+      "CLAUDE.AI",
+      "CLAUDE PRO",
+      "CLAUDE MAX"
     ],
     "cancel": {
       "difficulty": 1,
       "url": "https://claude.ai/settings/billing",
       "channels": [
-        "web"
+        "web",
+        "app"
       ],
       "steps": [
-        "Open claude.ai and go to Settings → Billing",
-        "Choose Manage subscription, then cancel",
+        "On web or Claude Desktop: click your initials (bottom left) → Settings → Billing → Cancel",
+        "On iOS/Android: click your initials (top right) → Billing → Manage subscription → Cancel",
         "Confirm. Access continues to the end of the paid period."
       ],
-      "notice_period_days": 0,
+      "notice_period_days": 1,
       "gotchas": [
-        "If you subscribed in a mobile app, cancel through Apple or Google instead"
+        "If you subscribed via Apple App Store or Google Play, cancel there instead, not in the app",
+        "Cancel at least 24 hours before your next billing date to avoid being charged again"
       ],
       "refund_policy": "none"
     },
@@ -1078,5 +1118,475 @@
     },
     "verified": null,
     "icon": "virgin-media-uk.svg"
+  },
+  {
+    "id": "ideogram-us",
+    "name": "Ideogram",
+    "aliases": [
+      "ideogram.ai",
+      "ideogram ai"
+    ],
+    "category": "ai",
+    "region": "US",
+    "domain": "ideogram.ai",
+    "color": "#000000",
+    "price": null,
+    "plans": [
+      {
+        "id": "plus",
+        "name": "Plus",
+        "prices": [
+          {
+            "region": "US",
+            "amount": 1500,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://ideogram.ai/pricing/",
+            "note": "Billed annually at $180; $20/month if billed monthly"
+          }
+        ]
+      },
+      {
+        "id": "pro",
+        "name": "Pro",
+        "prices": [
+          {
+            "region": "US",
+            "amount": 4200,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://ideogram.ai/pricing/",
+            "note": "Billed annually at $504; $60/month if billed monthly"
+          }
+        ]
+      },
+      {
+        "id": "team",
+        "name": "Team",
+        "prices": [
+          {
+            "region": "US",
+            "amount": 2000,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://ideogram.ai/pricing/",
+            "note": "Per user/month, billed annually, minimum 2 users"
+          }
+        ]
+      }
+    ],
+    "match": [
+      "IDEOGRAM",
+      "IDEOGRAM.AI"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://ideogram.ai/plans",
+      "channels": [
+        "web"
+      ],
+      "steps": [
+        "Sign in and click your profile picture → Manage plan",
+        "Click 'Manage plan ↗' to open the billing portal",
+        "Click 'Cancel subscription' next to your current plan",
+        "Review the end-of-access date shown, then confirm"
+      ],
+      "notice_period_days": 5,
+      "gotchas": [
+        "Cancellations must be made at least 5 days before your renewal date per Ideogram's Terms of Service",
+        "Access continues until the end of the period already paid for",
+        "Purchased top-up credits expire one year from purchase, even after cancelling"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "apple-one-uk",
+    "name": "Apple One",
+    "aliases": [
+      "apple one bundle"
+    ],
+    "category": "other",
+    "region": "GB",
+    "domain": "apple.com",
+    "color": "#555555",
+    "price": null,
+    "plans": [
+      {
+        "id": "premier",
+        "name": "Premier",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 3695,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://www.apple.com/uk/apple-one/"
+          }
+        ]
+      }
+    ],
+    "match": [
+      "APPLE ONE",
+      "APPLE.COM/BILL"
+    ],
+    "cancel": {
+      "difficulty": 2,
+      "url": "https://support.apple.com/en-gb/HT211238",
+      "channels": [
+        "app",
+        "web"
+      ],
+      "steps": [
+        "On iPhone/iPad: Settings → your name at the top → Subscriptions → Apple One",
+        "Tap Cancel Subscription",
+        "Confirm. Access continues through the end of the current billing period."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "May offer a discount to stay"
+      ],
+      "gotchas": [
+        "Cancelling Apple One cancels the whole bundle — it does not separately cancel the individual services inside it",
+        "If you had an existing standalone subscription (e.g. iCloud+) before joining Apple One, check it did not resume separately"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "applecare-plus-uk",
+    "name": "AppleCare+",
+    "aliases": [
+      "applecare"
+    ],
+    "category": "insurance",
+    "region": "GB",
+    "domain": "apple.com",
+    "color": "#555555",
+    "price": null,
+    "plans": [
+      {
+        "id": "with-theft-loss",
+        "name": "With Theft and Loss",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1199,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://www.apple.com/uk/apple-care/",
+            "note": "Price varies by device model; this is a representative iPhone rate"
+          }
+        ]
+      }
+    ],
+    "match": [
+      "APPLECARE",
+      "APPLE CARE"
+    ],
+    "cancel": {
+      "difficulty": 2,
+      "phone": "0800 048 0087",
+      "channels": [
+        "app",
+        "phone"
+      ],
+      "steps": [
+        "On iPhone/iPad: Settings → your name → Subscriptions → AppleCare+",
+        "Tap Cancel Subscription and confirm",
+        "Alternatively, call Apple Support and ask them to cancel it for you"
+      ],
+      "notice_period_days": 0,
+      "gotchas": [
+        "Cancelling AppleCare+ does not affect the standard one-year limited warranty that came with the device",
+        "Coverage is per device, so cancelling one does not affect AppleCare+ on other devices"
+      ],
+      "refund_policy": "prorated"
+    },
+    "verified": null
+  },
+  {
+    "id": "dashlane-uk",
+    "name": "Dashlane",
+    "aliases": [
+      "dashlane.com",
+      "password manager"
+    ],
+    "category": "software",
+    "region": "GB",
+    "domain": "dashlane.com",
+    "color": "#4B7BF5",
+    "price": null,
+    "plans": [
+      {
+        "id": "premium",
+        "name": "Premium",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 3999,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-11",
+            "source": "https://www.dashlane.com/pricing",
+            "note": "Billed annually; check current site for monthly option"
+          }
+        ]
+      }
+    ],
+    "match": [
+      "DASHLANE"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://www.dashlane.com/account",
+      "channels": [
+        "web"
+      ],
+      "steps": [
+        "Sign in at my.dashlane.com and open Settings → Subscription",
+        "Choose Manage plan, then Cancel subscription",
+        "Confirm. Access continues through the end of the current billing period."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "May offer a discount to stay"
+      ],
+      "gotchas": [
+        "Your saved passwords remain in your local vault even after the subscription ends",
+        "If you subscribed via the App Store or Google Play, cancel there instead"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "fitbod",
+    "name": "Fitbod",
+    "aliases": [
+      "fitbod.me",
+      "workout app"
+    ],
+    "category": "fitness",
+    "domain": "fitbod.me",
+    "color": "#FF6B35",
+    "price": null,
+    "match": [
+      "FITBOD"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "channels": [
+        "app"
+      ],
+      "steps": [
+        "Fitbod subscriptions are billed through Apple App Store or Google Play, not directly by Fitbod",
+        "On iPhone/iPad: Settings → your name → Subscriptions → Fitbod → Cancel Subscription",
+        "On Android: Google Play → Subscriptions → Fitbod → Cancel subscription"
+      ],
+      "notice_period_days": 0,
+      "gotchas": [
+        "There is no cancellation option inside the Fitbod app itself — it must be done through the app store"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "google-photos-uk",
+    "name": "Google One (Google Photos storage)",
+    "aliases": [
+      "google storage",
+      "google photos"
+    ],
+    "category": "storage",
+    "region": "GB",
+    "domain": "google.com",
+    "color": "#4285F4",
+    "price": null,
+    "plans": [
+      {
+        "id": "100gb",
+        "name": "100 GB",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 199,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://one.google.com/about/plans"
+          }
+        ]
+      },
+      {
+        "id": "200gb",
+        "name": "200 GB",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 279,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://one.google.com/about/plans"
+          }
+        ]
+      },
+      {
+        "id": "2tb",
+        "name": "2 TB",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 999,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://one.google.com/about/plans"
+          }
+        ]
+      }
+    ],
+    "match": [
+      "GOOGLE *PHOTOS",
+      "GOOGLE STORAGE",
+      "GOOGLE ONE"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://one.google.com/storage",
+      "channels": [
+        "web",
+        "app"
+      ],
+      "steps": [
+        "Go to one.google.com/storage while signed in",
+        "Select your plan, then choose to downgrade to the free 15 GB tier",
+        "Confirm the change"
+      ],
+      "notice_period_days": 0,
+      "gotchas": [
+        "Files are not deleted if you go over the free limit, but new uploads, backups and syncing stop until you're back under it",
+        "Storage is shared across Gmail, Drive and Photos, so check total usage before downgrading"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "skylight-app",
+    "name": "Skylight",
+    "aliases": [
+      "skylight app",
+      "skylight calendar"
+    ],
+    "category": "software",
+    "domain": "skylightapp.com",
+    "color": "#6366F1",
+    "price": null,
+    "plans": [
+      {
+        "id": "plus",
+        "name": "Plus",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 600,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://www.skylightapp.com/"
+          }
+        ]
+      }
+    ],
+    "match": [
+      "SKYLIGHT",
+      "SKYLIGHT APP"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://www.skylightapp.com/account",
+      "channels": [
+        "app",
+        "web"
+      ],
+      "steps": [
+        "Open the Skylight app → Settings → Subscription → Manage subscription",
+        "Or sign in at skylightapp.com/account and open your subscription settings",
+        "Choose Cancel subscription and confirm"
+      ],
+      "notice_period_days": 0,
+      "gotchas": [
+        "If subscribed through the App Store or Google Play, cancel there instead",
+        "Your calendar and photo data remain accessible after cancellation"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
+  },
+  {
+    "id": "strava-uk",
+    "name": "Strava",
+    "aliases": [
+      "strava.com",
+      "running app"
+    ],
+    "category": "fitness",
+    "region": "GB",
+    "domain": "strava.com",
+    "color": "#FC5200",
+    "price": null,
+    "plans": [
+      {
+        "id": "summit",
+        "name": "Summit",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 5499,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-11",
+            "source": "https://www.strava.com/subscribe",
+            "note": "Annual price; a monthly option is also offered at a higher effective rate"
+          }
+        ]
+      }
+    ],
+    "match": [
+      "STRAVA"
+    ],
+    "cancel": {
+      "difficulty": 1,
+      "url": "https://www.strava.com/subscribe/manage",
+      "channels": [
+        "web",
+        "app"
+      ],
+      "steps": [
+        "Sign in on the web or open the app and go to Settings → Subscription",
+        "Choose Manage subscription, then Cancel subscription",
+        "Confirm. Access continues through the end of the current billing period."
+      ],
+      "notice_period_days": 0,
+      "retention_tactics": [
+        "May offer a discount or extension to stay"
+      ],
+      "gotchas": [
+        "If subscribed via Apple App Store or Google Play, cancel there instead",
+        "Your activity history and segments remain visible after cancellation — only Summit features are lost"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": null
   }
 ]

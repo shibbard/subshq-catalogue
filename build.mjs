@@ -129,6 +129,20 @@ function validate(entry, seenIds, glyphs) {
         check(pl, VALID_CYCLES.has(price.cycle), 'price.cycle is not a valid cycle');
         check(pl, ISO_DATE.test(price.verified ?? ''), 'a price needs the date it was checked');
         check(pl, typeof price.source === 'string' && price.source.startsWith('http'), 'a price needs the URL it was read from');
+
+        // Whether a figure includes VAT is not cosmetic: it decides whether an
+        // app can offer the number as-is or has to ask what the user was
+        // actually charged. UK consumer prices are quoted inclusive, US ones
+        // never are, and a US vendor billing a UK customer may add VAT at
+        // checkout without it appearing anywhere on the pricing page.
+        //
+        // `null` is the honest value when the page did not say, and is
+        // deliberately distinct from the field being left off — the first is a
+        // finding, the second is an oversight.
+        check(pl, 'tax_included' in price,
+          'a price must state tax_included: true, false, or null when the page did not say');
+        check(pl, price.tax_included === true || price.tax_included === false || price.tax_included === null,
+          'tax_included must be true, false or null');
       }
     }
   }

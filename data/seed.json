@@ -1137,6 +1137,15 @@
         "name": "Plus",
         "prices": [
           {
+            "region": "GB",
+            "amount": 1500,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://ideogram.ai/pricing/",
+            "note": "Ideogram bills in USD worldwide, no GBP pricing exists. Billed annually at $180; $20/month if billed monthly"
+          },
+          {
             "region": "US",
             "amount": 1500,
             "currency": "USD",
@@ -1152,6 +1161,15 @@
         "name": "Pro",
         "prices": [
           {
+            "region": "GB",
+            "amount": 4200,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://ideogram.ai/pricing/",
+            "note": "Ideogram bills in USD worldwide, no GBP pricing exists. Billed annually at $504; $60/month if billed monthly"
+          },
+          {
             "region": "US",
             "amount": 4200,
             "currency": "USD",
@@ -1166,6 +1184,15 @@
         "id": "team",
         "name": "Team",
         "prices": [
+          {
+            "region": "GB",
+            "amount": 2000,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://ideogram.ai/pricing/",
+            "note": "Ideogram bills in USD worldwide, no GBP pricing exists. Per user/month, billed annually, minimum 2 users"
+          },
           {
             "region": "US",
             "amount": 2000,

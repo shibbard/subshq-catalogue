@@ -1457,9 +1457,42 @@
       "workout app"
     ],
     "category": "fitness",
+    "region": "GB",
     "domain": "fitbod.me",
     "color": "#FF6B35",
     "price": null,
+    "plans": [
+      {
+        "id": "monthly",
+        "name": "Monthly",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1599,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://fitbod.me/",
+            "note": "Confirmed from an in-app UK checkout screen: $15.99/month standard price. Fitbod bills in USD even for UK customers. A 'WEB_DISCOUNT_10' promo code was showing 10% off ($14.39/mo) at time of checking — treat that as a temporary promo, not the standing price"
+          }
+        ]
+      },
+      {
+        "id": "yearly",
+        "name": "Yearly",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 799,
+            "currency": "USD",
+            "cycle": "monthly",
+            "verified": "2026-09-11",
+            "source": "https://fitbod.me/",
+            "note": "Confirmed from an in-app UK checkout screen: $95.99/year ($7.99/mo effective), standard price. A 'WEB_DISCOUNT_10' promo code was showing 10% off ($86.39/year, $7.20/mo) at time of checking — treat that as a temporary promo, not the standing price"
+          }
+        ]
+      }
+    ],
     "match": [
       "FITBOD"
     ],

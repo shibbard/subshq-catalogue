@@ -28,6 +28,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The feed version is the commit count, so a shallow clone
+          # would report 1 and the build would refuse to publish.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -43,6 +47,10 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The feed version is the commit count, so a shallow clone
+          # would report 1 and the build would refuse to publish.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22

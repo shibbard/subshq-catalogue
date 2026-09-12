@@ -8,6 +8,7 @@
 // Deliberately has no dependencies: it runs with plain node.
 
 import { copyFile, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -19,6 +20,13 @@ const OUT = path.join(OUT_DIR, 'catalogue.json');
 const ICON_DIR = path.join(OUT_DIR, 'icons');
 
 const SCHEMA = 1;
+
+/**
+ * The highest version any shipped app has already cached. The feed must never
+ * publish below this, or a client falling back to the version comparison would
+ * treat its stale copy as newer and stop updating.
+ */
+const MIN_VERSION = 15;
 const HEX = /^#[0-9A-Fa-f]{6}$/;
 
 const VALID_CATEGORIES = new Set([
@@ -154,6 +162,66 @@ function validate(entry, seenIds, glyphs) {
 }
 
 /**
+ * A monotonic version for the published feed: the repository's commit count.
+ *
+ * This used to be read back out of the last `dist/catalogue.json` and
+ * incremented. `dist/` is gitignored, so CI never had a previous build and
+ * every publish shipped version 1 — the counter had been dead since the day it
+ * was written, and the comment claiming "CI bumps it on merge" described
+ * something that could not happen.
+ *
+ * It mattered less than it looks because consumers compare `generated` first.
+ * But that left one missing field between a stale cache and a feed that never
+ * updates again: a v1 publish loses the fallback comparison to any cache with
+ * a higher number, permanently. The commit count cannot regress on a branch,
+ * needs no state carried between builds, and survives the clean checkout that
+ * broke the old scheme.
+ *
+ * CI must check out full history for this — see .github/workflows/publish.yml.
+ * A shallow clone reports 1 and would reintroduce the original bug, so a
+ * suspiciously low count is treated as a failure rather than published.
+ */
+function catalogueVersion() {
+  let count;
+  try {
+    count = Number(
+      execFileSync('git', ['rev-list', '--count', 'HEAD'], {
+        cwd: here,
+        encoding: 'utf8',
+        stdio: ['ignore', 'pipe', 'ignore'],
+      }).trim(),
+    );
+  } catch {
+    // No git: a tarball or an unpacked release. Nothing here can be trusted to
+    // be monotonic, so say so rather than invent a number that might go
+    // backwards for whoever is already running an older copy.
+    console.error('');
+    console.error('Cannot read the git history, so the feed version cannot be');
+    console.error('determined. Build from a git checkout.');
+    console.error('');
+    process.exit(1);
+  }
+
+  if (!Number.isInteger(count) || count < MIN_VERSION) {
+    console.error('');
+    console.error(`Refusing to publish version ${count}: that is below the`);
+    console.error(`${MIN_VERSION} already shipped, so an app holding a newer`);
+    console.error('cached copy would ignore this feed if it ever fell back to');
+    console.error('comparing version numbers.');
+    console.error('');
+    console.error('This is almost always a shallow clone. CI needs:');
+    console.error('');
+    console.error('  - uses: actions/checkout@v4');
+    console.error('    with:');
+    console.error('      fetch-depth: 0');
+    console.error('');
+    process.exit(1);
+  }
+
+  return count;
+}
+
+/**
  * Fills in what can be derived rather than demanding it be typed. A bank
  * descriptor is almost always the service name in capitals, so that is the
  * default; anything unusual still has to be listed explicitly.
@@ -217,16 +285,13 @@ async function main() {
 
   entries.sort((a, b) => a.name.localeCompare(b.name));
 
-  // The version is a monotonic counter; CI bumps it on merge. Locally we derive
-  // it from the entry count and content so a rebuild is deterministic.
-  const previous = await readFile(OUT, 'utf8').then((t) => JSON.parse(t)).catch(() => null);
-  const body = JSON.stringify(entries);
-  const changed = !previous || JSON.stringify(previous.entries) !== body;
-  const version = previous ? previous.version + (changed ? 1 : 0) : 1;
+  const version = catalogueVersion();
 
   const catalogue = {
     schema: SCHEMA,
     version,
+    // Required, and the field consumers compare first. A feed without it falls
+    // back to `version`, which is why that number has to be trustworthy too.
     generated: new Date().toISOString(),
     entries,
   };

@@ -54,7 +54,8 @@
           }
         ]
       }
-    ]
+    ],
+    "manage_url": "https://apps.apple.com/account/subscriptions"
   },
   {
     "id": "amazon-music",
@@ -180,7 +181,8 @@
           }
         ]
       }
-    ]
+    ],
+    "manage_url": "https://apps.apple.com/account/subscriptions"
   },
   {
     "id": "britbox",
@@ -324,7 +326,7 @@
             "cycle": "annual",
             "verified": "2026-09-10",
             "source": "https://www.canva.com/en_gb/pricing/",
-            "note": "Per person",
+            "note": "Per person. The page shows £100/year; a UK invoice charged £99.99",
             "tax_included": true
           }
         ]
@@ -523,16 +525,6 @@
     "price": null,
     "verified": null,
     "icon": "perplexity.svg"
-  },
-  {
-    "id": "strava",
-    "name": "Strava",
-    "category": "fitness",
-    "domain": "strava.com",
-    "color": "#FC4C02",
-    "price": null,
-    "verified": null,
-    "icon": "strava.svg"
   },
   {
     "id": "myfitnesspal",
@@ -764,6 +756,14 @@
     "category": "other",
     "domain": "ancestry.co.uk",
     "color": "#9CAF88",
+    "price": null,
+    "verified": null
+  },
+  {
+    "id": "kittl",
+    "name": "Kittl",
+    "category": "software",
+    "domain": "kittl.com",
     "price": null,
     "verified": null
   }

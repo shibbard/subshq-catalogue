@@ -901,22 +901,23 @@
         "prices": [
           {
             "region": "GB",
-            "amount": 1500,
+            "amount": 18000,
             "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-11",
+            "cycle": "annual",
+            "verified": "2026-09-13",
             "source": "https://claude.com/pricing",
             "tax_included": true,
-            "note": "Billed annually at £180"
+            "note": "Billed annually; the page shows this as £15/month"
           },
           {
             "region": "US",
-            "amount": 2000,
+            "amount": 20000,
             "currency": "USD",
-            "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.claude.com/pricing",
-            "tax_included": false
+            "cycle": "annual",
+            "verified": "2026-09-13",
+            "source": "https://claude.com/pricing",
+            "tax_included": false,
+            "note": "$200 billed up front; the page shows this as $17/month. $20 if billed monthly"
           }
         ]
       },
@@ -1102,7 +1103,8 @@
       "refund_policy": "none"
     },
     "verified": null,
-    "icon": "apple-icloud-uk.svg"
+    "icon": "apple-icloud-uk.svg",
+    "manage_url": "https://apps.apple.com/account/subscriptions"
   },
   {
     "id": "puregym-uk",
@@ -1277,9 +1279,9 @@
         "prices": [
           {
             "region": "GB",
-            "amount": 1500,
+            "amount": 18000,
             "currency": "USD",
-            "cycle": "monthly",
+            "cycle": "annual",
             "verified": "2026-09-11",
             "source": "https://ideogram.ai/pricing/",
             "tax_included": false,
@@ -1309,9 +1311,9 @@
         "prices": [
           {
             "region": "GB",
-            "amount": 4200,
+            "amount": 50400,
             "currency": "USD",
-            "cycle": "monthly",
+            "cycle": "annual",
             "verified": "2026-09-11",
             "source": "https://ideogram.ai/pricing/",
             "tax_included": false,
@@ -1325,13 +1327,13 @@
         "prices": [
           {
             "region": "GB",
-            "amount": 2000,
+            "amount": 24000,
             "currency": "USD",
-            "cycle": "monthly",
+            "cycle": "annual",
             "verified": "2026-09-11",
             "source": "https://ideogram.ai/pricing/",
             "tax_included": false,
-            "note": "Per user/month, billed annually, minimum 2 users. Plus VAT for UK customers. Not verified against an actual receipt."
+            "note": "Per user, billed annually ($20/user/month), minimum 2 users. Plus VAT for UK customers. Not verified against an actual receipt."
           }
         ]
       }
@@ -1375,6 +1377,66 @@
     "price": null,
     "plans": [
       {
+        "id": "individual",
+        "name": "Individual",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1895,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-13",
+            "source": "https://www.apple.com/uk/apple-one/",
+            "tax_included": true
+          }
+        ],
+        "note": "Also includes Apple Arcade",
+        "includes": [
+          {
+            "entry": "apple-icloud-uk",
+            "plan": "50gb"
+          },
+          {
+            "entry": "apple-tv-plus",
+            "plan": "standard"
+          },
+          {
+            "entry": "apple-music",
+            "plan": "individual"
+          }
+        ]
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 2495,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-13",
+            "source": "https://www.apple.com/uk/apple-one/",
+            "tax_included": true
+          }
+        ],
+        "note": "Also includes Apple Arcade. Shareable with up to five others",
+        "includes": [
+          {
+            "entry": "apple-icloud-uk",
+            "plan": "200gb"
+          },
+          {
+            "entry": "apple-tv-plus",
+            "plan": "standard"
+          },
+          {
+            "entry": "apple-music",
+            "plan": "family"
+          }
+        ]
+      },
+      {
         "id": "premier",
         "name": "Premier",
         "prices": [
@@ -1383,9 +1445,24 @@
             "amount": 3695,
             "currency": "GBP",
             "cycle": "monthly",
-            "verified": "2026-09-11",
+            "verified": "2026-09-13",
             "source": "https://www.apple.com/uk/apple-one/",
             "tax_included": true
+          }
+        ],
+        "note": "Also includes Apple Arcade, Fitness+ and News+. Shareable with up to five others",
+        "includes": [
+          {
+            "entry": "apple-icloud-uk",
+            "plan": "2tb"
+          },
+          {
+            "entry": "apple-tv-plus",
+            "plan": "standard"
+          },
+          {
+            "entry": "apple-music",
+            "plan": "family"
           }
         ]
       }
@@ -1416,7 +1493,8 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null
+    "verified": null,
+    "manage_url": "https://apps.apple.com/account/subscriptions"
   },
   {
     "id": "applecare-plus-uk",
@@ -1470,7 +1548,8 @@
       ],
       "refund_policy": "prorated"
     },
-    "verified": null
+    "verified": null,
+    "manage_url": "https://apps.apple.com/account/subscriptions"
   },
   {
     "id": "dashlane-uk",
@@ -1563,13 +1642,24 @@
         "prices": [
           {
             "region": "GB",
-            "amount": 799,
+            "amount": 9599,
             "currency": "USD",
-            "cycle": "monthly",
+            "cycle": "annual",
             "verified": "2026-09-11",
             "source": "https://fitbod.me/",
             "note": "Confirmed from an in-app UK checkout screen: $95.99/year ($7.99/mo effective), standard price. A 'WEB_DISCOUNT_10' promo code was showing 10% off ($86.39/year, $7.20/mo) at time of checking — treat that as a temporary promo, not the standing price",
             "tax_included": null
+          },
+          {
+            "region": "GB",
+            "amount": 9999,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-13",
+            "source": "https://apps.apple.com/gb/app/id1041517543",
+            "tax_included": true,
+            "billed_via": "apple",
+            "note": "In-app purchase \"A Year of Fitbod Elite\", billed by Apple. Matches a UK Apple invoice: £99.99 inclusive of VAT at 20%. The listing also shows legacy and discounted prices"
           }
         ]
       }
@@ -1597,10 +1687,13 @@
   },
   {
     "id": "google-photos-uk",
-    "name": "Google One (Google Photos storage)",
+    "name": "Google One",
     "aliases": [
       "google storage",
-      "google photos"
+      "google photos",
+      "google ai pro",
+      "google ai plus",
+      "gemini"
     ],
     "category": "storage",
     "region": "GB",
@@ -1610,46 +1703,62 @@
     "plans": [
       {
         "id": "100gb",
-        "name": "100 GB",
+        "name": "Basic 100 GB",
         "prices": [
           {
             "region": "GB",
-            "amount": 199,
+            "amount": 159,
             "currency": "GBP",
             "cycle": "monthly",
-            "verified": "2026-09-11",
+            "verified": "2026-09-13",
             "source": "https://one.google.com/about/plans",
             "tax_included": true
           }
         ]
       },
       {
-        "id": "200gb",
-        "name": "200 GB",
+        "id": "ai-plus",
+        "name": "Google AI Plus (2 TB)",
         "prices": [
           {
             "region": "GB",
-            "amount": 279,
+            "amount": 799,
             "currency": "GBP",
             "cycle": "monthly",
-            "verified": "2026-09-11",
+            "verified": "2026-09-13",
             "source": "https://one.google.com/about/plans",
             "tax_included": true
           }
         ]
       },
       {
-        "id": "2tb",
-        "name": "2 TB",
+        "id": "ai-pro",
+        "name": "Google AI Pro (5 TB)",
+        "includes": [
+          {
+            "entry": "youtube-premium-uk",
+            "plan": "lite"
+          }
+        ],
         "prices": [
           {
             "region": "GB",
-            "amount": 999,
+            "amount": 1899,
             "currency": "GBP",
             "cycle": "monthly",
-            "verified": "2026-09-11",
+            "verified": "2026-09-13",
             "source": "https://one.google.com/about/plans",
             "tax_included": true
+          },
+          {
+            "region": "GB",
+            "amount": 18999,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-13",
+            "source": "https://one.google.com/settings",
+            "tax_included": true,
+            "note": "Shown on the signed-in membership page as \"Save 16% with annual billing\"; the public plans page gives only the monthly price"
           }
         ]
       }
@@ -1678,7 +1787,9 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null
+    "verified": null,
+    "icon": "google-photos-uk.svg",
+    "manage_url": "https://one.google.com/settings"
   },
   {
     "id": "skylight-app",
@@ -1788,6 +1899,43 @@
       ],
       "refund_policy": "none"
     },
+    "verified": null,
+    "icon": "strava-uk.svg"
+  },
+  {
+    "id": "moshi-kids",
+    "name": "Moshi Kids",
+    "aliases": [
+      "moshi",
+      "moshi sleep"
+    ],
+    "category": "other",
+    "region": "GB",
+    "domain": "moshikids.com",
+    "price": null,
+    "manage_url": "https://apps.apple.com/account/subscriptions",
+    "plans": [
+      {
+        "id": "monthly",
+        "name": "Monthly",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 799,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-13",
+            "source": "https://apps.apple.com/gb/app/moshi-kids-sleep-relax-play/id1306719339",
+            "tax_included": true,
+            "billed_via": "apple",
+            "note": "In-app purchase \"Moshi Monthly Subscription\", billed by Apple. The listing also shows £9.99 monthly options"
+          }
+        ]
+      }
+    ],
+    "match": [
+      "MOSHI"
+    ],
     "verified": null
   }
 ]

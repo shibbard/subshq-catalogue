@@ -36,6 +36,58 @@ const VALID_CATEGORIES = new Set([
 ]);
 const VALID_CHANNELS = new Set(['web', 'app', 'phone', 'email', 'post', 'chat']);
 const VALID_CYCLES = new Set(['weekly', 'monthly', 'quarterly', 'biannual', 'annual', 'custom']);
+// Who takes the money when it isn't the service itself. Matches the app's
+// `billedVia`; an absent field means the service bills you directly.
+const VALID_BILLERS = new Set(['apple', 'google']);
+
+/** Two entries with this key are the same service, whatever their ids. */
+function nameKey(name) {
+  return name.toLowerCase().replace(/\([^)]*\)/g, '').replace(/[^a-z0-9]/g, '');
+}
+
+/**
+ * Checks that need the whole catalogue rather than one entry at a time.
+ *
+ * Duplicate names: the Wikipedia import deduplicated on id and domain only, so
+ * a stub "Amazon Prime" on amazon.com sat beside the priced "Amazon Prime" on
+ * amazon.co.uk. Searching showed both, and a first-run screen of services to
+ * tap would show both side by side. Five such pairs had accumulated.
+ *
+ * Includes: a bundle pointing at an entry or plan that doesn't exist would
+ * silently stop warning anyone about paying twice.
+ */
+function validateCatalogue(entries) {
+  const byName = new Map();
+  for (const entry of entries) {
+    if (typeof entry.name !== 'string') continue;
+    const key = nameKey(entry.name);
+    if (byName.has(key)) {
+      errors.push(`${entry.id}: same service as ${byName.get(key)} — merge them rather than keeping two`);
+    } else {
+      byName.set(key, entry.id);
+    }
+  }
+
+  const byId = new Map(entries.map((e) => [e.id, e]));
+  for (const entry of entries) {
+    // Where someone can see what they pay and when it renews. Linked, never
+    // fetched, so it costs nothing in privacy.
+    if (entry.manage_url !== undefined) {
+      check(entry.id, typeof entry.manage_url === 'string' && entry.manage_url.startsWith('https://'),
+        'manage_url must be an https URL');
+    }
+    for (const plan of entry.plans ?? []) {
+      for (const inc of plan.includes ?? []) {
+        const target = byId.get(inc.entry);
+        check(`${entry.id}/${plan.id}`, Boolean(target), `includes unknown entry "${inc.entry}"`);
+        if (target && inc.plan !== undefined) {
+          check(`${entry.id}/${plan.id}`, (target.plans ?? []).some((p) => p.id === inc.plan),
+            `includes unknown plan "${inc.entry}/${inc.plan}"`);
+        }
+      }
+    }
+  }
+}
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 const errors = [];
@@ -126,12 +178,37 @@ function validate(entry, seenIds, glyphs) {
       // Prices carry their own region, date and source. A price nobody can
       // trace back to the page it came from is an assertion, not a fact, and
       // the whole point of this file is that its claims are checkable.
+      if (plan.includes !== undefined) {
+        check(label, Array.isArray(plan.includes) && plan.includes.length > 0, 'includes must be a non-empty array');
+        for (const inc of plan.includes ?? []) {
+          check(label, typeof inc.entry === 'string', 'each includes item needs an entry id');
+        }
+      }
+
+      // Two rows may share a region and cycle when they differ in currency or in
+      // who bills: Fitbod sells a year at $95.99 on its site and £99.99 through
+      // the App Store, and both are true.
       const seenRegions = new Set();
       for (const price of plan.prices ?? []) {
         const pl = `${label}/${price.region ?? '(no region)'}`;
+        const key = `${price.region}:${price.currency}:${price.cycle}:${price.billed_via ?? 'direct'}`;
         check(pl, /^[A-Z]{2}$/.test(price.region ?? ''), 'price.region must be an ISO alpha-2 code');
-        check(pl, !seenRegions.has(`${price.region}:${price.cycle}`), 'duplicate region and cycle for this plan');
-        seenRegions.add(`${price.region}:${price.cycle}`);
+        check(pl, !seenRegions.has(key), 'duplicate region, currency, cycle and biller for this plan');
+        seenRegions.add(key);
+        if (price.billed_via !== undefined) {
+          check(pl, VALID_BILLERS.has(price.billed_via), `billed_via must be one of ${[...VALID_BILLERS].join(', ')}`);
+        }
+
+        // An annual plan recorded at its monthly equivalent annualises to the
+        // right figure, which is why it went unnoticed, but every date built on
+        // it is wrong: the app shows £15 due each month instead of £180 once a
+        // year. Record what is charged, when it is charged. The one legitimate
+        // exception is a yearly contract that really is billed each month.
+        const describesYear = /annual|yearly|per year|\/year/i.test(`${plan.name} ${price.note ?? ''}`);
+        if (price.cycle === 'monthly' && describesYear) {
+          check(pl, /billed monthly/i.test(price.note ?? ''),
+            'looks like an annual plan stored as a monthly amount. Use cycle "annual" with the amount charged, or say "billed monthly" in the note if that is genuinely how it is charged');
+        }
         check(pl, Number.isInteger(price.amount), 'price.amount must be an integer in minor units');
         check(pl, typeof price.currency === 'string' && /^[A-Z]{3}$/.test(price.currency), 'price.currency must be ISO 4217');
         check(pl, VALID_CYCLES.has(price.cycle), 'price.cycle is not a valid cycle');
@@ -270,6 +347,7 @@ async function main() {
 
   const seenIds = new Set();
   for (const entry of entries) validate(entry, seenIds, glyphs);
+  validateCatalogue(entries);
 
   if (errors.length > 0) {
     console.error(`\nCatalogue build failed with ${errors.length} error(s):\n`);

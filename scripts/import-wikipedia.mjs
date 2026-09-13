@@ -147,9 +147,15 @@ function slugify(name) {
     .replace(/^-|-$/g, '');
 }
 
+/** Same rule as the build's duplicate-name check. */
+function nameKey(name) {
+  return name.toLowerCase().replace(/\([^)]*\)/g, '').replace(/[^a-z0-9]/g, '');
+}
+
 async function existingIdsAndDomains() {
   const ids = new Set();
   const domains = new Set();
+  const names = new Set();
   const files = (await readdir(DATA_DIR)).filter((f) => f.endsWith('.json'));
   for (const f of files) {
     if (f === path.basename(OUT)) continue;
@@ -157,13 +163,14 @@ async function existingIdsAndDomains() {
     for (const e of Array.isArray(parsed) ? parsed : [parsed]) {
       if (e.id) ids.add(e.id);
       if (e.domain) domains.add(e.domain.toLowerCase());
+      if (e.name) names.add(nameKey(e.name));
     }
   }
-  return { ids, domains };
+  return { ids, domains, names };
 }
 
 async function main() {
-  const { ids: takenIds, domains: takenDomains } = await existingIdsAndDomains();
+  const { ids: takenIds, domains: takenDomains, names: takenNames } = await existingIdsAndDomains();
 
   const byTitle = new Map();
   for (const src of SOURCES) {
@@ -207,6 +214,13 @@ async function main() {
     }
 
     const name = cleanName(title);
+    // A regional domain is still the same service: amazon.com's "Amazon Prime"
+    // must not be added beside amazon.co.uk's. The build now rejects that.
+    if (takenNames.has(nameKey(name))) {
+      duplicates.push(title);
+      continue;
+    }
+    takenNames.add(nameKey(name));
     let id = slugify(name);
     if (takenIds.has(id)) {
       duplicates.push(title);

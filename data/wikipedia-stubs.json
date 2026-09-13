@@ -54,17 +54,6 @@
     "verified": null
   },
   {
-    "id": "amazon-prime",
-    "name": "Amazon Prime",
-    "category": "other",
-    "domain": "amazon.com",
-    "price": null,
-    "wikipedia": "Amazon Prime",
-    "verified": null,
-    "color": "#00A8E1",
-    "icon": "amazon-prime.svg"
-  },
-  {
     "id": "amazon-prime-video",
     "name": "Amazon Prime Video",
     "category": "streaming",
@@ -130,17 +119,6 @@
     "price": null,
     "wikipedia": "Atresplayer",
     "verified": null
-  },
-  {
-    "id": "audible",
-    "name": "Audible",
-    "category": "other",
-    "domain": "audible.com",
-    "price": null,
-    "wikipedia": "Audible (service)",
-    "verified": null,
-    "color": "#F8991C",
-    "icon": "audible.svg"
   },
   {
     "id": "bahamut-animation-crazy",
@@ -691,17 +669,6 @@
     "verified": null
   },
   {
-    "id": "google-one",
-    "name": "Google One",
-    "category": "other",
-    "domain": "one.google.com",
-    "price": null,
-    "wikipedia": "Google One",
-    "verified": null,
-    "color": "#4285F4",
-    "icon": "google-one.svg"
-  },
-  {
     "id": "google-play-pass",
     "name": "Google Play Pass",
     "category": "other",
@@ -1030,15 +997,6 @@
     "domain": "mgmplus.com",
     "price": null,
     "wikipedia": "MGM+",
-    "verified": null
-  },
-  {
-    "id": "microsoft-365",
-    "name": "Microsoft 365",
-    "category": "other",
-    "domain": "office365.com",
-    "price": null,
-    "wikipedia": "Microsoft 365",
     "verified": null
   },
   {

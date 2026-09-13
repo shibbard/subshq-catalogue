@@ -62,11 +62,14 @@ nothing, because someone will trust it.
   "region": "GB",
   "domain": "netflix.com",
   "color": "#E50914",
+  "manage_url": "https://www.netflix.com/account", // where you see your plan and renewal date
   "plans": [
     { "id": "standard", "name": "Standard",
+      "includes": [{ "entry": "…", "plan": "…" }], // other services this plan comes with
       "prices": [
         { "region": "GB", "amount": 1399, "currency": "GBP", "cycle": "monthly",
           "tax_included": true,            // true | false | null — see below
+          "billed_via": "apple",           // optional: apple | google, when they bill instead
           "verified": "2026-09-10",
           "source": "https://www.netflix.com/signup/planform" }
       ] }
@@ -110,6 +113,37 @@ US prices never are; and a US vendor billing a UK customer may add 20% at
 checkout that appears nowhere on the pricing page — Ideogram's $20.00 plan
 charges a UK customer $24.00. An app that shows the headline figure as the
 amount someone pays would be wrong by a fifth, with no way to tell.
+
+### Cycles: record what is charged, when it is charged
+
+An annual plan is `"cycle": "annual"` with the yearly amount — £180, not "£15 a
+month". The monthly equivalent annualises to the same total, which is why it
+slips through, but every date built on it is wrong: an app would show £15 due
+each month instead of £180 once a year. The build rejects a monthly price whose
+plan or note says annual, unless the note says it is genuinely "billed monthly".
+
+### `billed_via`
+
+Optional, `apple` or `google`, for a price charged through an app store rather
+than by the service. The same plan can cost different amounts depending on who
+bills: Fitbod's year is $95.99 on its site and £99.99 through the App Store.
+Both are true, so both are recorded, and a plan may hold two prices for the
+same region and cycle as long as the currency or biller differs.
+
+### `includes`
+
+What a plan comes with that is also sold on its own — Google AI Pro includes
+YouTube Premium Lite; Apple One Premier includes iCloud+ 2 TB, Apple Music and
+Apple TV. Each item names an `entry` id and, optionally, a `plan` id, and the
+build fails if either doesn't exist. Apps use it to warn someone before they
+track, and pay for, something they already have.
+
+### `manage_url`
+
+Where a subscriber can see their own plan, price and renewal date. Not the
+cancel route, though often the same page. For anything billed through Apple it
+is `https://apps.apple.com/account/subscriptions`. It is only ever a link the
+user taps: never fetched.
 
 ## Icons
 

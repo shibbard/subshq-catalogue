@@ -7,7 +7,7 @@
 //
 // Deliberately has no dependencies: it runs with plain node.
 
-import { copyFile, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
@@ -15,9 +15,7 @@ import path from 'node:path';
 const here = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(here, 'data');
 const OUT_DIR = path.join(here, 'dist');
-const ICON_SRC = path.join(here, 'icons');
 const OUT = path.join(OUT_DIR, 'catalogue.json');
-const ICON_DIR = path.join(OUT_DIR, 'icons');
 
 const SCHEMA = 1;
 
@@ -97,7 +95,7 @@ function check(id, condition, message) {
   if (!condition) errors.push(`${id}: ${message}`);
 }
 
-function validate(entry, seenIds, glyphs) {
+function validate(entry, seenIds) {
   const id = entry.id ?? '(missing id)';
 
   check(id, typeof entry.id === 'string' && entry.id.length > 0, 'id is required');
@@ -126,7 +124,7 @@ function validate(entry, seenIds, glyphs) {
   }
 
   // A stub — an entry with no cancel block — is a legitimate state. It gets a
-  // service into search with its name and icon so a subscription can be added,
+  // service into search with its name so a subscription can be added,
   // while being honest that nobody has worked out how to leave it yet. The app
   // shows those differently from a service that is missing entirely.
   const c = entry.cancel;
@@ -158,12 +156,10 @@ function validate(entry, seenIds, glyphs) {
     check(id, HEX.test(entry.color), 'color must be a 6-digit hex like "#E50914"');
   }
 
-  // Apps ship the glyphs in icons/ and draw `icon` from that set, so any other
-  // name points at a file no install has. See the icons note below.
-  if (entry.icon !== undefined) {
-    check(id, entry.icon === `${entry.id}.svg`, `icon must be "${entry.id}.svg", the glyph named after the entry`);
-    check(id, glyphs.has(entry.icon), `icon "${entry.icon}" has no file in icons/`);
-  }
+  // No logos. This data is public domain, and nobody can grant that for a
+  // company's logo, so apps bundle their own, named after the entry id.
+  check(id, entry.icon === undefined,
+    'icon is not part of this public data: apps bundle their own logos, named after the entry id');
 
   if (entry.plans !== undefined) {
     check(id, Array.isArray(entry.plans) && entry.plans.length > 0, 'plans must be a non-empty array');
@@ -309,20 +305,6 @@ function normaliseEntry(entry) {
   }
 }
 
-// --- icons -----------------------------------------------------------------
-//
-// Brand marks are Simple Icons glyphs, fetched by scripts/enrich-icons.mjs and
-// committed under icons/ as <id>.svg, which also sets `icon` in the data. The
-// build only copies them, so it needs no network and is reproducible.
-//
-// Apps bundle the same glyphs and never fetch an icon at runtime: a request for
-// netflix.com's icon while the app is open would tell Netflix (or whichever
-// host served it) that this user tracks a Netflix subscription.
-//
-// `icon` is taken from the data and nothing else. This build used to scrape
-// favicons and carry icon names forward from its previous output, and in CI
-// that replaced the glyph names with .ico and .png files no app ships.
-
 async function main() {
   await mkdir(OUT_DIR, { recursive: true });
 
@@ -343,10 +325,8 @@ async function main() {
 
   for (const entry of entries) normaliseEntry(entry);
 
-  const glyphs = new Set((await readdir(ICON_SRC).catch(() => [])).filter((f) => f.endsWith('.svg')));
-
   const seenIds = new Set();
-  for (const entry of entries) validate(entry, seenIds, glyphs);
+  for (const entry of entries) validate(entry, seenIds);
   validateCatalogue(entries);
 
   if (errors.length > 0) {
@@ -354,11 +334,6 @@ async function main() {
     for (const e of errors) console.error(`  ✗ ${e}`);
     console.error('\nA malformed entry must fail the build, not ship.\n');
     process.exit(1);
-  }
-
-  await mkdir(ICON_DIR, { recursive: true });
-  for (const f of glyphs) {
-    await copyFile(path.join(ICON_SRC, f), path.join(ICON_DIR, f));
   }
 
   entries.sort((a, b) => a.name.localeCompare(b.name));

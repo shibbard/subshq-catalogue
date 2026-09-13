@@ -7,7 +7,6 @@
     "color": "#FA243C",
     "price": null,
     "verified": null,
-    "icon": "apple-music.svg",
     "plans": [
       {
         "id": "individual",
@@ -64,8 +63,7 @@
     "domain": "music.amazon.co.uk",
     "color": "#46C3D0",
     "price": null,
-    "verified": null,
-    "icon": "amazon-music.svg"
+    "verified": null
   },
   {
     "id": "tidal",
@@ -74,8 +72,7 @@
     "domain": "tidal.com",
     "color": "#000000",
     "price": null,
-    "verified": null,
-    "icon": "tidal.svg"
+    "verified": null
   },
   {
     "id": "deezer",
@@ -94,7 +91,6 @@
     "color": "#FF5E00",
     "price": null,
     "verified": null,
-    "icon": "crunchyroll.svg",
     "plans": [
       {
         "id": "fan",
@@ -153,8 +149,7 @@
     "domain": "paramountplus.com",
     "color": "#0064FF",
     "price": null,
-    "verified": null,
-    "icon": "paramount-plus.svg"
+    "verified": null
   },
   {
     "id": "apple-tv-plus",
@@ -164,7 +159,6 @@
     "color": "#000000",
     "price": null,
     "verified": null,
-    "icon": "apple-tv-plus.svg",
     "plans": [
       {
         "id": "standard",
@@ -200,8 +194,7 @@
     "domain": "mubi.com",
     "color": "#000000",
     "price": null,
-    "verified": null,
-    "icon": "mubi.svg"
+    "verified": null
   },
   {
     "id": "xbox-game-pass",
@@ -228,8 +221,7 @@
     "domain": "ea.com",
     "color": "#000000",
     "price": null,
-    "verified": null,
-    "icon": "ea-play.svg"
+    "verified": null
   },
   {
     "id": "dropbox",
@@ -239,7 +231,6 @@
     "color": "#0061FF",
     "price": null,
     "verified": null,
-    "icon": "dropbox.svg",
     "plans": [
       {
         "id": "plus",
@@ -265,8 +256,7 @@
     "domain": "backblaze.com",
     "color": "#E21E29",
     "price": null,
-    "verified": null,
-    "icon": "backblaze.svg"
+    "verified": null
   },
   {
     "id": "notion",
@@ -275,8 +265,7 @@
     "domain": "notion.so",
     "color": "#000000",
     "price": null,
-    "verified": null,
-    "icon": "notion.svg"
+    "verified": null
   },
   {
     "id": "figma",
@@ -286,7 +275,6 @@
     "color": "#F24E1E",
     "price": null,
     "verified": null,
-    "icon": "figma.svg",
     "plans": [
       {
         "id": "professional",
@@ -313,7 +301,6 @@
     "color": "#00C4CC",
     "price": null,
     "verified": null,
-    "icon": "canva.svg",
     "plans": [
       {
         "id": "pro",
@@ -357,7 +344,6 @@
     "color": "#027E6F",
     "price": null,
     "verified": null,
-    "icon": "grammarly.svg",
     "plans": [
       {
         "id": "pro",
@@ -383,8 +369,7 @@
     "domain": "evernote.com",
     "color": "#00A82D",
     "price": null,
-    "verified": null,
-    "icon": "evernote.svg"
+    "verified": null
   },
   {
     "id": "todoist",
@@ -393,8 +378,7 @@
     "domain": "todoist.com",
     "color": "#E44332",
     "price": null,
-    "verified": null,
-    "icon": "todoist.svg"
+    "verified": null
   },
   {
     "id": "setapp",
@@ -403,8 +387,7 @@
     "domain": "setapp.com",
     "color": "#E6C3A5",
     "price": null,
-    "verified": null,
-    "icon": "setapp.svg"
+    "verified": null
   },
   {
     "id": "1password",
@@ -414,7 +397,6 @@
     "color": "#3B66BC",
     "price": null,
     "verified": null,
-    "icon": "1password.svg",
     "plans": [
       {
         "id": "individual",
@@ -455,8 +437,7 @@
     "domain": "github.com",
     "color": "#000000",
     "price": null,
-    "verified": null,
-    "icon": "github-copilot.svg"
+    "verified": null
   },
   {
     "id": "linkedin-premium",
@@ -474,8 +455,7 @@
     "domain": "nordvpn.com",
     "color": "#4687FF",
     "price": null,
-    "verified": null,
-    "icon": "nordvpn.svg"
+    "verified": null
   },
   {
     "id": "expressvpn",
@@ -484,8 +464,7 @@
     "domain": "expressvpn.com",
     "color": "#DA3940",
     "price": null,
-    "verified": null,
-    "icon": "expressvpn.svg"
+    "verified": null
   },
   {
     "id": "surfshark",
@@ -494,8 +473,7 @@
     "domain": "surfshark.com",
     "color": "#1EBFBF",
     "price": null,
-    "verified": null,
-    "icon": "surfshark.svg"
+    "verified": null
   },
   {
     "id": "proton",
@@ -504,8 +482,7 @@
     "domain": "proton.me",
     "color": "#6D4AFF",
     "price": null,
-    "verified": null,
-    "icon": "proton.svg"
+    "verified": null
   },
   {
     "id": "midjourney",
@@ -523,8 +500,7 @@
     "domain": "perplexity.ai",
     "color": "#1FB8CD",
     "price": null,
-    "verified": null,
-    "icon": "perplexity.svg"
+    "verified": null
   },
   {
     "id": "myfitnesspal",
@@ -578,8 +554,7 @@
     "domain": "duolingo.com",
     "color": "#58CC02",
     "price": null,
-    "verified": null,
-    "icon": "duolingo.svg"
+    "verified": null
   },
   {
     "id": "babbel",
@@ -597,8 +572,7 @@
     "domain": "skillshare.com",
     "color": "#00FF84",
     "price": null,
-    "verified": null,
-    "icon": "skillshare.svg"
+    "verified": null
   },
   {
     "id": "coursera",
@@ -607,8 +581,7 @@
     "domain": "coursera.org",
     "color": "#0056D2",
     "price": null,
-    "verified": null,
-    "icon": "coursera.svg"
+    "verified": null
   },
   {
     "id": "the-times",
@@ -626,8 +599,7 @@
     "domain": "theguardian.com",
     "color": "#052962",
     "price": null,
-    "verified": null,
-    "icon": "the-guardian.svg"
+    "verified": null
   },
   {
     "id": "financial-times",
@@ -663,8 +635,7 @@
     "domain": "substack.com",
     "color": "#FF6719",
     "price": null,
-    "verified": null,
-    "icon": "substack.svg"
+    "verified": null
   },
   {
     "id": "vodafone-uk",
@@ -674,8 +645,7 @@
     "domain": "vodafone.co.uk",
     "color": "#E60000",
     "price": null,
-    "verified": null,
-    "icon": "vodafone-uk.svg"
+    "verified": null
   },
   {
     "id": "ee-uk",
@@ -695,8 +665,7 @@
     "domain": "o2.co.uk",
     "color": "#0050FF",
     "price": null,
-    "verified": null,
-    "icon": "o2-uk.svg"
+    "verified": null
   },
   {
     "id": "three-uk",
@@ -716,8 +685,7 @@
     "domain": "bt.com",
     "color": "#6400AA",
     "price": null,
-    "verified": null,
-    "icon": "bt-uk.svg"
+    "verified": null
   },
   {
     "id": "sky-uk",
@@ -727,8 +695,7 @@
     "domain": "sky.com",
     "color": "#0072C9",
     "price": null,
-    "verified": null,
-    "icon": "sky-uk.svg"
+    "verified": null
   },
   {
     "id": "uber-one",
@@ -737,8 +704,7 @@
     "domain": "uber.com",
     "color": "#000000",
     "price": null,
-    "verified": null,
-    "icon": "uber-one.svg"
+    "verified": null
   },
   {
     "id": "deliveroo-plus",
@@ -747,8 +713,7 @@
     "domain": "deliveroo.co.uk",
     "color": "#00CCBC",
     "price": null,
-    "verified": null,
-    "icon": "deliveroo-plus.svg"
+    "verified": null
   },
   {
     "id": "ancestry",

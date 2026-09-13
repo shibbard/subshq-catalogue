@@ -145,17 +145,17 @@ cancel route, though often the same page. For anything billed through Apple it
 is `https://apps.apple.com/account/subscriptions`. It is only ever a link the
 user taps: never fetched.
 
-## Icons
+## Logos
 
-Brand marks are single-colour SVGs from [Simple Icons](https://simpleicons.org)
-(CC0), committed under `icons/` and named after the entry — `netflix-uk.svg` for
-`netflix-uk`. `node scripts/enrich-icons.mjs` matches entries to brands, writes
-the SVGs and sets each entry's `icon` and `color`. The build copies them into
-`dist/icons`, and fails if an `icon` isn't `<id>.svg` or has no file.
+There aren't any. This data is public domain, and nobody can grant that for a
+company's logo, so logos aren't part of it and the build rejects an `icon`
+field. Apps bundle their own, named after the entry `id`, and shouldn't fetch
+one at runtime: an app requesting netflix.com's logo while it's open would tell
+Netflix, or whoever served it, that the user tracks a Netflix subscription.
 
-Apps should ship these glyphs rather than fetch them at runtime: an app
-requesting netflix.com's icon while it's open would tell Netflix, or whoever
-served the icon, that the user tracks a Netflix subscription.
+`color` is a brand colour — a fact about the brand, for drawing a letter tile —
+and is part of the data. `node scripts/enrich-colours.mjs` sets it from
+[Simple Icons](https://simpleicons.org).
 
 ## Licence
 

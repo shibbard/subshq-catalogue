@@ -56,7 +56,7 @@ jobs:
           node-version: 22
 
       - name: Build
-        # Brand glyphs are committed under icons/, so this needs no network.
+        # Everything the build reads is committed, so this needs no network.
         run: node build.mjs
 
       - name: Add CORS headers

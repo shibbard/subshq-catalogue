@@ -61,8 +61,7 @@
     "price": null,
     "wikipedia": "Amazon Prime Video",
     "verified": null,
-    "color": "#00A8E1",
-    "icon": "amazon-prime-video.svg"
+    "color": "#00A8E1"
   },
   {
     "id": "amc",
@@ -81,8 +80,7 @@
     "price": null,
     "wikipedia": "Ameba TV",
     "verified": null,
-    "color": "#2D8C3C",
-    "icon": "ameba-tv.svg"
+    "color": "#2D8C3C"
   },
   {
     "id": "animation-digital-network",
@@ -362,8 +360,7 @@
     "price": null,
     "wikipedia": "DAZN",
     "verified": null,
-    "color": "#F8F8F5",
-    "icon": "dazn.svg"
+    "color": "#F8F8F5"
   },
   {
     "id": "dc-universe",
@@ -499,8 +496,7 @@
     "price": null,
     "wikipedia": "Fandango Media",
     "verified": null,
-    "color": "#FF7300",
-    "icon": "fandango-media.svg"
+    "color": "#FF7300"
   },
   {
     "id": "fandor",
@@ -591,8 +587,7 @@
     "price": null,
     "wikipedia": "Fox Nation",
     "verified": null,
-    "color": "#000000",
-    "icon": "fox-nation.svg"
+    "color": "#000000"
   },
   {
     "id": "foxtel-now",
@@ -602,8 +597,7 @@
     "price": null,
     "wikipedia": "Foxtel Now",
     "verified": null,
-    "color": "#EB5205",
-    "icon": "foxtel-now.svg"
+    "color": "#EB5205"
   },
   {
     "id": "funimation",
@@ -676,8 +670,7 @@
     "price": null,
     "wikipedia": "Google Play Pass",
     "verified": null,
-    "color": "#414141",
-    "icon": "google-play-pass.svg"
+    "color": "#414141"
   },
   {
     "id": "gousto",
@@ -732,8 +725,7 @@
     "price": null,
     "wikipedia": "HBO Go",
     "verified": null,
-    "color": "#000000",
-    "icon": "hbo-go.svg"
+    "color": "#000000"
   },
   {
     "id": "hbo-max",
@@ -743,8 +735,7 @@
     "price": null,
     "wikipedia": "HBO Max",
     "verified": null,
-    "color": "#000000",
-    "icon": "hbo-max.svg"
+    "color": "#000000"
   },
   {
     "id": "hbo-now",
@@ -754,8 +745,7 @@
     "price": null,
     "wikipedia": "HBO Now",
     "verified": null,
-    "color": "#000000",
-    "icon": "hbo-now.svg"
+    "color": "#000000"
   },
   {
     "id": "headspace",
@@ -765,8 +755,7 @@
     "price": null,
     "wikipedia": "Headspace (company)",
     "verified": null,
-    "color": "#F47D31",
-    "icon": "headspace.svg"
+    "color": "#F47D31"
   },
   {
     "id": "hellofresh",
@@ -776,8 +765,7 @@
     "price": null,
     "wikipedia": "HelloFresh",
     "verified": null,
-    "color": "#99CC33",
-    "icon": "hellofresh.svg"
+    "color": "#99CC33"
   },
   {
     "id": "hidive",
@@ -940,8 +928,7 @@
     "price": null,
     "wikipedia": "Loot Crate",
     "verified": null,
-    "color": "#1E1E1E",
-    "icon": "loot-crate.svg"
+    "color": "#1E1E1E"
   },
   {
     "id": "marvel-unlimited",
@@ -978,8 +965,7 @@
     "price": null,
     "wikipedia": "Medium (website)",
     "verified": null,
-    "color": "#000000",
-    "icon": "medium.svg"
+    "color": "#000000"
   },
   {
     "id": "mewatch",
@@ -1025,8 +1011,7 @@
     "price": null,
     "wikipedia": "NBC Sports Gold",
     "verified": null,
-    "color": "#222222",
-    "icon": "nbc-sports-gold.svg"
+    "color": "#222222"
   },
   {
     "id": "nebula",
@@ -1036,8 +1021,7 @@
     "price": null,
     "wikipedia": "Nebula (streaming service)",
     "verified": null,
-    "color": "#2CADFE",
-    "icon": "nebula.svg"
+    "color": "#2CADFE"
   },
   {
     "id": "new-japan-pro-wrestling-world",
@@ -1047,8 +1031,7 @@
     "price": null,
     "wikipedia": "New Japan Pro-Wrestling World",
     "verified": null,
-    "color": "#FF160B",
-    "icon": "new-japan-pro-wrestling-world.svg"
+    "color": "#FF160B"
   },
   {
     "id": "newsplayer",
@@ -1112,8 +1095,7 @@
     "price": null,
     "wikipedia": "Patreon",
     "verified": null,
-    "color": "#000000",
-    "icon": "patreon.svg"
+    "color": "#000000"
   },
   {
     "id": "peacock",
@@ -1132,8 +1114,7 @@
     "price": null,
     "wikipedia": "Peloton Interactive",
     "verified": null,
-    "color": "#181A1D",
-    "icon": "peloton-interactive.svg"
+    "color": "#181A1D"
   },
   {
     "id": "perlego",
@@ -1161,8 +1142,7 @@
     "price": null,
     "wikipedia": "PlayStation Video",
     "verified": null,
-    "color": "#0070D1",
-    "icon": "playstation-video.svg"
+    "color": "#0070D1"
   },
   {
     "id": "plex",
@@ -1172,8 +1152,7 @@
     "price": null,
     "wikipedia": "Plex",
     "verified": null,
-    "color": "#EBAF00",
-    "icon": "plex.svg"
+    "color": "#EBAF00"
   },
   {
     "id": "pokergo",
@@ -1201,8 +1180,7 @@
     "price": null,
     "wikipedia": "Presto (streaming company)",
     "verified": null,
-    "color": "#5890FF",
-    "icon": "presto.svg"
+    "color": "#5890FF"
   },
   {
     "id": "quickflix",
@@ -1230,8 +1208,7 @@
     "price": null,
     "wikipedia": "Rakuten TV",
     "verified": null,
-    "color": "#BF0000",
-    "icon": "rakuten-tv.svg"
+    "color": "#BF0000"
   },
   {
     "id": "rakuten-viki",
@@ -1241,8 +1218,7 @@
     "price": null,
     "wikipedia": "Rakuten Viki",
     "verified": null,
-    "color": "#BF0000",
-    "icon": "rakuten-viki.svg"
+    "color": "#BF0000"
   },
   {
     "id": "readly",
@@ -1306,8 +1282,7 @@
     "price": null,
     "wikipedia": "Scribd",
     "verified": null,
-    "color": "#1E7B85",
-    "icon": "scribd.svg"
+    "color": "#1E7B85"
   },
   {
     "id": "shoedazzle",
@@ -1380,8 +1355,7 @@
     "price": null,
     "wikipedia": "Sony Pictures Core",
     "verified": null,
-    "color": "#FFFFFF",
-    "icon": "sony-pictures-core.svg"
+    "color": "#FFFFFF"
   },
   {
     "id": "sonyliv",
@@ -1571,8 +1545,7 @@
     "price": null,
     "wikipedia": "Triller Inc.",
     "verified": null,
-    "color": "#FF0089",
-    "icon": "triller-inc.svg"
+    "color": "#FF0089"
   },
   {
     "id": "triller-tv",
@@ -1582,8 +1555,7 @@
     "price": null,
     "wikipedia": "Triller TV",
     "verified": null,
-    "color": "#E61414",
-    "icon": "triller-tv.svg"
+    "color": "#E61414"
   },
   {
     "id": "trilogy-media",
@@ -1629,8 +1601,7 @@
     "price": null,
     "wikipedia": "UFC Fight Pass",
     "verified": null,
-    "color": "#D20A0A",
-    "icon": "ufc-fight-pass.svg"
+    "color": "#D20A0A"
   },
   {
     "id": "venu-sports",
@@ -1658,8 +1629,7 @@
     "price": null,
     "wikipedia": "Viaplay",
     "verified": null,
-    "color": "#FE365F",
-    "icon": "viaplay.svg"
+    "color": "#FE365F"
   },
   {
     "id": "vidangel",
@@ -1777,8 +1747,7 @@
     "price": null,
     "wikipedia": "WWE Network",
     "verified": null,
-    "color": "#000000",
-    "icon": "wwe-network.svg"
+    "color": "#000000"
   },
   {
     "id": "wwnlive",

@@ -81,8 +81,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "netflix-uk.svg"
+    "verified": null
   },
   {
     "id": "spotify-uk",
@@ -182,8 +181,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "spotify-uk.svg"
+    "verified": null
   },
   {
     "id": "amazon-prime-uk",
@@ -291,8 +289,7 @@
       ],
       "refund_policy": "partial"
     },
-    "verified": null,
-    "icon": "amazon-prime-uk.svg"
+    "verified": null
   },
   {
     "id": "disney-plus-uk",
@@ -483,8 +480,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "youtube-premium-uk.svg"
+    "verified": null
   },
   {
     "id": "adobe-cc-uk",
@@ -679,8 +675,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "audible-uk.svg"
+    "verified": null
   },
   {
     "id": "microsoft-365-uk",
@@ -879,8 +874,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "chatgpt-plus.svg"
+    "verified": null
   },
   {
     "id": "claude-pro",
@@ -988,8 +982,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "claude-pro.svg"
+    "verified": null
   },
   {
     "id": "apple-icloud-uk",
@@ -1103,7 +1096,6 @@
       "refund_policy": "none"
     },
     "verified": null,
-    "icon": "apple-icloud-uk.svg",
     "manage_url": "https://apps.apple.com/account/subscriptions"
   },
   {
@@ -1241,8 +1233,7 @@
       "renewal_reminder_required": true,
       "source": "https://www.ofcom.org.uk/phones-and-broadband/service-quality/contract-changes"
     },
-    "verified": null,
-    "icon": "virgin-media-uk.svg"
+    "verified": null
   },
   {
     "id": "ideogram-us",
@@ -1788,7 +1779,6 @@
       "refund_policy": "none"
     },
     "verified": null,
-    "icon": "google-photos-uk.svg",
     "manage_url": "https://one.google.com/settings"
   },
   {
@@ -1899,8 +1889,7 @@
       ],
       "refund_policy": "none"
     },
-    "verified": null,
-    "icon": "strava-uk.svg"
+    "verified": null
   },
   {
     "id": "moshi-kids",

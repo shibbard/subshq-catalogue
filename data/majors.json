@@ -444,7 +444,7 @@
     "name": "LinkedIn Premium",
     "category": "software",
     "domain": "linkedin.com",
-    "color": "#0A66C2",
+    "color": "#9F8333",
     "price": null,
     "verified": null
   },
@@ -729,7 +729,46 @@
     "name": "Kittl",
     "category": "software",
     "domain": "kittl.com",
+    "color": "#5AF2D8",
     "price": null,
     "verified": null
+  },
+  {
+    "id": "shopify",
+    "name": "Shopify",
+    "aliases": [
+      "shopify billing"
+    ],
+    "category": "software",
+    "region": "GB",
+    "domain": "shopify.com",
+    "color": "#7AB55C",
+    "price": null,
+    "manage_url": "https://admin.shopify.com/",
+    "match": [
+      "SHOPIFY",
+      "SHOPIFY BILLING"
+    ],
+    "cancel": {
+      "difficulty": 2,
+      "url": "https://admin.shopify.com/",
+      "channels": [
+        "web",
+        "app"
+      ],
+      "steps": [
+        "Sign in as the store owner and open Settings → Plan",
+        "Choose Cancel plan, then review the alternatives, domains and pending charges",
+        "Choose Cancel my plan and uninstall all apps, continue, give a reason and confirm with your password"
+      ],
+      "notice_period_days": 0,
+      "gotchas": [
+        "The store closes at the end of the current billing cycle and subscription charges are non-refundable",
+        "Review domains and any apps billed outside Shopify before cancelling; external charges may continue",
+        "Shopify Plus stores must cancel through Shopify Plus Support"
+      ],
+      "refund_policy": "none"
+    },
+    "verified": "2026-09-14"
   }
 ]

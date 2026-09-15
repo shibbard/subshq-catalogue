@@ -86,7 +86,7 @@
     "id": "animation-digital-network",
     "name": "Animation Digital Network",
     "category": "streaming",
-    "domain": "animationdigitalnetwork.fr",
+    "domain": "animationdigitalnetwork.com",
     "price": null,
     "wikipedia": "Animation Digital Network",
     "verified": null
@@ -95,7 +95,7 @@
     "id": "arrow-films",
     "name": "Arrow Films",
     "category": "streaming",
-    "domain": "arrowfilms.co.uk",
+    "domain": "arrow-player.com",
     "price": null,
     "wikipedia": "Arrow Films",
     "verified": null
@@ -1204,7 +1204,7 @@
     "id": "rakuten-tv",
     "name": "Rakuten TV",
     "category": "streaming",
-    "domain": "showtime.jp",
+    "domain": "rakuten.tv",
     "price": null,
     "wikipedia": "Rakuten TV",
     "verified": null,
@@ -1771,7 +1771,7 @@
     "id": "yousician",
     "name": "Yousician",
     "category": "other",
-    "domain": "ovelin.com",
+    "domain": "yousician.com",
     "price": null,
     "wikipedia": "Yousician",
     "verified": null

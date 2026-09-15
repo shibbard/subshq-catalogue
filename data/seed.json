@@ -313,9 +313,8 @@
             "amount": 599,
             "currency": "GBP",
             "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.disneyplus.com/en-gb",
-            "note": "Standard rate; a 6-month minimum-term plan is cheaper",
+            "verified": "2026-09-15",
+            "source": "https://www.disneyplus.com/en-gb/explore/what-is-disneyplus",
             "tax_included": true
           }
         ]
@@ -329,9 +328,17 @@
             "amount": 999,
             "currency": "GBP",
             "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.disneyplus.com/en-gb",
-            "note": "Standard rate; a 6-month minimum-term plan is cheaper",
+            "verified": "2026-09-15",
+            "source": "https://www.disneyplus.com/en-gb/explore/what-is-disneyplus",
+            "tax_included": true
+          },
+          {
+            "region": "GB",
+            "amount": 9990,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-15",
+            "source": "https://www.disneyplus.com/en-gb/explore/what-is-disneyplus",
             "tax_included": true
           }
         ]
@@ -345,9 +352,17 @@
             "amount": 1499,
             "currency": "GBP",
             "cycle": "monthly",
-            "verified": "2026-09-10",
-            "source": "https://www.disneyplus.com/en-gb",
-            "note": "Standard rate; a 6-month minimum-term plan is cheaper",
+            "verified": "2026-09-15",
+            "source": "https://www.disneyplus.com/en-gb/explore/what-is-disneyplus",
+            "tax_included": true
+          },
+          {
+            "region": "GB",
+            "amount": 14990,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-15",
+            "source": "https://www.disneyplus.com/en-gb/explore/what-is-disneyplus",
             "tax_included": true
           }
         ]
@@ -1118,8 +1133,8 @@
             "amount": 1799,
             "currency": "GBP",
             "cycle": "monthly",
-            "verified": "2026-09-11",
-            "source": "https://www.puregym.com/gyms/",
+            "verified": "2026-09-15",
+            "source": "https://www.puregym.com/membership-options/",
             "note": "From £17.99/month + joining fee. Price varies by gym location; access limited to off-peak hours",
             "tax_included": true
           }
@@ -1134,8 +1149,8 @@
             "amount": 2299,
             "currency": "GBP",
             "cycle": "monthly",
-            "verified": "2026-09-11",
-            "source": "https://www.puregym.com/gyms/",
+            "verified": "2026-09-15",
+            "source": "https://www.puregym.com/membership-options/",
             "note": "From £22.99/month + joining fee. Price varies by gym location; unrestricted 24/7 access",
             "tax_included": true
           }
@@ -1150,8 +1165,8 @@
             "amount": 2899,
             "currency": "GBP",
             "cycle": "monthly",
-            "verified": "2026-09-11",
-            "source": "https://www.puregym.com/gyms/",
+            "verified": "2026-09-15",
+            "source": "https://www.puregym.com/membership-options/",
             "note": "From £28.99/month + joining fee. Price varies by gym location; includes access to other PureGym sites, 4 guest visits/month, free freeze",
             "tax_included": true
           }
@@ -1199,6 +1214,7 @@
     "domain": "virginmedia.com",
     "color": "#ED1A37",
     "price": null,
+    "manage_url": "https://www.virginmedia.com/myvmo2/login",
     "match": [
       "VIRGIN MEDIA",
       "VIRGINMEDIA"
@@ -1500,20 +1516,8 @@
     "price": null,
     "plans": [
       {
-        "id": "with-theft-loss",
-        "name": "With Theft and Loss",
-        "prices": [
-          {
-            "region": "GB",
-            "amount": 1199,
-            "currency": "GBP",
-            "cycle": "monthly",
-            "verified": "2026-09-11",
-            "source": "https://www.apple.com/uk/apple-care/",
-            "note": "Price varies by device model; this is a representative iPhone rate",
-            "tax_included": true
-          }
-        ]
+        "id": "device-specific",
+        "name": "Device-specific cover"
       }
     ],
     "match": [

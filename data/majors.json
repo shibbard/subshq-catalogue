@@ -210,8 +210,72 @@
     "name": "Nintendo Switch Online",
     "category": "gaming",
     "domain": "nintendo.co.uk",
+    "region": "GB",
     "color": "#E60012",
     "price": null,
+    "manage_url": "https://accounts.nintendo.com/portal",
+    "plans": [
+      {
+        "id": "individual-annual",
+        "name": "Individual (12 months)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1799,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-15",
+            "source": "https://www.nintendo.com/en-gb/Nintendo-Switch-Online/Nintendo-Switch-Online-Overview-1183143.html",
+            "tax_included": null
+          }
+        ]
+      },
+      {
+        "id": "family-annual",
+        "name": "Family (12 months)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 3149,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-15",
+            "source": "https://www.nintendo.com/en-gb/Nintendo-Switch-Online/Nintendo-Switch-Online-Overview-1183143.html",
+            "tax_included": null
+          }
+        ]
+      },
+      {
+        "id": "expansion-individual-annual",
+        "name": "Expansion Pack — Individual (12 months)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 3499,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-15",
+            "source": "https://www.nintendo.com/en-gb/Nintendo-Switch-Online/Nintendo-Switch-Online-Overview-1183143.html",
+            "tax_included": null
+          }
+        ]
+      },
+      {
+        "id": "expansion-family-annual",
+        "name": "Expansion Pack — Family (12 months)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 5999,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-15",
+            "source": "https://www.nintendo.com/en-gb/Nintendo-Switch-Online/Nintendo-Switch-Online-Overview-1183143.html",
+            "tax_included": null
+          }
+        ]
+      }
+    ],
     "verified": null
   },
   {
@@ -219,8 +283,71 @@
     "name": "EA Play",
     "category": "gaming",
     "domain": "ea.com",
+    "region": "GB",
     "color": "#000000",
     "price": null,
+    "plans": [
+      {
+        "id": "ea-play-monthly",
+        "name": "EA Play (monthly)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 599,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-15",
+            "source": "https://www.ea.com/en-gb/ea-play",
+            "tax_included": null
+          }
+        ]
+      },
+      {
+        "id": "ea-play-annual",
+        "name": "EA Play (annual)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 3599,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-15",
+            "source": "https://www.ea.com/en-gb/ea-play",
+            "tax_included": null
+          }
+        ]
+      },
+      {
+        "id": "ea-play-pro-monthly",
+        "name": "EA Play Pro (monthly)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 1699,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-15",
+            "source": "https://www.ea.com/en-gb/ea-play",
+            "tax_included": null
+          }
+        ]
+      },
+      {
+        "id": "ea-play-pro-annual",
+        "name": "EA Play Pro (annual)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 10999,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-15",
+            "source": "https://www.ea.com/en-gb/ea-play",
+            "tax_included": null
+          }
+        ]
+      }
+    ],
     "verified": null
   },
   {
@@ -262,7 +389,7 @@
     "id": "notion",
     "name": "Notion",
     "category": "software",
-    "domain": "notion.so",
+    "domain": "notion.com",
     "color": "#000000",
     "price": null,
     "verified": null
@@ -444,8 +571,43 @@
     "name": "LinkedIn Premium",
     "category": "software",
     "domain": "linkedin.com",
+    "region": "GB",
     "color": "#9F8333",
     "price": null,
+    "plans": [
+      {
+        "id": "premium-career-monthly",
+        "name": "Premium Career (monthly)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 2999,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-15",
+            "source": "https://premium.linkedin.com/careers/career",
+            "note": "Estimate; may exclude VAT and promotions and can vary by device",
+            "tax_included": null
+          }
+        ]
+      },
+      {
+        "id": "premium-career-annual",
+        "name": "Premium Career (annual)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 17988,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-15",
+            "source": "https://premium.linkedin.com/careers/career",
+            "note": "Estimate; may exclude VAT and promotions and can vary by device",
+            "tax_included": null
+          }
+        ]
+      }
+    ],
     "verified": null
   },
   {
@@ -615,8 +777,43 @@
     "name": "The Economist",
     "category": "news",
     "domain": "economist.com",
+    "region": "GB",
     "color": "#E3120B",
     "price": null,
+    "plans": [
+      {
+        "id": "premium-monthly",
+        "name": "Premium (monthly)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 2790,
+            "currency": "GBP",
+            "cycle": "monthly",
+            "verified": "2026-09-14",
+            "source": "https://subscribenow.economist.com/?lmo_co=GB",
+            "note": "Regular rate; introductory offers excluded",
+            "tax_included": null
+          }
+        ]
+      },
+      {
+        "id": "premium-annual",
+        "name": "Premium (annual)",
+        "prices": [
+          {
+            "region": "GB",
+            "amount": 27900,
+            "currency": "GBP",
+            "cycle": "annual",
+            "verified": "2026-09-14",
+            "source": "https://subscribenow.economist.com/?lmo_co=GB",
+            "note": "Regular rate; introductory offers excluded",
+            "tax_included": null
+          }
+        ]
+      }
+    ],
     "verified": null
   },
   {
